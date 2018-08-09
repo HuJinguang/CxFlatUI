@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CxFlatUI", "CxFlatUI\CxFlatUI.csproj", "{818F9757-8EA0-4756-B1BC-4C18226473F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CxFlatDemo", "CxFlatDemo\CxFlatDemo.csproj", "{E4C673EC-B8E5-484C-990D-241339740572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818F9757-8EA0-4756-B1BC-4C18226473F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818F9757-8EA0-4756-B1BC-4C18226473F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818F9757-8EA0-4756-B1BC-4C18226473F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818F9757-8EA0-4756-B1BC-4C18226473F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C673EC-B8E5-484C-990D-241339740572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C673EC-B8E5-484C-990D-241339740572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C673EC-B8E5-484C-990D-241339740572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C673EC-B8E5-484C-990D-241339740572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EE93C22-88ED-451D-A702-994D5BDB924A}
+	EndGlobalSection
+EndGlobal
