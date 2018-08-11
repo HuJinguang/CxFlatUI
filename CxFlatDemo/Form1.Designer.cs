@@ -32,6 +32,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.cxFlatTabControl1 = new CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cxFlatButton2 = new CxFlatButton();
             this.cxFlatGroupBox1 = new CxFlatGroupBox();
             this.cxFlatToggle1 = new CxFlatToggle();
             this.cxFlatCheckBox1 = new CxFlatCheckBox();
@@ -43,7 +44,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cxFlatStatusBar1 = new CxFlatStatusBar();
             this.cxFlatButton1 = new CxFlatButton();
-            this.cxFlatButton2 = new CxFlatButton();
+            this.cxFlatSliderBar1 = new CxFlatSliderBar();
             this.cxFlatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.cxFlatGroupBox1.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cxFlatSliderBar1);
             this.tabPage1.Controls.Add(this.cxFlatButton2);
             this.tabPage1.Controls.Add(this.cxFlatGroupBox1);
             this.tabPage1.Controls.Add(this.cxFlatProgressBar1);
@@ -83,6 +85,18 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cxFlatButton2
+            // 
+            this.cxFlatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton2.Location = new System.Drawing.Point(171, 197);
+            this.cxFlatButton2.Name = "cxFlatButton2";
+            this.cxFlatButton2.Size = new System.Drawing.Size(130, 37);
+            this.cxFlatButton2.TabIndex = 11;
+            this.cxFlatButton2.Text = "cxFlatButton2";
+            this.cxFlatButton2.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton2.ThemeColor = System.Drawing.Color.RoyalBlue;
+            this.cxFlatButton2.Click += new System.EventHandler(this.button1_Click);
             // 
             // cxFlatGroupBox1
             // 
@@ -222,17 +236,18 @@
             this.cxFlatButton1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatButton1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cxFlatButton2
+            // cxFlatSliderBar1
             // 
-            this.cxFlatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton2.Location = new System.Drawing.Point(171, 197);
-            this.cxFlatButton2.Name = "cxFlatButton2";
-            this.cxFlatButton2.Size = new System.Drawing.Size(130, 37);
-            this.cxFlatButton2.TabIndex = 11;
-            this.cxFlatButton2.Text = "cxFlatButton2";
-            this.cxFlatButton2.TextColor = System.Drawing.Color.White;
-            this.cxFlatButton2.ThemeColor = System.Drawing.Color.RoyalBlue;
-            this.cxFlatButton2.Click += new System.EventHandler(this.button1_Click);
+            this.cxFlatSliderBar1.Location = new System.Drawing.Point(57, 53);
+            this.cxFlatSliderBar1.MaxValue = 10;
+            this.cxFlatSliderBar1.MinValue = 0;
+            this.cxFlatSliderBar1.Name = "cxFlatSliderBar1";
+            this.cxFlatSliderBar1.ShowValue = true;
+            this.cxFlatSliderBar1.Size = new System.Drawing.Size(254, 45);
+            this.cxFlatSliderBar1.TabIndex = 12;
+            this.cxFlatSliderBar1.Text = "cxFlatSliderBar1";
+            this.cxFlatSliderBar1.ThemeColor = System.Drawing.Color.RoyalBlue;
+            this.cxFlatSliderBar1.Value = 0;
             // 
             // Form1
             // 
@@ -273,6 +288,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private CxFlatButton cxFlatButton2;
+        private CxFlatSliderBar cxFlatSliderBar1;
     }
 }
 

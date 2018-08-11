@@ -39,5 +39,9 @@ namespace CxFlatDemo
                 cxFlatProgressBar1.ValueNumber = 0;
             }
         }
+
+        private void cxFlatSlider1_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }

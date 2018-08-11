@@ -59,6 +59,9 @@
     <Compile Include="CxFlatRoundProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CxFlatSliderBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatStatusBar.cs">
       <SubType>Component</SubType>
     </Compile>
