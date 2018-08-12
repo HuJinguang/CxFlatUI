@@ -22,7 +22,7 @@ namespace CxFlatUI.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CxFlatUI.Properties {
         ///   返回此类使用的缓存的 ResourceManager 实例。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CxFlatUI.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace CxFlatUI.Properties {
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon others {
+        public static System.Drawing.Icon others {
             get {
                 object obj = ResourceManager.GetObject("others", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -73,7 +73,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon sale {
+        public static System.Drawing.Icon sale {
             get {
                 object obj = ResourceManager.GetObject("sale", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -83,7 +83,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon sale_fill {
+        public static System.Drawing.Icon sale_fill {
             get {
                 object obj = ResourceManager.GetObject("sale_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -93,7 +93,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon wifi {
+        public static System.Drawing.Icon wifi {
             get {
                 object obj = ResourceManager.GetObject("wifi", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -103,7 +103,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 二维码 {
+        public static System.Drawing.Icon 二维码 {
             get {
                 object obj = ResourceManager.GetObject("二维码", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -113,7 +113,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 优惠券 {
+        public static System.Drawing.Icon 优惠券 {
             get {
                 object obj = ResourceManager.GetObject("优惠券", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -123,7 +123,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 信息 {
+        public static System.Drawing.Icon 信息 {
             get {
                 object obj = ResourceManager.GetObject("信息", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -133,7 +133,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 信息_fill {
+        public static System.Drawing.Icon 信息_fill {
             get {
                 object obj = ResourceManager.GetObject("信息_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -143,7 +143,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 信用卡 {
+        public static System.Drawing.Icon 信用卡 {
             get {
                 object obj = ResourceManager.GetObject("信用卡", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -153,7 +153,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 关闭1 {
+        public static System.Drawing.Icon 关闭1 {
             get {
                 object obj = ResourceManager.GetObject("关闭1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -163,7 +163,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 关闭2 {
+        public static System.Drawing.Icon 关闭2 {
             get {
                 object obj = ResourceManager.GetObject("关闭2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -173,7 +173,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 关闭2_fill {
+        public static System.Drawing.Icon 关闭2_fill {
             get {
                 object obj = ResourceManager.GetObject("关闭2_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -183,7 +183,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 内衣 {
+        public static System.Drawing.Icon 内衣 {
             get {
                 object obj = ResourceManager.GetObject("内衣", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -193,7 +193,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 减号 {
+        public static System.Drawing.Icon 减号 {
             get {
                 object obj = ResourceManager.GetObject("减号", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -203,7 +203,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 分享 {
+        public static System.Drawing.Icon 分享 {
             get {
                 object obj = ResourceManager.GetObject("分享", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -213,7 +213,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 列表形式 {
+        public static System.Drawing.Icon 列表形式 {
             get {
                 object obj = ResourceManager.GetObject("列表形式", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -223,7 +223,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 删除 {
+        public static System.Drawing.Icon 删除 {
             get {
                 object obj = ResourceManager.GetObject("删除", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -233,7 +233,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 刷新 {
+        public static System.Drawing.Icon 刷新 {
             get {
                 object obj = ResourceManager.GetObject("刷新", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -243,7 +243,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 券 {
+        public static System.Drawing.Icon 券 {
             get {
                 object obj = ResourceManager.GetObject("券", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -253,7 +253,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 加号 {
+        public static System.Drawing.Icon 加号 {
             get {
                 object obj = ResourceManager.GetObject("加号", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -263,7 +263,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 加号1 {
+        public static System.Drawing.Icon 加号1 {
             get {
                 object obj = ResourceManager.GetObject("加号1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -273,7 +273,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 加号2_fill {
+        public static System.Drawing.Icon 加号2_fill {
             get {
                 object obj = ResourceManager.GetObject("加号2_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -283,7 +283,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 加载 {
+        public static System.Drawing.Icon 加载 {
             get {
                 object obj = ResourceManager.GetObject("加载", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -293,7 +293,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 单品 {
+        public static System.Drawing.Icon 单品 {
             get {
                 object obj = ResourceManager.GetObject("单品", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -303,7 +303,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 单选 {
+        public static System.Drawing.Icon 单选 {
             get {
                 object obj = ResourceManager.GetObject("单选", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -313,7 +313,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 单选_fill {
+        public static System.Drawing.Icon 单选_fill {
             get {
                 object obj = ResourceManager.GetObject("单选_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -323,7 +323,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 卡片形式 {
+        public static System.Drawing.Icon 卡片形式 {
             get {
                 object obj = ResourceManager.GetObject("卡片形式", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -333,7 +333,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 反馈 {
+        public static System.Drawing.Icon 反馈 {
             get {
                 object obj = ResourceManager.GetObject("反馈", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -343,7 +343,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向上1 {
+        public static System.Drawing.Icon 向上1 {
             get {
                 object obj = ResourceManager.GetObject("向上1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -353,7 +353,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向上2 {
+        public static System.Drawing.Icon 向上2 {
             get {
                 object obj = ResourceManager.GetObject("向上2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -363,7 +363,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向上3 {
+        public static System.Drawing.Icon 向上3 {
             get {
                 object obj = ResourceManager.GetObject("向上3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -373,7 +373,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向上4 {
+        public static System.Drawing.Icon 向上4 {
             get {
                 object obj = ResourceManager.GetObject("向上4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -383,7 +383,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向上5 {
+        public static System.Drawing.Icon 向上5 {
             get {
                 object obj = ResourceManager.GetObject("向上5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -393,7 +393,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向下1 {
+        public static System.Drawing.Icon 向下1 {
             get {
                 object obj = ResourceManager.GetObject("向下1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -403,7 +403,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向下2 {
+        public static System.Drawing.Icon 向下2 {
             get {
                 object obj = ResourceManager.GetObject("向下2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -413,7 +413,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向下3 {
+        public static System.Drawing.Icon 向下3 {
             get {
                 object obj = ResourceManager.GetObject("向下3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -423,7 +423,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向下4 {
+        public static System.Drawing.Icon 向下4 {
             get {
                 object obj = ResourceManager.GetObject("向下4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -433,7 +433,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向下5 {
+        public static System.Drawing.Icon 向下5 {
             get {
                 object obj = ResourceManager.GetObject("向下5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -443,7 +443,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向右1 {
+        public static System.Drawing.Icon 向右1 {
             get {
                 object obj = ResourceManager.GetObject("向右1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -453,7 +453,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向右2 {
+        public static System.Drawing.Icon 向右2 {
             get {
                 object obj = ResourceManager.GetObject("向右2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -463,7 +463,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向右3 {
+        public static System.Drawing.Icon 向右3 {
             get {
                 object obj = ResourceManager.GetObject("向右3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -473,7 +473,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向右3_fill {
+        public static System.Drawing.Icon 向右3_fill {
             get {
                 object obj = ResourceManager.GetObject("向右3_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -483,7 +483,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向左1 {
+        public static System.Drawing.Icon 向左1 {
             get {
                 object obj = ResourceManager.GetObject("向左1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -493,7 +493,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 向左2 {
+        public static System.Drawing.Icon 向左2 {
             get {
                 object obj = ResourceManager.GetObject("向左2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -503,7 +503,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 品牌 {
+        public static System.Drawing.Icon 品牌 {
             get {
                 object obj = ResourceManager.GetObject("品牌", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -513,7 +513,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 喜欢 {
+        public static System.Drawing.Icon 喜欢 {
             get {
                 object obj = ResourceManager.GetObject("喜欢", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -523,7 +523,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 喜欢_fill {
+        public static System.Drawing.Icon 喜欢_fill {
             get {
                 object obj = ResourceManager.GetObject("喜欢_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -533,7 +533,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 国际物流 {
+        public static System.Drawing.Icon 国际物流 {
             get {
                 object obj = ResourceManager.GetObject("国际物流", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -543,7 +543,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 圆形未选中 {
+        public static System.Drawing.Icon 圆形未选中 {
             get {
                 object obj = ResourceManager.GetObject("圆形未选中", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -553,7 +553,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 圆形选中 {
+        public static System.Drawing.Icon 圆形选中 {
             get {
                 object obj = ResourceManager.GetObject("圆形选中", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -563,7 +563,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 圆形选中_fill {
+        public static System.Drawing.Icon 圆形选中_fill {
             get {
                 object obj = ResourceManager.GetObject("圆形选中_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -573,7 +573,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 坐标 {
+        public static System.Drawing.Icon 坐标 {
             get {
                 object obj = ResourceManager.GetObject("坐标", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -583,7 +583,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 坐标_fill {
+        public static System.Drawing.Icon 坐标_fill {
             get {
                 object obj = ResourceManager.GetObject("坐标_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -593,7 +593,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 多种支付 {
+        public static System.Drawing.Icon 多种支付 {
             get {
                 object obj = ResourceManager.GetObject("多种支付", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -603,7 +603,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 女装 {
+        public static System.Drawing.Icon 女装 {
             get {
                 object obj = ResourceManager.GetObject("女装", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -613,7 +613,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 客服 {
+        public static System.Drawing.Icon 客服 {
             get {
                 object obj = ResourceManager.GetObject("客服", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -623,7 +623,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 客服_fill {
+        public static System.Drawing.Icon 客服_fill {
             get {
                 object obj = ResourceManager.GetObject("客服_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -633,7 +633,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 居家 {
+        public static System.Drawing.Icon 居家 {
             get {
                 object obj = ResourceManager.GetObject("居家", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -643,7 +643,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 已售出 {
+        public static System.Drawing.Icon 已售出 {
             get {
                 object obj = ResourceManager.GetObject("已售出", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -653,7 +653,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 帮助中心 {
+        public static System.Drawing.Icon 帮助中心 {
             get {
                 object obj = ResourceManager.GetObject("帮助中心", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -663,7 +663,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 底部 {
+        public static System.Drawing.Icon 底部 {
             get {
                 object obj = ResourceManager.GetObject("底部", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -673,7 +673,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 我的 {
+        public static System.Drawing.Icon 我的 {
             get {
                 object obj = ResourceManager.GetObject("我的", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -683,7 +683,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 我的_fill {
+        public static System.Drawing.Icon 我的_fill {
             get {
                 object obj = ResourceManager.GetObject("我的_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -693,7 +693,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 户外 {
+        public static System.Drawing.Icon 户外 {
             get {
                 object obj = ResourceManager.GetObject("户外", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -703,7 +703,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 扫码 {
+        public static System.Drawing.Icon 扫码 {
             get {
                 object obj = ResourceManager.GetObject("扫码", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -713,7 +713,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 提示 {
+        public static System.Drawing.Icon 提示 {
             get {
                 object obj = ResourceManager.GetObject("提示", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -723,7 +723,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 提示_fill {
+        public static System.Drawing.Icon 提示_fill {
             get {
                 object obj = ResourceManager.GetObject("提示_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -733,7 +733,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 搜索 {
+        public static System.Drawing.Icon 搜索 {
             get {
                 object obj = ResourceManager.GetObject("搜索", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -743,7 +743,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 搜索类目 {
+        public static System.Drawing.Icon 搜索类目 {
             get {
                 object obj = ResourceManager.GetObject("搜索类目", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -753,7 +753,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 搜索类目_fill {
+        public static System.Drawing.Icon 搜索类目_fill {
             get {
                 object obj = ResourceManager.GetObject("搜索类目_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -763,7 +763,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 撤销 {
+        public static System.Drawing.Icon 撤销 {
             get {
                 object obj = ResourceManager.GetObject("撤销", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -773,7 +773,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 攻略 {
+        public static System.Drawing.Icon 攻略 {
             get {
                 object obj = ResourceManager.GetObject("攻略", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -783,7 +783,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 整理 {
+        public static System.Drawing.Icon 整理 {
             get {
                 object obj = ResourceManager.GetObject("整理", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -793,7 +793,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 方形未选中 {
+        public static System.Drawing.Icon 方形未选中 {
             get {
                 object obj = ResourceManager.GetObject("方形未选中", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -803,7 +803,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 方形选中 {
+        public static System.Drawing.Icon 方形选中 {
             get {
                 object obj = ResourceManager.GetObject("方形选中", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -813,7 +813,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 方形选中_fill {
+        public static System.Drawing.Icon 方形选中_fill {
             get {
                 object obj = ResourceManager.GetObject("方形选中_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -823,7 +823,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 时钟 {
+        public static System.Drawing.Icon 时钟 {
             get {
                 object obj = ResourceManager.GetObject("时钟", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -833,7 +833,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 时钟_fill {
+        public static System.Drawing.Icon 时钟_fill {
             get {
                 object obj = ResourceManager.GetObject("时钟_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -843,7 +843,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 更多 {
+        public static System.Drawing.Icon 更多 {
             get {
                 object obj = ResourceManager.GetObject("更多", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -853,7 +853,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 朋友 {
+        public static System.Drawing.Icon 朋友 {
             get {
                 object obj = ResourceManager.GetObject("朋友", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -863,7 +863,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 朋友_fill {
+        public static System.Drawing.Icon 朋友_fill {
             get {
                 object obj = ResourceManager.GetObject("朋友_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -873,7 +873,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 标星 {
+        public static System.Drawing.Icon 标星 {
             get {
                 object obj = ResourceManager.GetObject("标星", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -883,7 +883,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 标星_fill {
+        public static System.Drawing.Icon 标星_fill {
             get {
                 object obj = ResourceManager.GetObject("标星_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -893,7 +893,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 母婴 {
+        public static System.Drawing.Icon 母婴 {
             get {
                 object obj = ResourceManager.GetObject("母婴", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -903,7 +903,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 清除 {
+        public static System.Drawing.Icon 清除 {
             get {
                 object obj = ResourceManager.GetObject("清除", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -913,7 +913,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 物流 {
+        public static System.Drawing.Icon 物流 {
             get {
                 object obj = ResourceManager.GetObject("物流", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -923,7 +923,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 用户 {
+        public static System.Drawing.Icon 用户 {
             get {
                 object obj = ResourceManager.GetObject("用户", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -933,7 +933,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 用户_fill {
+        public static System.Drawing.Icon 用户_fill {
             get {
                 object obj = ResourceManager.GetObject("用户_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -943,7 +943,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 电话 {
+        public static System.Drawing.Icon 电话 {
             get {
                 object obj = ResourceManager.GetObject("电话", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -953,7 +953,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 男装 {
+        public static System.Drawing.Icon 男装 {
             get {
                 object obj = ResourceManager.GetObject("男装", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -963,7 +963,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 留言 {
+        public static System.Drawing.Icon 留言 {
             get {
                 object obj = ResourceManager.GetObject("留言", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -973,7 +973,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 留言_fill {
+        public static System.Drawing.Icon 留言_fill {
             get {
                 object obj = ResourceManager.GetObject("留言_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -983,7 +983,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 相机1 {
+        public static System.Drawing.Icon 相机1 {
             get {
                 object obj = ResourceManager.GetObject("相机1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -993,7 +993,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 相机1_fill {
+        public static System.Drawing.Icon 相机1_fill {
             get {
                 object obj = ResourceManager.GetObject("相机1_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1003,7 +1003,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 相机2 {
+        public static System.Drawing.Icon 相机2 {
             get {
                 object obj = ResourceManager.GetObject("相机2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1013,7 +1013,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 筛选 {
+        public static System.Drawing.Icon 筛选 {
             get {
                 object obj = ResourceManager.GetObject("筛选", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1023,7 +1023,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 箱包 {
+        public static System.Drawing.Icon 箱包 {
             get {
                 object obj = ResourceManager.GetObject("箱包", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1033,7 +1033,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 类目 {
+        public static System.Drawing.Icon 类目 {
             get {
                 object obj = ResourceManager.GetObject("类目", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1043,7 +1043,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 红包 {
+        public static System.Drawing.Icon 红包 {
             get {
                 object obj = ResourceManager.GetObject("红包", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1053,7 +1053,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 菜单 {
+        public static System.Drawing.Icon 菜单 {
             get {
                 object obj = ResourceManager.GetObject("菜单", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1063,7 +1063,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 裤子 {
+        public static System.Drawing.Icon 裤子 {
             get {
                 object obj = ResourceManager.GetObject("裤子", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1073,7 +1073,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 订单 {
+        public static System.Drawing.Icon 订单 {
             get {
                 object obj = ResourceManager.GetObject("订单", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1083,7 +1083,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 设置 {
+        public static System.Drawing.Icon 设置 {
             get {
                 object obj = ResourceManager.GetObject("设置", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1093,7 +1093,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 语言 {
+        public static System.Drawing.Icon 语言 {
             get {
                 object obj = ResourceManager.GetObject("语言", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1103,7 +1103,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 购物袋 {
+        public static System.Drawing.Icon 购物袋 {
             get {
                 object obj = ResourceManager.GetObject("购物袋", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1113,7 +1113,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 赞同 {
+        public static System.Drawing.Icon 赞同 {
             get {
                 object obj = ResourceManager.GetObject("赞同", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1123,7 +1123,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 赞同_fill {
+        public static System.Drawing.Icon 赞同_fill {
             get {
                 object obj = ResourceManager.GetObject("赞同_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1133,7 +1133,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 赠送 {
+        public static System.Drawing.Icon 赠送 {
             get {
                 object obj = ResourceManager.GetObject("赠送", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1143,7 +1143,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 足迹 {
+        public static System.Drawing.Icon 足迹 {
             get {
                 object obj = ResourceManager.GetObject("足迹", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1153,7 +1153,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 身份 {
+        public static System.Drawing.Icon 身份 {
             get {
                 object obj = ResourceManager.GetObject("身份", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1163,7 +1163,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 退款 {
+        public static System.Drawing.Icon 退款 {
             get {
                 object obj = ResourceManager.GetObject("退款", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1173,7 +1173,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 选择 {
+        public static System.Drawing.Icon 选择 {
             get {
                 object obj = ResourceManager.GetObject("选择", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1183,7 +1183,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 通知 {
+        public static System.Drawing.Icon 通知 {
             get {
                 object obj = ResourceManager.GetObject("通知", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1193,7 +1193,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 通知_fill {
+        public static System.Drawing.Icon 通知_fill {
             get {
                 object obj = ResourceManager.GetObject("通知_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1203,7 +1203,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 问号 {
+        public static System.Drawing.Icon 问号 {
             get {
                 object obj = ResourceManager.GetObject("问号", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1213,7 +1213,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 问号_fill {
+        public static System.Drawing.Icon 问号_fill {
             get {
                 object obj = ResourceManager.GetObject("问号_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1223,7 +1223,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 顶部 {
+        public static System.Drawing.Icon 顶部 {
             get {
                 object obj = ResourceManager.GetObject("顶部", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1233,7 +1233,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 顶部_禁止 {
+        public static System.Drawing.Icon 顶部_禁止 {
             get {
                 object obj = ResourceManager.GetObject("顶部_禁止", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1243,7 +1243,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 首页 {
+        public static System.Drawing.Icon 首页 {
             get {
                 object obj = ResourceManager.GetObject("首页", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -1253,7 +1253,7 @@ namespace CxFlatUI.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon 首页_fill {
+        public static System.Drawing.Icon 首页_fill {
             get {
                 object obj = ResourceManager.GetObject("首页_fill", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
