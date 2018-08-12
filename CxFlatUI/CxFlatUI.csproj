@@ -86,11 +86,421 @@
     <Compile Include="DrawHelper.cs" />
     <Compile Include="MouseStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ThemeColor.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icos\CxFlatIcos.dll" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Android更多.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\others.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助中心.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\标星.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\标星-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\撤销.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单品.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单选.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单选-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底部.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\电话.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\店铺.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\店铺-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\顶部.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\顶部-禁止.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\订单.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\多种支付.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\二维码.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反馈.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\方形未选中.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\方形选中.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\方形选中-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\分享.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\更多.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻略.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\购物车.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\购物车-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\购物袋.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭2-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\国际物流.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\红包.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\户外.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加号.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加号1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加号2-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加载.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\减号.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\居家.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\聚划算.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\卡片形式.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\客服.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\客服-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\裤子  .ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\类目.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列表形式.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\留言.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\留言-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\母婴.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\男装.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\内衣.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\女装.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\朋友.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\朋友-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\品牌.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\清除.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\券.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\扫码.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\筛选.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\身份.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\手机淘宝.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\首页.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\首页-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索类目.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索类目-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\淘宝.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\淘金币.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\特权专属.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\提示.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\提示-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天猫.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通知.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通知-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退款.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\旺旺.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\旺旺-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\问号.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\问号-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\我的.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\我的-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\物流.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\喜欢.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\喜欢-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\相机1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\相机1-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\相机2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箱包.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向右1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向右2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向右3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向右3-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向左1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向左2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信息.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信息-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信用卡.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\选择.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已售出.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\优惠券.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\语言.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\圆形未选中.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\圆形选中.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\圆形选中-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\赞同.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\赞同-fill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\赠送.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\整理.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\足迹.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\坐标.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\坐标-fill.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
