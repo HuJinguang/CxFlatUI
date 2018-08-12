@@ -9,35 +9,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-public class CxFlatPictureBox : PictureBox
+
+namespace CxFlatUI
 {
-    protected override void OnPaint(PaintEventArgs pe)
+    public class CxFlatPictureBox : PictureBox
     {
-        var graphics = pe.Graphics;
-        graphics.SmoothingMode = SmoothingMode.HighQuality;
-        graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-        graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-        graphics.Clear(Color.White);
-
-        var backPath = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 3);
-        graphics.FillPath(new SolidBrush(Color.White), backPath);
-        graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), backPath);
-        if (Image == null)
+        protected override void OnPaint(PaintEventArgs pe)
         {
-            graphics.FillRectangle(new SolidBrush(ThemeColors.PlaceholderText), new RectangleF(5, 5, Width - 10, Height - 10));
+            var graphics = pe.Graphics;
+            graphics.SmoothingMode = SmoothingMode.HighQuality;
+            graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+            graphics.Clear(Color.White);
+
+            if (Image == null)
+            {
+                graphics.FillRectangle(new SolidBrush(ThemeColors.PlaceholderText), new RectangleF(5, 5, Width - 10, Height - 10));
+            }
+            base.OnPaint(pe);
+
+            var backPath = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 3);
+            graphics.DrawPath(new Pen(Color.White, 8), backPath);
+            graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), backPath);
         }
-        else
+
+
+        public CxFlatPictureBox()
         {
-            graphics.DrawImage(Image, 5, 5, Width - 10, Height - 10);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            DoubleBuffered = true;
         }
-
-        
-    }
-
-
-    public CxFlatPictureBox()
-    {
-        SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
-        DoubleBuffered = true;
     }
 }

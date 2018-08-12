@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CxFlatUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +48,10 @@ namespace CxFlatDemo
         private void cxFlatButton2_Click(object sender, EventArgs e)
         {
             cxFlatAlertBox1.ShowAlertBox(CxFlatAlertBox.AlertType.info, "123123", 1000);
+        }
+
+        private void cxFlatRoundButton1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

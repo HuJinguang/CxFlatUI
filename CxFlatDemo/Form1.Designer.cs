@@ -1,4 +1,6 @@
-﻿namespace CxFlatDemo
+﻿using CxFlatUI;
+
+namespace CxFlatDemo
 {
     partial class Form1
     {
@@ -31,39 +33,39 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cxFlatTabControl1 = new CxFlatTabControl();
+            this.cxFlatTabControl1 = new CxFlatUI.CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.cxFlatPictureBox1 = new CxFlatPictureBox();
-            this.cxFlatRoundButton1 = new CxFlatRoundButton();
-            this.cxFlatGroupBox2 = new CxFlatGroupBox();
-            this.cxFlatSwitch2 = new CxFlatSwitch();
-            this.cxFlatToggle1 = new CxFlatToggle();
-            this.cxFlatCheckBox2 = new CxFlatCheckBox();
-            this.cxFlatSwitch1 = new CxFlatSwitch();
-            this.cxFlatCheckBox1 = new CxFlatCheckBox();
-            this.cxFlatToggle2 = new CxFlatToggle();
-            this.cxFlatAlertBox4 = new CxFlatAlertBox();
-            this.cxFlatAlertBox3 = new CxFlatAlertBox();
-            this.cxFlatAlertBox2 = new CxFlatAlertBox();
-            this.cxFlatAlertBox1 = new CxFlatAlertBox();
-            this.cxFlatSliderBar1 = new CxFlatSliderBar();
-            this.cxFlatButton2 = new CxFlatButton();
-            this.cxFlatGroupBox1 = new CxFlatGroupBox();
-            this.cxFlatRadioButton3 = new CxFlatRadioButton();
-            this.cxFlatRadioButton1 = new CxFlatRadioButton();
-            this.cxFlatRadioButton2 = new CxFlatRadioButton();
-            this.cxFlatProgressBar1 = new CxFlatProgressBar();
-            this.cxFlatRoundProgressBar1 = new CxFlatRoundProgressBar();
+            this.cxFlatPictureBox2 = new CxFlatUI.CxFlatPictureBox();
+            this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
+            this.cxFlatRoundButton1 = new CxFlatUI.CxFlatRoundButton();
+            this.cxFlatGroupBox2 = new CxFlatUI.CxFlatGroupBox();
+            this.cxFlatSwitch2 = new CxFlatUI.CxFlatSwitch();
+            this.cxFlatToggle1 = new CxFlatUI.CxFlatToggle();
+            this.cxFlatCheckBox2 = new CxFlatUI.CxFlatCheckBox();
+            this.cxFlatSwitch1 = new CxFlatUI.CxFlatSwitch();
+            this.cxFlatCheckBox1 = new CxFlatUI.CxFlatCheckBox();
+            this.cxFlatToggle2 = new CxFlatUI.CxFlatToggle();
+            this.cxFlatAlertBox4 = new CxFlatUI.CxFlatAlertBox();
+            this.cxFlatAlertBox3 = new CxFlatUI.CxFlatAlertBox();
+            this.cxFlatAlertBox2 = new CxFlatUI.CxFlatAlertBox();
+            this.cxFlatAlertBox1 = new CxFlatUI.CxFlatAlertBox();
+            this.cxFlatSliderBar1 = new CxFlatUI.CxFlatSliderBar();
+            this.cxFlatButton2 = new CxFlatUI.CxFlatButton();
+            this.cxFlatGroupBox1 = new CxFlatUI.CxFlatGroupBox();
+            this.cxFlatRadioButton3 = new CxFlatUI.CxFlatRadioButton();
+            this.cxFlatRadioButton1 = new CxFlatUI.CxFlatRadioButton();
+            this.cxFlatRadioButton2 = new CxFlatUI.CxFlatRadioButton();
+            this.cxFlatProgressBar1 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatRoundProgressBar1 = new CxFlatUI.CxFlatRoundProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cxFlatStatusBar1 = new CxFlatStatusBar();
-            this.cxFlatButton1 = new CxFlatButton();
-            this.cxFlatPictureBox2 = new CxFlatPictureBox();
+            this.cxFlatStatusBar1 = new CxFlatUI.CxFlatStatusBar();
+            this.cxFlatButton1 = new CxFlatUI.CxFlatButton();
             this.cxFlatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
             this.cxFlatGroupBox2.SuspendLayout();
             this.cxFlatGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -112,13 +114,21 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cxFlatPictureBox2
+            // 
+            this.cxFlatPictureBox2.Location = new System.Drawing.Point(314, 293);
+            this.cxFlatPictureBox2.Name = "cxFlatPictureBox2";
+            this.cxFlatPictureBox2.Size = new System.Drawing.Size(139, 94);
+            this.cxFlatPictureBox2.TabIndex = 21;
+            this.cxFlatPictureBox2.TabStop = false;
+            // 
             // cxFlatPictureBox1
             // 
             this.cxFlatPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox1.Image")));
-            this.cxFlatPictureBox1.Location = new System.Drawing.Point(637, 323);
+            this.cxFlatPictureBox1.Location = new System.Drawing.Point(482, 293);
             this.cxFlatPictureBox1.Name = "cxFlatPictureBox1";
-            this.cxFlatPictureBox1.Size = new System.Drawing.Size(139, 86);
-            this.cxFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cxFlatPictureBox1.Size = new System.Drawing.Size(139, 94);
+            this.cxFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cxFlatPictureBox1.TabIndex = 20;
             this.cxFlatPictureBox1.TabStop = false;
             // 
@@ -132,6 +142,7 @@
             this.cxFlatRoundButton1.Text = "圆角按钮";
             this.cxFlatRoundButton1.TextColor = System.Drawing.Color.White;
             this.cxFlatRoundButton1.ThemeColor = System.Drawing.Color.RoyalBlue;
+            this.cxFlatRoundButton1.Click += new System.EventHandler(this.cxFlatRoundButton1_Click);
             // 
             // cxFlatGroupBox2
             // 
@@ -234,7 +245,7 @@
             this.cxFlatAlertBox4.Size = new System.Drawing.Size(285, 34);
             this.cxFlatAlertBox4.TabIndex = 16;
             this.cxFlatAlertBox4.Text = "cxFlatAlertBox4";
-            this.cxFlatAlertBox4.Type = CxFlatAlertBox.AlertType.Success;
+            this.cxFlatAlertBox4.Type = CxFlatUI.CxFlatAlertBox.AlertType.Success;
             // 
             // cxFlatAlertBox3
             // 
@@ -244,7 +255,7 @@
             this.cxFlatAlertBox3.Size = new System.Drawing.Size(285, 34);
             this.cxFlatAlertBox3.TabIndex = 15;
             this.cxFlatAlertBox3.Text = "cxFlatAlertBox3";
-            this.cxFlatAlertBox3.Type = CxFlatAlertBox.AlertType.info;
+            this.cxFlatAlertBox3.Type = CxFlatUI.CxFlatAlertBox.AlertType.info;
             // 
             // cxFlatAlertBox2
             // 
@@ -254,7 +265,7 @@
             this.cxFlatAlertBox2.Size = new System.Drawing.Size(285, 34);
             this.cxFlatAlertBox2.TabIndex = 14;
             this.cxFlatAlertBox2.Text = "cxFlatAlertBox2";
-            this.cxFlatAlertBox2.Type = CxFlatAlertBox.AlertType.Warning;
+            this.cxFlatAlertBox2.Type = CxFlatUI.CxFlatAlertBox.AlertType.Warning;
             // 
             // cxFlatAlertBox1
             // 
@@ -264,7 +275,7 @@
             this.cxFlatAlertBox1.Size = new System.Drawing.Size(285, 34);
             this.cxFlatAlertBox1.TabIndex = 13;
             this.cxFlatAlertBox1.Text = "cxFlatAlertBox1";
-            this.cxFlatAlertBox1.Type = CxFlatAlertBox.AlertType.Error;
+            this.cxFlatAlertBox1.Type = CxFlatUI.CxFlatAlertBox.AlertType.Error;
             // 
             // cxFlatSliderBar1
             // 
@@ -404,14 +415,6 @@
             this.cxFlatButton1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatButton1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cxFlatPictureBox2
-            // 
-            this.cxFlatPictureBox2.Location = new System.Drawing.Point(637, 222);
-            this.cxFlatPictureBox2.Name = "cxFlatPictureBox2";
-            this.cxFlatPictureBox2.Size = new System.Drawing.Size(139, 94);
-            this.cxFlatPictureBox2.TabIndex = 21;
-            this.cxFlatPictureBox2.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -427,12 +430,12 @@
             this.TransparencyKey = System.Drawing.Color.White;
             this.cxFlatTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();
             this.cxFlatGroupBox2.ResumeLayout(false);
             this.cxFlatGroupBox2.PerformLayout();
             this.cxFlatGroupBox1.ResumeLayout(false);
             this.cxFlatGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
