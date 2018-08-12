@@ -26,6 +26,18 @@ public class CxFlatGroupBox : GroupBox
             Invalidate();
         }
     }
+
+    private bool _showText = false;
+    [Description("是否显示控件文本")]
+    public bool ShowText
+    {
+        get { return _showText; }
+        set
+        {
+            _showText = value;
+            Invalidate();
+        }
+    }
     #endregion
 
     protected override void OnPaint(PaintEventArgs e)
@@ -39,17 +51,19 @@ public class CxFlatGroupBox : GroupBox
         graphics.Clear(Color.White);
 
         var BG = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 3);
-        var tempColor = ColorTranslator.FromHtml("#dadcdf");
         graphics.FillPath(new SolidBrush(Color.White), BG);
-        graphics.DrawPath(new Pen(tempColor), BG);
-        graphics.FillRectangle(new SolidBrush(_themeColor), new Rectangle(0, 0, 5, 45));
-        graphics.FillRectangle(new SolidBrush(tempColor), new Rectangle(5, 0, Width - 5, 45));
-        graphics.DrawString(Text, Font, new SolidBrush(Color.Black), new RectangleF(25, 0, Width - 25, 45), new StringFormat
-        {
-            Alignment = StringAlignment.Near,
-            LineAlignment = StringAlignment.Center
-        });
+        graphics.DrawPath(new Pen(DrawHelper.BackColor), BG);
 
+        if(_showText)
+        {
+            graphics.FillRectangle(new SolidBrush(_themeColor), new Rectangle(0, 0, 5, 35));
+            graphics.FillRectangle(new SolidBrush(ThemeColors.ThreeLevelBorder), new Rectangle(5, 0, Width - 5, 35));
+            graphics.DrawString(Text, new Font("Segoe UI" ,12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width-50, 35), new StringFormat
+            {
+                Alignment = StringAlignment.Near,
+                LineAlignment = StringAlignment.Center
+            });
+        }
     }
 
     public CxFlatGroupBox()

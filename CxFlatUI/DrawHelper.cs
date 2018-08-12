@@ -68,7 +68,7 @@ static class DrawHelper
         return Color.FromArgb(r, g, b);
     }
 
-    public static Color BackColor = ColorTranslator.FromHtml("#bcbfc4");
+    public static Color BackColor = ColorTranslator.FromHtml("#dadcdf");//bcbfc4
     public static Color DarkBackColor = ColorTranslator.FromHtml("#90949a");
     public static Color LightBackColor = ColorTranslator.FromHtml("#F5F5F5");
 }

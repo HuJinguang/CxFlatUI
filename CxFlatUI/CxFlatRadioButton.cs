@@ -85,7 +85,7 @@ public class CxFlatRadioButton : RadioButton
         graphics.FillEllipse(BG, new Rectangle(PointAnimationNum, PointAnimationNum, SizeAnimationNum, SizeAnimationNum));
 
         //绘制文本
-        graphics.DrawString(Text, Font, new SolidBrush(Color.Black), new RectangleF(22, 0, Width - 22, Height), new StringFormat
+        graphics.DrawString(Text, Font, new SolidBrush(Checked?_checkedColor:Color.Black), new RectangleF(22, 0, Width - 22, Height), new StringFormat
         {
             LineAlignment = StringAlignment.Center
         });

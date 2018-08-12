@@ -43,5 +43,10 @@ namespace CxFlatDemo
         private void cxFlatSlider1_Paint(object sender, PaintEventArgs e)
         {
         }
+
+        private void cxFlatButton2_Click(object sender, EventArgs e)
+        {
+            cxFlatAlertBox1.ShowAlertBox(CxFlatAlertBox.AlertType.info, "123123", 1000);
+        }
     }
 }

@@ -135,14 +135,14 @@ public class CxFlatSliderBar : Control
 
         if (ShowValue && mouseFlat)
         {
-            graphics.FillEllipse(new SolidBrush( _themeColor), new RectangleF(ValueWidth - 2 + 7, 1, 18, 18));
+            graphics.FillEllipse(new SolidBrush( _themeColor), new RectangleF(ValueWidth - 2 + 5, 1, 18, 18));
             graphics.FillPolygon(new SolidBrush(_themeColor), new PointF[]
             {
-            new PointF(ValueWidth+1.305F-2+7,13.5F+1),
-            new PointF(ValueWidth+7.794F+9-2+7,13.5F+1),
-            new PointF(ValueWidth+9-2+7,28F)
+            new PointF(ValueWidth+1.305F-2+5,13.5F+1),
+            new PointF(ValueWidth+7.794F+9-2+5,13.5F+1),
+            new PointF(ValueWidth+9-2+5,28F)
             });
-            graphics.DrawString(_value.ToString(), Font, new SolidBrush(Color.White), new RectangleF(ValueWidth - 2 + 7, 2, 18, 18), new StringFormat
+            graphics.DrawString(_value.ToString(), Font, new SolidBrush(Color.White), new RectangleF(ValueWidth - 2 + 5, 2, 18, 18), new StringFormat
             {
                 LineAlignment = StringAlignment.Center,
                 Alignment = StringAlignment.Center
@@ -151,8 +151,9 @@ public class CxFlatSliderBar : Control
 
         graphics.FillRectangle(new SolidBrush(DrawHelper.BackColor), new RectangleF(15, Height - 10, Width - 30, 4));
         graphics.FillRectangle(new SolidBrush(Color.White), new RectangleF(15, Height - 10, ValueWidth, 4));
-        graphics.FillRectangle(new SolidBrush(Color.FromArgb(150, _themeColor)), new RectangleF(15, Height - 10, ValueWidth, 4));
-        graphics.FillEllipse(new SolidBrush(_themeColor), new RectangleF(ValueWidth+7, Height - 15, 14, 14));
+        graphics.FillRectangle(new SolidBrush(_themeColor), new RectangleF(15, Height - 10, ValueWidth, 4));
+        graphics.FillEllipse(new SolidBrush(_themeColor), new RectangleF(ValueWidth+5, Height - 17, 16, 16));
+        graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(ValueWidth + 8, Height - 14, 10, 10));
     }
 
 

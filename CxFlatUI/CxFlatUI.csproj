@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CxFlatAlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -50,10 +53,16 @@
     <Compile Include="CxFlatGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CxFlatPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CxFlatRoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatRoundProgressBar.cs">
@@ -65,6 +74,9 @@
     <Compile Include="CxFlatStatusBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CxFlatSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -74,6 +86,7 @@
     <Compile Include="DrawHelper.cs" />
     <Compile Include="MouseStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
