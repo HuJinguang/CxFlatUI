@@ -80,32 +80,33 @@ namespace CxFlatUI
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Color.White);
 
-            var backBrush = new SolidBrush(ThemeColors.Theme);
-            var textBrush = new SolidBrush(ThemeColors.Theme);
+            var backBrush = new SolidBrush(ThemeColors.PrimaryColor);
+            var textBrush = new SolidBrush(ThemeColors.PrimaryColor);
             switch (_type)
             {
                 case AlertType.Success:
-                    backBrush = new SolidBrush(Color.FromArgb(50, ThemeColors.Success));
+                    backBrush = new SolidBrush(Color.FromArgb(25, ThemeColors.Success));
                     textBrush = new SolidBrush(ThemeColors.Success);
                     break;
                 case AlertType.Warning:
-                    backBrush = new SolidBrush(Color.FromArgb(50, ThemeColors.Warning));
+                    backBrush = new SolidBrush(Color.FromArgb(25, ThemeColors.Warning));
                     textBrush = new SolidBrush(ThemeColors.Warning);
                     break;
                 case AlertType.info:
-                    backBrush = new SolidBrush(Color.FromArgb(50, ThemeColors.Info));
+                    backBrush = new SolidBrush(Color.FromArgb(25, ThemeColors.Info));
                     textBrush = new SolidBrush(ThemeColors.Info);
                     break;
                 case AlertType.Error:
-                    backBrush = new SolidBrush(Color.FromArgb(50, ThemeColors.Danger));
+                    backBrush = new SolidBrush(Color.FromArgb(25, ThemeColors.Danger));
                     textBrush = new SolidBrush(ThemeColors.Danger);
                     break;
                 default:
                     break;
             }
 
-            var back = DrawHelper.CreateRoundRect(0, 0, Width, Height, 2);
+            var back = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width-1, Height-1, 3);
             graphics.FillPath(backBrush, back);
+            graphics.DrawPath(new Pen(textBrush, 0.5f), back);
             graphics.DrawString(Text, Font, textBrush, new RectangleF(20, 0, Width - 40, Height), new StringFormat
             {
                 Alignment = StringAlignment.Near,

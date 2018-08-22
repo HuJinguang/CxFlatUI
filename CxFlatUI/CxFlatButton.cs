@@ -20,13 +20,13 @@ namespace CxFlatUI
         #endregion
 
         #region 属性
-        private Color _themeColor = Color.RoyalBlue;
-        public Color ThemeColor
+        private ButtonType _buttonType = ButtonType.Primary;
+        public ButtonType ButtonType
         {
-            get { return _themeColor; }
+            get { return _buttonType; }
             set
             {
-                _themeColor = value;
+                _buttonType = value;
                 Invalidate();
             }
         }
@@ -81,14 +81,54 @@ namespace CxFlatUI
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Color.White);
 
-            var BG = DrawHelper.CreateRoundRect(0, 0, Width, Height, 2);
-            var brush = new SolidBrush(enterFlag ? (clickFlag ? Color.FromArgb(250, _themeColor) : Color.FromArgb(240, _themeColor)) : _themeColor);
-            graphics.FillPath(brush, BG);
-            graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(0, 0, Width, Height), new StringFormat
+            if (_buttonType == ButtonType.Default)
             {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+                var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
+                graphics.FillPath(new SolidBrush(enterFlag ? Color.FromArgb(25, ThemeColors.PrimaryColor) : Color.White), BG);
+                graphics.DrawPath(new Pen(clickFlag ? ThemeColors.PrimaryColor : ThemeColors.OneLevelBorder,1), BG);
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(0, 0, Width, Height), new StringFormat
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                });
+            }
+            else
+            {
+                var BG = DrawHelper.CreateRoundRect(0, 0, Width, Height, 3);
+                var backColor = ThemeColors.PrimaryColor;
+                switch (_buttonType)
+                {
+                    case ButtonType.Primary:
+                        backColor = ThemeColors.PrimaryColor;
+                        break;
+                    case ButtonType.Success:
+                        backColor = ThemeColors.Success;
+                        break;
+                    case ButtonType.Info:
+                        backColor = ThemeColors.Info;
+                        break;
+                    case ButtonType.Waring:
+                        backColor = ThemeColors.Warning;
+                        break;
+                    case ButtonType.Danger:
+                        backColor = ThemeColors.Danger;
+                        break;
+                    default:
+                        break;
+                }
+                
+                var brush = new SolidBrush(enterFlag ? (clickFlag ? backColor : Color.FromArgb(225, backColor)) : backColor);
+                graphics.FillPath(brush, BG);
+                if (!Enabled)
+                {
+                    graphics.FillPath(new SolidBrush(Color.FromArgb(125, ThemeColors.OneLevelBorder)), BG);
+                }
+                graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(0, 0, Width, Height), new StringFormat
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                });
+            }
         }
 
 

@@ -22,7 +22,7 @@ namespace CxFlatUI
         #endregion
 
         #region 属性
-        private Color _themeColor = Color.RoyalBlue;
+        private Color _themeColor = ThemeColors.PrimaryColor;
         [Description("主题颜色")]
         public Color ThemeColor
         {
@@ -161,7 +161,7 @@ namespace CxFlatUI
 
         public CxFlatSliderBar()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             Height = 45;
             Font = new Font("Segoe UI", 8F);

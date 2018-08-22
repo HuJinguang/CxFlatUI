@@ -10,6 +10,15 @@ namespace CxFlatUI
 {
     public class CxFlatRoundProgressBar : Control
     {
+        #region 变量
+        public enum ProgressBarState
+        {
+            Normal=0,
+            Success=1,
+            Error=2
+        }
+        #endregion
+
         private int _valueNumber = 0;
         public int ValueNumber
         {
@@ -57,7 +66,7 @@ namespace CxFlatUI
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Color.White);
-
+            
             //绘制扇形
             graphics.FillEllipse(new SolidBrush(Color.FromArgb(55, _themeColor)), new RectangleF(0, 0, Width, Height));
             graphics.FillPie(new SolidBrush(_themeColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);

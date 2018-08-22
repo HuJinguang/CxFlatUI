@@ -27,7 +27,7 @@ namespace CxFlatUI
         bool enterFalg = false;
         #endregion
 
-        private Color _checkedColor = Color.Blue;
+        private Color _checkedColor = ThemeColors.PrimaryColor;
 
         #region 属性
         [Category("选中时的颜色")]

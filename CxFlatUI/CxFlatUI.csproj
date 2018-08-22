@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonType.cs" />
     <Compile Include="CxFlatAlertBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -48,6 +49,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CxFlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatGroupBox.cs">
@@ -66,6 +70,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatRoundProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CxFlatSimpleButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CxFlatSliderBar.cs">

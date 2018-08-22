@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CxFlatUI
 {
-    public class CxFlatRoundButton : Control
+    public class CxFlatSimpleButton : Control
     {
         #region 变量
         bool enterFlag = false;
@@ -20,7 +20,6 @@ namespace CxFlatUI
         #endregion
 
         #region 属性
-
         private ButtonType _buttonType = ButtonType.Primary;
         public ButtonType ButtonType
         {
@@ -82,16 +81,12 @@ namespace CxFlatUI
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Color.White);
 
-            var backPath = new GraphicsPath();
-            backPath.AddArc(new RectangleF(0.5f, 0.5f, Height-1, Height-1), 90, 180);
-            backPath.AddArc(new RectangleF(Width - Height+0.5f, 0.5f, Height-1, Height-1), 270, 180);
-            backPath.CloseAllFigures();
 
             if (_buttonType == ButtonType.Default)
             {
-                graphics.DrawPath(new Pen(clickFlag ? ThemeColors.PrimaryColor : ThemeColors.OneLevelBorder,1), backPath);
-                graphics.FillPath(new SolidBrush(enterFlag ? Color.FromArgb(25, ThemeColors.PrimaryColor) : Color.White), backPath);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(Height / 2, 0, Width - Height, Height), new StringFormat
+                var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
+                graphics.DrawPath(new Pen(enterFlag ? (clickFlag ? ThemeColors.DarkPrimary : ThemeColors.PrimaryColor) : ThemeColors.OneLevelBorder, 1), BG);
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? (clickFlag?ThemeColors.DarkPrimary:ThemeColors.PrimaryColor ): ThemeColors.MainText), new RectangleF(0, 0, Width, Height), new StringFormat
                 {
                     Alignment = StringAlignment.Center,
                     LineAlignment = StringAlignment.Center
@@ -120,18 +115,31 @@ namespace CxFlatUI
                     default:
                         break;
                 }
-                var brush = new SolidBrush(enterFlag ? (clickFlag ? backColor: Color.FromArgb(225, backColor)) : backColor);
-                graphics.FillPath(brush, backPath);
-                graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(Height / 2, 0, Width - Height, Height), new StringFormat
+
+                var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
+                if (!enterFlag)
+                {
+                    BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
+                    graphics.DrawPath(new Pen(backColor, 0.5f), BG);
+                }
+                else
+                {
+                    BG = DrawHelper.CreateRoundRect(0, 0, Width, Height, 3);
+                }
+
+                var brush = new SolidBrush(enterFlag ? (clickFlag ? backColor : Color.FromArgb(225, backColor)) : Color.FromArgb(25, backColor));
+                graphics.FillPath(brush, BG);
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? Color.White : backColor), new RectangleF(0, 0, Width, Height), new StringFormat
                 {
                     Alignment = StringAlignment.Center,
                     LineAlignment = StringAlignment.Center
                 });
+
             }
         }
 
 
-        public CxFlatRoundButton()
+        public CxFlatSimpleButton()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;

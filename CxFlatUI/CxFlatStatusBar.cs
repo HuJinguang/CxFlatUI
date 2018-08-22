@@ -22,7 +22,7 @@ namespace CxFlatUI
         private Rectangle closeRectangle;//关闭按钮区域
 
         private Color _titleColor = Color.FromArgb(255, 255, 255);//标题颜色
-        private Color _themeColor = Color.FromArgb(50, 55, 60);//主题颜色
+        private Color _themeColor = ThemeColors.PrimaryColor;//主题颜色
         private Image _iconImage = null;//应用图标
 
         #region 属性
@@ -147,19 +147,24 @@ namespace CxFlatUI
             if (_iconImage != null)
             {
                 graphics.DrawImage(_iconImage, new Rectangle(10, 10, 25, 25));
+                //
+                //绘制标题
+                //
+                graphics.DrawString(Text, Font, new SolidBrush(_titleColor), new Rectangle(45, 11, Width, Height));
             }
-
-            //
-            //绘制标题
-            //
-            graphics.DrawString(Text, Font, new SolidBrush(_titleColor), new Rectangle(45, 11, Width, Height));
-
+            else
+            {
+                //
+                //绘制标题
+                //
+                graphics.DrawString(Text, Font, new SolidBrush(_titleColor), new Rectangle(15, 11, Width, Height));
+            }
             //
             //最小化按钮
             //
             if (minRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("0", icoFont, new SolidBrush(Color.Blue), minRectangle);
+                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle);
             }
             else
             {
@@ -172,9 +177,9 @@ namespace CxFlatUI
             if (maxRectangle.Contains(mousePoint))
             {
                 if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(Color.Blue), maxRectangle);
+                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle);
                 else
-                    graphics.DrawString("2", icoFont, new SolidBrush(Color.Blue), maxRectangle);
+                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle);
             }
             else
             {
@@ -189,7 +194,7 @@ namespace CxFlatUI
             //
             if (closeRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("r", icoFont, new SolidBrush(Color.Red), closeRectangle);
+                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle);
             }
             else
             {

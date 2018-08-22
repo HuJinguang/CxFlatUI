@@ -7,7 +7,9 @@ namespace CxFlatUI
         /// <summary>
         /// 主色
         /// </summary>
-        public static Color Theme = ColorTranslator.FromHtml("#409eff");
+        public static Color PrimaryColor = ColorTranslator.FromHtml("#409eff");
+        public static Color LightPrimary = ColorTranslator.FromHtml("#5cadff");
+        public static Color DarkPrimary = ColorTranslator.FromHtml("#2b85e4");
 
         #region 辅助色
         /// <summary>

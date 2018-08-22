@@ -19,7 +19,7 @@ namespace CxFlatUI
 
         #region 属性
 
-        private Color _themeColor = Color.RoyalBlue;
+        private Color _themeColor = ThemeColors.PrimaryColor;
         public Color ThemeColor
         {
             get { return _themeColor; }

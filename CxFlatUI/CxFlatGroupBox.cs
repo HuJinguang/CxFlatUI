@@ -15,7 +15,7 @@ namespace CxFlatUI
 {
     public class CxFlatGroupBox : GroupBox
     {
-        private Color _themeColor = Color.Blue;
+        private Color _themeColor = ThemeColors.PrimaryColor;
 
         #region 属性
         public Color ThemeColor
@@ -53,13 +53,12 @@ namespace CxFlatUI
 
             var BG = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 3);
             graphics.FillPath(new SolidBrush(Color.White), BG);
-            graphics.DrawPath(new Pen(DrawHelper.BackColor), BG);
+            graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), BG);
 
             if (_showText)
             {
-                graphics.FillRectangle(new SolidBrush(_themeColor), new Rectangle(0, 0, 5, 35));
-                graphics.FillRectangle(new SolidBrush(ThemeColors.ThreeLevelBorder), new Rectangle(5, 0, Width - 5, 35));
-                graphics.DrawString(Text, new Font("Segoe UI", 12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width - 50, 35), new StringFormat
+                graphics.DrawLine(new Pen(ThemeColors.OneLevelBorder, 1), 0, 38, Width, 38);
+                graphics.DrawString(Text, new Font("微软雅黑", 12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width - 50, 38), new StringFormat
                 {
                     Alignment = StringAlignment.Near,
                     LineAlignment = StringAlignment.Center
