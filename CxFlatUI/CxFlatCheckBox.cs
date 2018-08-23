@@ -28,16 +28,6 @@ namespace CxFlatUI
         #endregion
 
         #region 属性
-        private Color _checkedColor = Color.Blue;
-        public Color CheckedColor
-        {
-            get { return _checkedColor; }
-            set
-            {
-                _checkedColor = value;
-                Invalidate();
-            }
-        }
         #endregion
 
         #region 事件
@@ -79,7 +69,7 @@ namespace CxFlatUI
             var checkmarkPath = DrawHelper.CreateRoundRect(2, 2, 16, 16, 1);
             var checkMarkLine = new Rectangle(3, 3, 14, 14);
 
-            EnabledCheckedColor = _checkedColor;
+            EnabledCheckedColor = ThemeColors.PrimaryColor;
             SolidBrush BG = new SolidBrush(Enabled ? (Checked || enterFlag ? EnabledCheckedColor : EnabledUnCheckedColor) : DisabledColor);
             Pen Pen = new Pen(BG.Color);
 
@@ -94,7 +84,7 @@ namespace CxFlatUI
             graphics.FillRectangle(new SolidBrush(Color.White), PointAnimationNum, PointAnimationNum, SizeAnimationNum, SizeAnimationNum);
 
             //绘制文字
-            graphics.DrawString(Text, Font, new SolidBrush(Color.Black), new RectangleF(22, 0, Width - 22, Height), new StringFormat
+            graphics.DrawString(Text, Font, new SolidBrush(Checked?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(22, 0, Width - 22, Height), new StringFormat
             {
                 LineAlignment = StringAlignment.Center
             });

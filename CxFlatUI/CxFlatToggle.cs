@@ -22,16 +22,6 @@ namespace CxFlatUI
         #endregion
 
         #region  属性
-        private Color _themeColor = Color.RoyalBlue;
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
         #endregion
 
         #region 事件
@@ -70,12 +60,12 @@ namespace CxFlatUI
             //
             //背景
             //
-            graphics.FillPath(new SolidBrush(Checked ? Color.FromArgb(100, _themeColor) : DrawHelper.BackColor), roundRectangle);
+            graphics.FillPath(new SolidBrush(Checked ? Color.FromArgb(100, ThemeColors.PrimaryColor) : ThemeColors.OneLevelBorder), roundRectangle);
             //
             //圆形
             //
-            graphics.FillEllipse(new SolidBrush(Checked ? _themeColor : Color.White), new RectangleF(PointAnimationNum, 1, 18, 18));
-            graphics.DrawEllipse(new Pen(Checked ? Color.FromArgb(100, _themeColor) : DrawHelper.BackColor, 2), new RectangleF(PointAnimationNum, 1, 18, 18));
+            graphics.FillEllipse(new SolidBrush(Checked ? ThemeColors.PrimaryColor: ThemeColors.OneLevelBorder), new RectangleF(PointAnimationNum, 1, 18, 18));
+            graphics.FillEllipse(new SolidBrush(Checked ? ThemeColors.PrimaryColor : Color.White), new RectangleF(PointAnimationNum+2, 3, 14, 14));
         }
 
         public CxFlatToggle()

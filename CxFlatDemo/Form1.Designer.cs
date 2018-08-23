@@ -216,7 +216,6 @@ namespace CxFlatDemo
             this.cxFlatSwitch2.Size = new System.Drawing.Size(40, 20);
             this.cxFlatSwitch2.TabIndex = 4;
             this.cxFlatSwitch2.Text = "cxFlatSwitch2";
-            this.cxFlatSwitch2.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatSwitch2.UseVisualStyleBackColor = true;
             // 
             // cxFlatToggle1
@@ -229,13 +228,11 @@ namespace CxFlatDemo
             this.cxFlatToggle1.Size = new System.Drawing.Size(48, 20);
             this.cxFlatToggle1.TabIndex = 10;
             this.cxFlatToggle1.Text = "cxFlatToggle1";
-            this.cxFlatToggle1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatToggle1.UseVisualStyleBackColor = true;
             // 
             // cxFlatCheckBox2
             // 
             this.cxFlatCheckBox2.AutoSize = true;
-            this.cxFlatCheckBox2.CheckedColor = System.Drawing.Color.Blue;
             this.cxFlatCheckBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatCheckBox2.Location = new System.Drawing.Point(35, 65);
             this.cxFlatCheckBox2.Name = "cxFlatCheckBox2";
@@ -254,14 +251,12 @@ namespace CxFlatDemo
             this.cxFlatSwitch1.Size = new System.Drawing.Size(40, 20);
             this.cxFlatSwitch1.TabIndex = 17;
             this.cxFlatSwitch1.Text = "cxFlatSwitch1";
-            this.cxFlatSwitch1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatSwitch1.UseVisualStyleBackColor = true;
             // 
             // cxFlatCheckBox1
             // 
             this.cxFlatCheckBox1.AutoSize = true;
             this.cxFlatCheckBox1.Checked = true;
-            this.cxFlatCheckBox1.CheckedColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cxFlatCheckBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatCheckBox1.Location = new System.Drawing.Point(35, 28);
@@ -279,7 +274,6 @@ namespace CxFlatDemo
             this.cxFlatToggle2.Size = new System.Drawing.Size(48, 20);
             this.cxFlatToggle2.TabIndex = 10;
             this.cxFlatToggle2.Text = "cxFlatToggle2";
-            this.cxFlatToggle2.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatToggle2.UseVisualStyleBackColor = true;
             this.cxFlatToggle2.CheckStateChanged += new System.EventHandler(this.button1_Click);
             // 
@@ -397,8 +391,6 @@ namespace CxFlatDemo
             this.cxFlatProgressBar1.ShowTip = true;
             this.cxFlatProgressBar1.Size = new System.Drawing.Size(790, 32);
             this.cxFlatProgressBar1.TabIndex = 6;
-            this.cxFlatProgressBar1.Text = "cxFlatProgressBar1";
-            this.cxFlatProgressBar1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatProgressBar1.ValueNumber = 0;
             // 
             // cxFlatRoundProgressBar1
@@ -410,7 +402,6 @@ namespace CxFlatDemo
             this.cxFlatRoundProgressBar1.Size = new System.Drawing.Size(108, 108);
             this.cxFlatRoundProgressBar1.TabIndex = 7;
             this.cxFlatRoundProgressBar1.Text = "cxFlatRoundProgressBar1";
-            this.cxFlatRoundProgressBar1.ThemeColor = System.Drawing.Color.RoyalBlue;
             this.cxFlatRoundProgressBar1.ValueNumber = 0;
             // 
             // tabPage2

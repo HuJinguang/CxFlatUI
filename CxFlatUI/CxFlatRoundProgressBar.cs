@@ -30,17 +30,6 @@ namespace CxFlatUI
             }
         }
 
-        private Color _themeColor = Color.Blue;
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
-
         private float _roundWidth = 10;
         public float RoundWidth
         {
@@ -68,11 +57,11 @@ namespace CxFlatUI
             graphics.Clear(Color.White);
             
             //绘制扇形
-            graphics.FillEllipse(new SolidBrush(Color.FromArgb(55, _themeColor)), new RectangleF(0, 0, Width, Height));
-            graphics.FillPie(new SolidBrush(_themeColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
+            graphics.FillEllipse(new SolidBrush(Color.FromArgb(25, ThemeColors.PrimaryColor)), new RectangleF(0, 0, Width, Height));
+            graphics.FillPie(new SolidBrush(ThemeColors.PrimaryColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
             //绘制文字
             graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
-            graphics.DrawString(_valueNumber.ToString() + "%", Font, new SolidBrush(_themeColor), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2), new StringFormat
+            graphics.DrawString(_valueNumber.ToString() + "%", Font, new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(_roundWidth, _roundWidth, Width - (_roundWidth * 2), Width - (_roundWidth * 2)), new StringFormat
             {
                 Alignment = StringAlignment.Center,
                 LineAlignment = StringAlignment.Center

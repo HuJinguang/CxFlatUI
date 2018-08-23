@@ -32,18 +32,6 @@ namespace CxFlatUI
             }
         }
 
-        private Color _themeColor = Color.Blue;
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
-
-
         #region 事件
         protected override void OnResize(EventArgs e)
         {
@@ -68,7 +56,7 @@ namespace CxFlatUI
             {
                 var x = _valueNumber * (Width - 32) / 100 + 16f;
                 var y = 25;
-                graphics.FillPolygon(new SolidBrush(Color.FromArgb(255, _themeColor)), new PointF[]
+                graphics.FillPolygon(new SolidBrush( ThemeColors.PrimaryColor), new PointF[]
                 {
             new PointF(x,y),new PointF(x+5,y-5),new PointF(x+16,y-5),new PointF(x+16,y-25),new PointF(x-16,y-25),new PointF(x-16,y-5),new PointF(x-5,y-5)
                 });
@@ -78,13 +66,13 @@ namespace CxFlatUI
                     LineAlignment = StringAlignment.Center
                 });
 
-                graphics.FillRectangle(new SolidBrush(Color.FromArgb(55, _themeColor)), new RectangleF(16, 25, Width - 32, Height - 25));
-                graphics.FillRectangle(new SolidBrush(_themeColor), new RectangleF(16, 25, x - 16, Height - 25));
+                graphics.FillRectangle(new SolidBrush(Color.FromArgb(25, ThemeColors.PrimaryColor)), new RectangleF(16, 25, Width - 32, Height - 25));
+                graphics.FillRectangle(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(16, 25, x - 16, Height - 25));
             }
             else
             {
-                graphics.FillRectangle(new SolidBrush(Color.FromArgb(55, _themeColor)), new RectangleF(0, 0, Width, Height));
-                graphics.FillRectangle(new SolidBrush(_themeColor), new RectangleF(0, 0, _valueNumber * Width / 100, Height));
+                graphics.FillRectangle(new SolidBrush(Color.FromArgb(25, ThemeColors.PrimaryColor)), new RectangleF(0, 0, Width, Height));
+                graphics.FillRectangle(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(0, 0, _valueNumber * Width / 100, Height));
             }
         }
 

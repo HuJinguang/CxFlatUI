@@ -22,16 +22,6 @@ namespace CxFlatUI
         #endregion
 
         #region  属性
-        private Color _themeColor = Color.RoyalBlue;
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
         #endregion
 
         #region 事件
@@ -56,18 +46,19 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.AntiAlias;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+            graphics.InterpolationMode = InterpolationMode.High;
             graphics.Clear(Color.White);
             //
             //背景形状
             //
             var backRect = new GraphicsPath();
-            backRect.AddArc(new RectangleF(0, 0, Height, Height), 90, 180);
-            backRect.AddArc(new RectangleF(Width - Height, 0, Height, Height), 270, 180);
+            backRect.AddArc(new RectangleF(0.5f, 0.5f, Height-1, Height-1), 90, 180);
+            backRect.AddArc(new RectangleF(Width - Height+0.5f, 0.5f, Height-1, Height-1), 270, 180);
             backRect.CloseAllFigures();
             //
             //背景
             //
-            graphics.FillPath(new SolidBrush(Checked ? _themeColor : ThemeColors.OneLevelBorder), backRect);
+            graphics.FillPath(new SolidBrush(Checked ? ThemeColors.PrimaryColor : ThemeColors.OneLevelBorder), backRect);
             //
             //圆形
             //
