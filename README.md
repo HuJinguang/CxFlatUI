@@ -1,5 +1,5 @@
 # CxFlatUI
-![image](https://github.com/HuJinguang/CxFlatUI/blob/master/CxFlatDemo/screenshot/1.png)
+![image](https://github.com/HuJinguang/CxFlatUI/blob/master/CxFlatDemo/screenshot/3.png)
 ![image](https://github.com/HuJinguang/CxFlatUI/blob/master/CxFlatDemo/screenshot/2.png)
 ## 当前控件
 + AlertBox
