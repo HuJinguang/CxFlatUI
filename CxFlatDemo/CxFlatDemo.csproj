@@ -84,6 +84,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="screenshot\1.png" />
     <Content Include="screenshot\3.png" />
     <Content Include="screenshot\2.png" />
     <Content Include="screenshot\TIM截图20180809221336.png" />

@@ -36,6 +36,8 @@ namespace CxFlatDemo
             this.cxFlatStatusBar1 = new CxFlatUI.CxFlatStatusBar();
             this.cxFlatTabControl1 = new CxFlatUI.CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cxFlatNumericUpDown2 = new CxFlatUI.CxFlatNumericUpDown();
+            this.cxFlatNumericUpDown1 = new CxFlatUI.CxFlatNumericUpDown();
             this.cxFlatSliderBar1 = new CxFlatUI.CxFlatSliderBar();
             this.cxFlatPictureBox2 = new CxFlatUI.CxFlatPictureBox();
             this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
@@ -125,6 +127,8 @@ namespace CxFlatDemo
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cxFlatNumericUpDown2);
+            this.tabPage1.Controls.Add(this.cxFlatNumericUpDown1);
             this.tabPage1.Controls.Add(this.cxFlatSliderBar1);
             this.tabPage1.Controls.Add(this.cxFlatPictureBox2);
             this.tabPage1.Controls.Add(this.cxFlatPictureBox1);
@@ -146,15 +150,45 @@ namespace CxFlatDemo
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cxFlatNumericUpDown2
+            // 
+            this.cxFlatNumericUpDown2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatNumericUpDown2.Location = new System.Drawing.Point(656, 355);
+            this.cxFlatNumericUpDown2.MaxNum = 10F;
+            this.cxFlatNumericUpDown2.MinNum = 0F;
+            this.cxFlatNumericUpDown2.Name = "cxFlatNumericUpDown2";
+            this.cxFlatNumericUpDown2.Precision = 0;
+            this.cxFlatNumericUpDown2.Size = new System.Drawing.Size(124, 32);
+            this.cxFlatNumericUpDown2.Step = 1F;
+            this.cxFlatNumericUpDown2.Style = CxFlatUI.CxFlatNumericUpDown.NumericStyle.TopDown;
+            this.cxFlatNumericUpDown2.TabIndex = 25;
+            this.cxFlatNumericUpDown2.Text = "cxFlatNumericUpDown2";
+            this.cxFlatNumericUpDown2.ValueNumber = 0F;
+            // 
+            // cxFlatNumericUpDown1
+            // 
+            this.cxFlatNumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatNumericUpDown1.Location = new System.Drawing.Point(656, 293);
+            this.cxFlatNumericUpDown1.MaxNum = 10F;
+            this.cxFlatNumericUpDown1.MinNum = 0F;
+            this.cxFlatNumericUpDown1.Name = "cxFlatNumericUpDown1";
+            this.cxFlatNumericUpDown1.Precision = 2;
+            this.cxFlatNumericUpDown1.Size = new System.Drawing.Size(124, 32);
+            this.cxFlatNumericUpDown1.Step = 0.1F;
+            this.cxFlatNumericUpDown1.Style = CxFlatUI.CxFlatNumericUpDown.NumericStyle.LeftRight;
+            this.cxFlatNumericUpDown1.TabIndex = 24;
+            this.cxFlatNumericUpDown1.Text = "cxFlatNumericUpDown1";
+            this.cxFlatNumericUpDown1.ValueNumber = 0F;
+            // 
             // cxFlatSliderBar1
             // 
             this.cxFlatSliderBar1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.cxFlatSliderBar1.Location = new System.Drawing.Point(22, 222);
+            this.cxFlatSliderBar1.Location = new System.Drawing.Point(22, 219);
             this.cxFlatSliderBar1.MaxValue = 10;
             this.cxFlatSliderBar1.MinValue = 0;
             this.cxFlatSliderBar1.Name = "cxFlatSliderBar1";
             this.cxFlatSliderBar1.ShowValue = true;
-            this.cxFlatSliderBar1.Size = new System.Drawing.Size(599, 45);
+            this.cxFlatSliderBar1.Size = new System.Drawing.Size(780, 45);
             this.cxFlatSliderBar1.TabIndex = 22;
             this.cxFlatSliderBar1.Text = "cxFlatSliderBar1";
             this.cxFlatSliderBar1.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
@@ -714,6 +748,8 @@ namespace CxFlatDemo
         private CxFlatSimpleButton cxFlatSimpleButton5;
         private CxFlatSimpleButton cxFlatSimpleButton4;
         private CxFlatSimpleButton cxFlatSimpleButton3;
+        private CxFlatNumericUpDown cxFlatNumericUpDown1;
+        private CxFlatNumericUpDown cxFlatNumericUpDown2;
     }
 }
 

@@ -57,6 +57,9 @@
     <Compile Include="CxFlatGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CxFlatNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
