@@ -41,7 +41,6 @@ namespace CxFlatDemo
             this.cxFlatSliderBar1 = new CxFlatUI.CxFlatSliderBar();
             this.cxFlatPictureBox2 = new CxFlatUI.CxFlatPictureBox();
             this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
-            this.cxFlatRoundButton1 = new CxFlatUI.CxFlatRoundButton();
             this.cxFlatGroupBox2 = new CxFlatUI.CxFlatGroupBox();
             this.cxFlatSwitch2 = new CxFlatUI.CxFlatSwitch();
             this.cxFlatToggle1 = new CxFlatUI.CxFlatToggle();
@@ -53,14 +52,20 @@ namespace CxFlatDemo
             this.cxFlatAlertBox3 = new CxFlatUI.CxFlatAlertBox();
             this.cxFlatAlertBox2 = new CxFlatUI.CxFlatAlertBox();
             this.cxFlatAlertBox1 = new CxFlatUI.CxFlatAlertBox();
-            this.cxFlatButton2 = new CxFlatUI.CxFlatButton();
             this.cxFlatGroupBox1 = new CxFlatUI.CxFlatGroupBox();
             this.cxFlatRadioButton3 = new CxFlatUI.CxFlatRadioButton();
             this.cxFlatRadioButton2 = new CxFlatUI.CxFlatRadioButton();
             this.cxFlatRadioButton1 = new CxFlatUI.CxFlatRadioButton();
-            this.cxFlatProgressBar1 = new CxFlatUI.CxFlatProgressBar();
-            this.cxFlatRoundProgressBar1 = new CxFlatUI.CxFlatRoundProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.cxFlatProgressBar8 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar7 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar6 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar5 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar4 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar3 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar2 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatRoundProgressBar3 = new CxFlatUI.CxFlatRoundProgressBar();
+            this.cxFlatRoundProgressBar2 = new CxFlatUI.CxFlatRoundProgressBar();
             this.cxFlatSimpleButton6 = new CxFlatUI.CxFlatSimpleButton();
             this.cxFlatSimpleButton5 = new CxFlatUI.CxFlatSimpleButton();
             this.cxFlatSimpleButton4 = new CxFlatUI.CxFlatSimpleButton();
@@ -80,6 +85,11 @@ namespace CxFlatDemo
             this.cxFlatButton5 = new CxFlatUI.CxFlatButton();
             this.cxFlatButton4 = new CxFlatUI.CxFlatButton();
             this.cxFlatButton1 = new CxFlatUI.CxFlatButton();
+            this.cxFlatProgressBar9 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar10 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar11 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatProgressBar12 = new CxFlatUI.CxFlatProgressBar();
+            this.cxFlatRoundProgressBar4 = new CxFlatUI.CxFlatRoundProgressBar();
             this.cxFlatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).BeginInit();
@@ -92,7 +102,7 @@ namespace CxFlatDemo
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Interval = 1000;
             // 
             // cxFlatStatusBar1
             // 
@@ -120,7 +130,7 @@ namespace CxFlatDemo
             this.cxFlatTabControl1.Location = new System.Drawing.Point(0, 51);
             this.cxFlatTabControl1.Name = "cxFlatTabControl1";
             this.cxFlatTabControl1.SelectedIndex = 0;
-            this.cxFlatTabControl1.Size = new System.Drawing.Size(825, 483);
+            this.cxFlatTabControl1.Size = new System.Drawing.Size(825, 492);
             this.cxFlatTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.cxFlatTabControl1.TabIndex = 11;
             this.cxFlatTabControl1.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
@@ -132,20 +142,16 @@ namespace CxFlatDemo
             this.tabPage1.Controls.Add(this.cxFlatSliderBar1);
             this.tabPage1.Controls.Add(this.cxFlatPictureBox2);
             this.tabPage1.Controls.Add(this.cxFlatPictureBox1);
-            this.tabPage1.Controls.Add(this.cxFlatRoundButton1);
             this.tabPage1.Controls.Add(this.cxFlatGroupBox2);
             this.tabPage1.Controls.Add(this.cxFlatAlertBox4);
             this.tabPage1.Controls.Add(this.cxFlatAlertBox3);
             this.tabPage1.Controls.Add(this.cxFlatAlertBox2);
             this.tabPage1.Controls.Add(this.cxFlatAlertBox1);
-            this.tabPage1.Controls.Add(this.cxFlatButton2);
             this.tabPage1.Controls.Add(this.cxFlatGroupBox1);
-            this.tabPage1.Controls.Add(this.cxFlatProgressBar1);
-            this.tabPage1.Controls.Add(this.cxFlatRoundProgressBar1);
             this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(825, 443);
+            this.tabPage1.Size = new System.Drawing.Size(825, 452);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -153,7 +159,7 @@ namespace CxFlatDemo
             // cxFlatNumericUpDown2
             // 
             this.cxFlatNumericUpDown2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatNumericUpDown2.Location = new System.Drawing.Point(656, 355);
+            this.cxFlatNumericUpDown2.Location = new System.Drawing.Point(387, 333);
             this.cxFlatNumericUpDown2.MaxNum = 10F;
             this.cxFlatNumericUpDown2.MinNum = 0F;
             this.cxFlatNumericUpDown2.Name = "cxFlatNumericUpDown2";
@@ -168,7 +174,7 @@ namespace CxFlatDemo
             // cxFlatNumericUpDown1
             // 
             this.cxFlatNumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatNumericUpDown1.Location = new System.Drawing.Point(656, 293);
+            this.cxFlatNumericUpDown1.Location = new System.Drawing.Point(387, 271);
             this.cxFlatNumericUpDown1.MaxNum = 10F;
             this.cxFlatNumericUpDown1.MinNum = 0F;
             this.cxFlatNumericUpDown1.Name = "cxFlatNumericUpDown1";
@@ -183,7 +189,7 @@ namespace CxFlatDemo
             // cxFlatSliderBar1
             // 
             this.cxFlatSliderBar1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.cxFlatSliderBar1.Location = new System.Drawing.Point(22, 219);
+            this.cxFlatSliderBar1.Location = new System.Drawing.Point(22, 207);
             this.cxFlatSliderBar1.MaxValue = 10;
             this.cxFlatSliderBar1.MinValue = 0;
             this.cxFlatSliderBar1.Name = "cxFlatSliderBar1";
@@ -196,7 +202,7 @@ namespace CxFlatDemo
             // 
             // cxFlatPictureBox2
             // 
-            this.cxFlatPictureBox2.Location = new System.Drawing.Point(314, 293);
+            this.cxFlatPictureBox2.Location = new System.Drawing.Point(22, 271);
             this.cxFlatPictureBox2.Name = "cxFlatPictureBox2";
             this.cxFlatPictureBox2.Size = new System.Drawing.Size(139, 94);
             this.cxFlatPictureBox2.TabIndex = 21;
@@ -205,24 +211,12 @@ namespace CxFlatDemo
             // cxFlatPictureBox1
             // 
             this.cxFlatPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox1.Image")));
-            this.cxFlatPictureBox1.Location = new System.Drawing.Point(482, 293);
+            this.cxFlatPictureBox1.Location = new System.Drawing.Point(195, 271);
             this.cxFlatPictureBox1.Name = "cxFlatPictureBox1";
             this.cxFlatPictureBox1.Size = new System.Drawing.Size(139, 94);
             this.cxFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cxFlatPictureBox1.TabIndex = 20;
             this.cxFlatPictureBox1.TabStop = false;
-            // 
-            // cxFlatRoundButton1
-            // 
-            this.cxFlatRoundButton1.ButtonType = CxFlatUI.ButtonType.Default;
-            this.cxFlatRoundButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton1.Location = new System.Drawing.Point(149, 285);
-            this.cxFlatRoundButton1.Name = "cxFlatRoundButton1";
-            this.cxFlatRoundButton1.Size = new System.Drawing.Size(125, 38);
-            this.cxFlatRoundButton1.TabIndex = 19;
-            this.cxFlatRoundButton1.Text = "圆角按钮";
-            this.cxFlatRoundButton1.TextColor = System.Drawing.Color.White;
-            this.cxFlatRoundButton1.Click += new System.EventHandler(this.cxFlatRoundButton1_Click);
             // 
             // cxFlatGroupBox2
             // 
@@ -351,18 +345,6 @@ namespace CxFlatDemo
             this.cxFlatAlertBox1.Text = "cxFlatAlertBox1";
             this.cxFlatAlertBox1.Type = CxFlatUI.CxFlatAlertBox.AlertType.Error;
             // 
-            // cxFlatButton2
-            // 
-            this.cxFlatButton2.ButtonType = CxFlatUI.ButtonType.Primary;
-            this.cxFlatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton2.Location = new System.Drawing.Point(150, 341);
-            this.cxFlatButton2.Name = "cxFlatButton2";
-            this.cxFlatButton2.Size = new System.Drawing.Size(125, 38);
-            this.cxFlatButton2.TabIndex = 11;
-            this.cxFlatButton2.Text = "一般按钮";
-            this.cxFlatButton2.TextColor = System.Drawing.Color.White;
-            this.cxFlatButton2.Click += new System.EventHandler(this.cxFlatButton2_Click);
-            // 
             // cxFlatGroupBox1
             // 
             this.cxFlatGroupBox1.Controls.Add(this.cxFlatRadioButton3);
@@ -417,29 +399,22 @@ namespace CxFlatDemo
             this.cxFlatRadioButton1.Text = "cxFlatRadioButton1";
             this.cxFlatRadioButton1.UseVisualStyleBackColor = true;
             // 
-            // cxFlatProgressBar1
-            // 
-            this.cxFlatProgressBar1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cxFlatProgressBar1.Location = new System.Drawing.Point(12, 401);
-            this.cxFlatProgressBar1.Name = "cxFlatProgressBar1";
-            this.cxFlatProgressBar1.ShowTip = true;
-            this.cxFlatProgressBar1.Size = new System.Drawing.Size(790, 32);
-            this.cxFlatProgressBar1.TabIndex = 6;
-            this.cxFlatProgressBar1.ValueNumber = 0;
-            // 
-            // cxFlatRoundProgressBar1
-            // 
-            this.cxFlatRoundProgressBar1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxFlatRoundProgressBar1.Location = new System.Drawing.Point(14, 279);
-            this.cxFlatRoundProgressBar1.Name = "cxFlatRoundProgressBar1";
-            this.cxFlatRoundProgressBar1.RoundWidth = 8F;
-            this.cxFlatRoundProgressBar1.Size = new System.Drawing.Size(108, 108);
-            this.cxFlatRoundProgressBar1.TabIndex = 7;
-            this.cxFlatRoundProgressBar1.Text = "cxFlatRoundProgressBar1";
-            this.cxFlatRoundProgressBar1.ValueNumber = 0;
-            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cxFlatRoundProgressBar4);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar12);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar11);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar10);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar9);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar8);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar7);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar6);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar5);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar4);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar3);
+            this.tabPage2.Controls.Add(this.cxFlatProgressBar2);
+            this.tabPage2.Controls.Add(this.cxFlatRoundProgressBar3);
+            this.tabPage2.Controls.Add(this.cxFlatRoundProgressBar2);
             this.tabPage2.Controls.Add(this.cxFlatSimpleButton6);
             this.tabPage2.Controls.Add(this.cxFlatSimpleButton5);
             this.tabPage2.Controls.Add(this.cxFlatSimpleButton4);
@@ -461,10 +436,117 @@ namespace CxFlatDemo
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(825, 443);
+            this.tabPage2.Size = new System.Drawing.Size(825, 452);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // cxFlatProgressBar8
+            // 
+            this.cxFlatProgressBar8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar8.IsError = false;
+            this.cxFlatProgressBar8.Location = new System.Drawing.Point(393, 279);
+            this.cxFlatProgressBar8.Name = "cxFlatProgressBar8";
+            this.cxFlatProgressBar8.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueOutSide;
+            this.cxFlatProgressBar8.Size = new System.Drawing.Size(408, 14);
+            this.cxFlatProgressBar8.TabIndex = 26;
+            this.cxFlatProgressBar8.Text = "cxFlatProgressBar8";
+            this.cxFlatProgressBar8.ValueNumber = 100;
+            // 
+            // cxFlatProgressBar7
+            // 
+            this.cxFlatProgressBar7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar7.IsError = false;
+            this.cxFlatProgressBar7.Location = new System.Drawing.Point(393, 253);
+            this.cxFlatProgressBar7.Name = "cxFlatProgressBar7";
+            this.cxFlatProgressBar7.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueOutSide;
+            this.cxFlatProgressBar7.Size = new System.Drawing.Size(408, 14);
+            this.cxFlatProgressBar7.TabIndex = 25;
+            this.cxFlatProgressBar7.Text = "cxFlatProgressBar7";
+            this.cxFlatProgressBar7.ValueNumber = 25;
+            // 
+            // cxFlatProgressBar6
+            // 
+            this.cxFlatProgressBar6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar6.IsError = true;
+            this.cxFlatProgressBar6.Location = new System.Drawing.Point(4, 409);
+            this.cxFlatProgressBar6.Name = "cxFlatProgressBar6";
+            this.cxFlatProgressBar6.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ToolTip;
+            this.cxFlatProgressBar6.Size = new System.Drawing.Size(361, 32);
+            this.cxFlatProgressBar6.TabIndex = 24;
+            this.cxFlatProgressBar6.Text = "cxFlatProgressBar6";
+            this.cxFlatProgressBar6.ValueNumber = 50;
+            // 
+            // cxFlatProgressBar5
+            // 
+            this.cxFlatProgressBar5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar5.IsError = false;
+            this.cxFlatProgressBar5.Location = new System.Drawing.Point(4, 371);
+            this.cxFlatProgressBar5.Name = "cxFlatProgressBar5";
+            this.cxFlatProgressBar5.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ToolTip;
+            this.cxFlatProgressBar5.Size = new System.Drawing.Size(361, 32);
+            this.cxFlatProgressBar5.TabIndex = 23;
+            this.cxFlatProgressBar5.Text = "cxFlatProgressBar5";
+            this.cxFlatProgressBar5.ValueNumber = 100;
+            // 
+            // cxFlatProgressBar4
+            // 
+            this.cxFlatProgressBar4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar4.IsError = false;
+            this.cxFlatProgressBar4.Location = new System.Drawing.Point(393, 227);
+            this.cxFlatProgressBar4.Name = "cxFlatProgressBar4";
+            this.cxFlatProgressBar4.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueOutSide;
+            this.cxFlatProgressBar4.Size = new System.Drawing.Size(408, 14);
+            this.cxFlatProgressBar4.TabIndex = 22;
+            this.cxFlatProgressBar4.Text = "cxFlatProgressBar4";
+            this.cxFlatProgressBar4.ValueNumber = 0;
+            // 
+            // cxFlatProgressBar3
+            // 
+            this.cxFlatProgressBar3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar3.IsError = false;
+            this.cxFlatProgressBar3.Location = new System.Drawing.Point(16, 227);
+            this.cxFlatProgressBar3.Name = "cxFlatProgressBar3";
+            this.cxFlatProgressBar3.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueInSide;
+            this.cxFlatProgressBar3.Size = new System.Drawing.Size(336, 14);
+            this.cxFlatProgressBar3.TabIndex = 21;
+            this.cxFlatProgressBar3.Text = "cxFlatProgressBar3";
+            this.cxFlatProgressBar3.ValueNumber = 0;
+            // 
+            // cxFlatProgressBar2
+            // 
+            this.cxFlatProgressBar2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar2.IsError = false;
+            this.cxFlatProgressBar2.Location = new System.Drawing.Point(4, 333);
+            this.cxFlatProgressBar2.Name = "cxFlatProgressBar2";
+            this.cxFlatProgressBar2.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ToolTip;
+            this.cxFlatProgressBar2.Size = new System.Drawing.Size(361, 32);
+            this.cxFlatProgressBar2.TabIndex = 20;
+            this.cxFlatProgressBar2.Text = "cxFlatProgressBar2";
+            this.cxFlatProgressBar2.ValueNumber = 25;
+            // 
+            // cxFlatRoundProgressBar3
+            // 
+            this.cxFlatRoundProgressBar3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cxFlatRoundProgressBar3.IsError = true;
+            this.cxFlatRoundProgressBar3.Location = new System.Drawing.Point(681, 335);
+            this.cxFlatRoundProgressBar3.Name = "cxFlatRoundProgressBar3";
+            this.cxFlatRoundProgressBar3.Size = new System.Drawing.Size(108, 108);
+            this.cxFlatRoundProgressBar3.TabIndex = 19;
+            this.cxFlatRoundProgressBar3.Text = "cxFlatRoundProgressBar3";
+            this.cxFlatRoundProgressBar3.ValueNumber = 50;
+            // 
+            // cxFlatRoundProgressBar2
+            // 
+            this.cxFlatRoundProgressBar2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cxFlatRoundProgressBar2.IsError = false;
+            this.cxFlatRoundProgressBar2.Location = new System.Drawing.Point(537, 335);
+            this.cxFlatRoundProgressBar2.Name = "cxFlatRoundProgressBar2";
+            this.cxFlatRoundProgressBar2.Size = new System.Drawing.Size(108, 108);
+            this.cxFlatRoundProgressBar2.TabIndex = 18;
+            this.cxFlatRoundProgressBar2.Text = "cxFlatRoundProgressBar2";
+            this.cxFlatRoundProgressBar2.ValueNumber = 100;
             // 
             // cxFlatSimpleButton6
             // 
@@ -676,6 +758,65 @@ namespace CxFlatDemo
             this.cxFlatButton1.TextColor = System.Drawing.Color.White;
             this.cxFlatButton1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cxFlatProgressBar9
+            // 
+            this.cxFlatProgressBar9.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar9.IsError = true;
+            this.cxFlatProgressBar9.Location = new System.Drawing.Point(393, 305);
+            this.cxFlatProgressBar9.Name = "cxFlatProgressBar9";
+            this.cxFlatProgressBar9.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueOutSide;
+            this.cxFlatProgressBar9.Size = new System.Drawing.Size(408, 14);
+            this.cxFlatProgressBar9.TabIndex = 27;
+            this.cxFlatProgressBar9.Text = "cxFlatProgressBar9";
+            this.cxFlatProgressBar9.ValueNumber = 50;
+            // 
+            // cxFlatProgressBar10
+            // 
+            this.cxFlatProgressBar10.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar10.IsError = false;
+            this.cxFlatProgressBar10.Location = new System.Drawing.Point(16, 253);
+            this.cxFlatProgressBar10.Name = "cxFlatProgressBar10";
+            this.cxFlatProgressBar10.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueInSide;
+            this.cxFlatProgressBar10.Size = new System.Drawing.Size(336, 14);
+            this.cxFlatProgressBar10.TabIndex = 28;
+            this.cxFlatProgressBar10.Text = "cxFlatProgressBar10";
+            this.cxFlatProgressBar10.ValueNumber = 25;
+            // 
+            // cxFlatProgressBar11
+            // 
+            this.cxFlatProgressBar11.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar11.IsError = false;
+            this.cxFlatProgressBar11.Location = new System.Drawing.Point(16, 279);
+            this.cxFlatProgressBar11.Name = "cxFlatProgressBar11";
+            this.cxFlatProgressBar11.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueInSide;
+            this.cxFlatProgressBar11.Size = new System.Drawing.Size(336, 14);
+            this.cxFlatProgressBar11.TabIndex = 29;
+            this.cxFlatProgressBar11.Text = "cxFlatProgressBar11";
+            this.cxFlatProgressBar11.ValueNumber = 100;
+            // 
+            // cxFlatProgressBar12
+            // 
+            this.cxFlatProgressBar12.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cxFlatProgressBar12.IsError = true;
+            this.cxFlatProgressBar12.Location = new System.Drawing.Point(16, 305);
+            this.cxFlatProgressBar12.Name = "cxFlatProgressBar12";
+            this.cxFlatProgressBar12.ProgressBarStyle = CxFlatUI.CxFlatProgressBar.Style.ValueInSide;
+            this.cxFlatProgressBar12.Size = new System.Drawing.Size(336, 14);
+            this.cxFlatProgressBar12.TabIndex = 30;
+            this.cxFlatProgressBar12.Text = "cxFlatProgressBar12";
+            this.cxFlatProgressBar12.ValueNumber = 50;
+            // 
+            // cxFlatRoundProgressBar4
+            // 
+            this.cxFlatRoundProgressBar4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cxFlatRoundProgressBar4.IsError = false;
+            this.cxFlatRoundProgressBar4.Location = new System.Drawing.Point(393, 335);
+            this.cxFlatRoundProgressBar4.Name = "cxFlatRoundProgressBar4";
+            this.cxFlatRoundProgressBar4.Size = new System.Drawing.Size(108, 108);
+            this.cxFlatRoundProgressBar4.TabIndex = 31;
+            this.cxFlatRoundProgressBar4.Text = "cxFlatRoundProgressBar4";
+            this.cxFlatRoundProgressBar4.ValueNumber = 50;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -704,8 +845,6 @@ namespace CxFlatDemo
         #endregion
         private CxFlatCheckBox cxFlatCheckBox1;
         private System.Windows.Forms.Timer timer1;
-        private CxFlatProgressBar cxFlatProgressBar1;
-        private CxFlatRoundProgressBar cxFlatRoundProgressBar1;
         private CxFlatGroupBox cxFlatGroupBox1;
         private CxFlatButton cxFlatButton1;
         private CxFlatToggle cxFlatToggle1;
@@ -713,7 +852,6 @@ namespace CxFlatDemo
         private CxFlatTabControl cxFlatTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private CxFlatButton cxFlatButton2;
         private CxFlatAlertBox cxFlatAlertBox1;
         private CxFlatAlertBox cxFlatAlertBox4;
         private CxFlatAlertBox cxFlatAlertBox3;
@@ -722,7 +860,6 @@ namespace CxFlatDemo
         private CxFlatGroupBox cxFlatGroupBox2;
         private CxFlatSwitch cxFlatSwitch2;
         private CxFlatCheckBox cxFlatCheckBox2;
-        private CxFlatRoundButton cxFlatRoundButton1;
         private CxFlatPictureBox cxFlatPictureBox1;
         private CxFlatPictureBox cxFlatPictureBox2;
         private CxFlatSliderBar cxFlatSliderBar1;
@@ -750,6 +887,20 @@ namespace CxFlatDemo
         private CxFlatSimpleButton cxFlatSimpleButton3;
         private CxFlatNumericUpDown cxFlatNumericUpDown1;
         private CxFlatNumericUpDown cxFlatNumericUpDown2;
+        private CxFlatRoundProgressBar cxFlatRoundProgressBar2;
+        private CxFlatRoundProgressBar cxFlatRoundProgressBar3;
+        private CxFlatProgressBar cxFlatProgressBar2;
+        private CxFlatProgressBar cxFlatProgressBar4;
+        private CxFlatProgressBar cxFlatProgressBar3;
+        private CxFlatProgressBar cxFlatProgressBar6;
+        private CxFlatProgressBar cxFlatProgressBar5;
+        private CxFlatProgressBar cxFlatProgressBar8;
+        private CxFlatProgressBar cxFlatProgressBar7;
+        private CxFlatProgressBar cxFlatProgressBar12;
+        private CxFlatProgressBar cxFlatProgressBar11;
+        private CxFlatProgressBar cxFlatProgressBar10;
+        private CxFlatProgressBar cxFlatProgressBar9;
+        private CxFlatRoundProgressBar cxFlatRoundProgressBar4;
     }
 }
 

@@ -27,19 +27,7 @@ namespace CxFlatDemo
                 timer1.Start();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (cxFlatProgressBar1.ValueNumber < 100)
-            {
-                cxFlatProgressBar1.ValueNumber += 1;
-                cxFlatRoundProgressBar1.ValueNumber += 1;
-            }
-            else
-            {
-                cxFlatRoundProgressBar1.ValueNumber = 0;
-                cxFlatProgressBar1.ValueNumber = 0;
-            }
-        }
+  
 
         private void cxFlatSlider1_Paint(object sender, PaintEventArgs e)
         {
@@ -53,6 +41,11 @@ namespace CxFlatDemo
         private void cxFlatRoundButton1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

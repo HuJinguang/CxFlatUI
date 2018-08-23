@@ -11,14 +11,9 @@ namespace CxFlatUI
     public class CxFlatRoundProgressBar : Control
     {
         #region 变量
-        public enum ProgressBarState
-        {
-            Normal=0,
-            Success=1,
-            Error=2
-        }
         #endregion
 
+        private int tempValue = 0;
         private int _valueNumber = 0;
         public int ValueNumber
         {
@@ -30,13 +25,15 @@ namespace CxFlatUI
             }
         }
 
-        private float _roundWidth = 10;
-        public float RoundWidth
+        private float _roundWidth = 6;
+
+        private bool _isError = false;
+        public bool IsError
         {
-            get { return _roundWidth; }
+            get { return _isError; }
             set
             {
-                _roundWidth = value < 5 ? 5 : value;
+                _isError = value;
                 Invalidate();
             }
         }
@@ -55,17 +52,38 @@ namespace CxFlatUI
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Color.White);
-            
-            //绘制扇形
-            graphics.FillEllipse(new SolidBrush(Color.FromArgb(25, ThemeColors.PrimaryColor)), new RectangleF(0, 0, Width, Height));
-            graphics.FillPie(new SolidBrush(ThemeColors.PrimaryColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
-            //绘制文字
-            graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
-            graphics.DrawString(_valueNumber.ToString() + "%", Font, new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(_roundWidth, _roundWidth, Width - (_roundWidth * 2), Width - (_roundWidth * 2)), new StringFormat
+
+            graphics.FillEllipse(new SolidBrush(ThemeColors.OneLevelBorder), new RectangleF(0, 0, Width, Height));
+
+            if(_isError)
             {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+                //绘制扇形
+                graphics.FillPie(new SolidBrush(ThemeColors.Danger), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
+                //绘制文字
+                graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
+                graphics.DrawLine(new Pen(ThemeColors.Danger, 2f), Width / 2 - 6, Height / 2 - 6, Width / 2 + 6, Height / 2 + 6);
+                graphics.DrawLine(new Pen(ThemeColors.Danger, 2f), Width / 2 - 6, Height / 2 + 6, Width / 2 + 6, Height / 2 - 6);
+            }
+            else
+            {
+                if(_valueNumber==100)
+                {
+                    graphics.FillPie(new SolidBrush(ThemeColors.Success), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);  
+                    graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
+                    graphics.DrawLine(new Pen(ThemeColors.Success, 2f), Width / 2 - 6, Height / 2, Width / 2-3, Height / 2 + 6);
+                    graphics.DrawLine(new Pen(ThemeColors.Success, 2f), Width / 2 + 6, Height / 2 - 6, Width / 2-3, Height / 2 + 6);
+                }
+                else
+                {
+                    graphics.FillPie(new SolidBrush(ThemeColors.PrimaryColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
+                    graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
+                    graphics.DrawString(_valueNumber.ToString()+"%", new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(_roundWidth, _roundWidth, Width - (_roundWidth * 2), Width - (_roundWidth * 2)), new StringFormat
+                    {
+                        Alignment = StringAlignment.Center,
+                        LineAlignment = StringAlignment.Center
+                    });
+                }
+            }
         }
 
         public CxFlatRoundProgressBar()
