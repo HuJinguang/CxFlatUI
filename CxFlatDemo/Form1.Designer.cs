@@ -36,6 +36,7 @@ namespace CxFlatDemo
             this.cxFlatStatusBar1 = new CxFlatUI.CxFlatStatusBar();
             this.cxFlatTabControl1 = new CxFlatUI.CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cxFlatTextBox1 = new CxFlatUI.CxFlatTextBox();
             this.cxFlatNumericUpDown2 = new CxFlatUI.CxFlatNumericUpDown();
             this.cxFlatNumericUpDown1 = new CxFlatUI.CxFlatNumericUpDown();
             this.cxFlatSliderBar1 = new CxFlatUI.CxFlatSliderBar();
@@ -136,6 +137,7 @@ namespace CxFlatDemo
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cxFlatTextBox1);
             this.tabPage1.Controls.Add(this.cxFlatNumericUpDown2);
             this.tabPage1.Controls.Add(this.cxFlatNumericUpDown1);
             this.tabPage1.Controls.Add(this.cxFlatSliderBar1);
@@ -154,6 +156,22 @@ namespace CxFlatDemo
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cxFlatTextBox1
+            // 
+            this.cxFlatTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cxFlatTextBox1.Hint = "请输入内容";
+            this.cxFlatTextBox1.Location = new System.Drawing.Point(566, 271);
+            this.cxFlatTextBox1.MaxLength = 32767;
+            this.cxFlatTextBox1.Name = "cxFlatTextBox1";
+            this.cxFlatTextBox1.PasswordChar = '\0';
+            this.cxFlatTextBox1.SelectedText = "";
+            this.cxFlatTextBox1.SelectionLength = 0;
+            this.cxFlatTextBox1.SelectionStart = 0;
+            this.cxFlatTextBox1.Size = new System.Drawing.Size(168, 38);
+            this.cxFlatTextBox1.TabIndex = 26;
+            this.cxFlatTextBox1.TabStop = false;
+            this.cxFlatTextBox1.UseSystemPasswordChar = false;
             // 
             // cxFlatNumericUpDown2
             // 
@@ -900,6 +918,7 @@ namespace CxFlatDemo
         private CxFlatProgressBar cxFlatProgressBar9;
         private CxFlatRoundProgressBar cxFlatRoundProgressBar4;
         private CxFlatStatusBar cxFlatStatusBar1;
+        private CxFlatTextBox cxFlatTextBox1;
     }
 }
 

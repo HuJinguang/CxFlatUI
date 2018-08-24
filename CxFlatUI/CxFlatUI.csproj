@@ -90,6 +90,9 @@
     <Compile Include="CxFlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CxFlatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CxFlatToggle.cs">
       <SubType>Component</SubType>
     </Compile>
