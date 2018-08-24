@@ -111,11 +111,10 @@ namespace CxFlatDemo
             this.cxFlatStatusBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatStatusBar1.Location = new System.Drawing.Point(0, 0);
             this.cxFlatStatusBar1.Name = "cxFlatStatusBar1";
-            this.cxFlatStatusBar1.Size = new System.Drawing.Size(825, 45);
+            this.cxFlatStatusBar1.Size = new System.Drawing.Size(825, 40);
             this.cxFlatStatusBar1.TabIndex = 12;
             this.cxFlatStatusBar1.Text = "cxFlatStatusBar1";
             this.cxFlatStatusBar1.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.cxFlatStatusBar1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // cxFlatTabControl1
             // 
@@ -825,6 +824,7 @@ namespace CxFlatDemo
             this.Controls.Add(this.cxFlatStatusBar1);
             this.Controls.Add(this.cxFlatTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1366, 728);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -862,7 +862,6 @@ namespace CxFlatDemo
         private CxFlatPictureBox cxFlatPictureBox1;
         private CxFlatPictureBox cxFlatPictureBox2;
         private CxFlatSliderBar cxFlatSliderBar1;
-        private CxFlatStatusBar cxFlatStatusBar1;
         private CxFlatRadioButton cxFlatRadioButton3;
         private CxFlatRadioButton cxFlatRadioButton2;
         private CxFlatRadioButton cxFlatRadioButton1;
@@ -900,6 +899,7 @@ namespace CxFlatDemo
         private CxFlatProgressBar cxFlatProgressBar10;
         private CxFlatProgressBar cxFlatProgressBar9;
         private CxFlatRoundProgressBar cxFlatRoundProgressBar4;
+        private CxFlatStatusBar cxFlatStatusBar1;
     }
 }
 

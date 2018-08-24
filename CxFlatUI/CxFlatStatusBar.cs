@@ -20,22 +20,11 @@ namespace CxFlatUI
         private Rectangle minRectangle;//最小化按钮区域
         private Rectangle maxRectangle;//最大化按钮区域
         private Rectangle closeRectangle;//关闭按钮区域
-
-        private Color _titleColor = Color.FromArgb(255, 255, 255);//标题颜色
+        
         private Color _themeColor = ThemeColors.PrimaryColor;//主题颜色
         private Image _iconImage = null;//应用图标
 
         #region 属性
-        [Category("标题颜色")]
-        public Color TitleColor
-        {
-            get { return _titleColor; }
-            set
-            {
-                _titleColor = value;
-                Invalidate();
-            }
-        }
 
         [Category("背景颜色")]
         public Color ThemeColor
@@ -110,7 +99,7 @@ namespace CxFlatUI
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Height = 45;
+            Height = 40;
         }
 
         protected override void OnCreateControl()
@@ -129,9 +118,9 @@ namespace CxFlatUI
             base.OnPaint(e);
             Location = new Point(0, 0);
             Width = ParentForm.Width;
-            minRectangle = new Rectangle(Width - 76, 14, 18, 18);
-            maxRectangle = new Rectangle(Width - 54, 14, 18, 18);
-            closeRectangle = new Rectangle(Width - 32, 14, 18, 18);
+            minRectangle = new Rectangle(Width - 76, (Height - 16) / 2, 18, 18);
+            maxRectangle = new Rectangle(Width - 54, (Height - 16) / 2, 18, 18);
+            closeRectangle = new Rectangle(Width - 32, (Height - 16) / 2, 18, 18);
 
             Bitmap bitmap = new Bitmap(Width, Height);
             Graphics graphics = Graphics.FromImage(bitmap);
@@ -151,25 +140,33 @@ namespace CxFlatUI
                 //
                 //绘制标题
                 //
-                graphics.DrawString(Text, Font, new SolidBrush(_titleColor), new Rectangle(45, 11, Width, Height));
+                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(45, 1, Width - 100, Height), new StringFormat
+                {
+                    Alignment = StringAlignment.Near,
+                    LineAlignment = StringAlignment.Center
+                });
             }
             else
             {
                 //
                 //绘制标题
                 //
-                graphics.DrawString(Text, Font, new SolidBrush(_titleColor), new Rectangle(15, 11, Width, Height));
+                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(15, 1, Width-100, Height), new StringFormat
+                {
+                    Alignment= StringAlignment.Near,
+                    LineAlignment= StringAlignment.Center
+                });
             }
             //
             //最小化按钮
             //
             if (minRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle);
+                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
             else
             {
-                graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle);
+                graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
 
             //
@@ -178,16 +175,16 @@ namespace CxFlatUI
             if (maxRectangle.Contains(mousePoint))
             {
                 if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle);
+                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
                 else
-                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle);
+                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
             else
             {
                 if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle);
+                    graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
                 else
-                    graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle);
+                    graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
 
             //
@@ -195,11 +192,11 @@ namespace CxFlatUI
             //
             if (closeRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle);
+                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
             else
             {
-                graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle);
+                graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
             }
 
             base.OnPaint(e);
@@ -214,7 +211,7 @@ namespace CxFlatUI
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
-            Height = 45;
+            Height = 40;
             Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
         }
     }
