@@ -27,25 +27,23 @@ namespace CxFlatDemo
                 timer1.Start();
         }
 
-  
-
-        private void cxFlatSlider1_Paint(object sender, PaintEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-        }
-
-        private void cxFlatButton2_Click(object sender, EventArgs e)
-        {
-            cxFlatAlertBox1.ShowAlertBox(CxFlatAlertBox.AlertType.info, "123123", 1000);
-        }
-
-        private void cxFlatRoundButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
+            foreach (var item in tabPage2.Controls)
+            {
+                if(item is CxFlatProgressBar)
+                {
+                    if (((CxFlatProgressBar)item).ValueNumber == 100)
+                        ((CxFlatProgressBar)item).ValueNumber = 0;
+                    ((CxFlatProgressBar)item).ValueNumber++;
+                }
+                if(item is CxFlatRoundProgressBar)
+                {
+                    if (((CxFlatRoundProgressBar)item).ValueNumber == 100)
+                        ((CxFlatRoundProgressBar)item).ValueNumber = 0;
+                    ((CxFlatRoundProgressBar)item).ValueNumber++;
+                }
+            }
         }
     }
 }

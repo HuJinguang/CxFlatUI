@@ -119,6 +119,7 @@ namespace CxFlatUI
             ParentForm.FormBorderStyle = FormBorderStyle.None;
             ParentForm.AllowTransparency = false;
             ParentForm.FindForm().StartPosition = FormStartPosition.CenterScreen;
+            ParentForm.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
             Invalidate();
         }
         #endregion
