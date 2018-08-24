@@ -89,6 +89,7 @@
     <Content Include="screenshot\2.png" />
     <Content Include="screenshot\4.png" />
     <Content Include="screenshot\5.png" />
+    <Content Include="screenshot\6.png" />
     <Content Include="screenshot\TIM截图20180809221336.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
