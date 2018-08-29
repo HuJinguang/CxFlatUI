@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace CxFlatUI
+namespace CxFlatUI.Controls
 {
     public class CxFlatButton : Control
     {

@@ -45,5 +45,10 @@ namespace CxFlatDemo
                 }
             }
         }
+
+        private void cxFlatContextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            cxFlatButton2.Text = e.ClickedItem.Text;
+        }
     }
 }

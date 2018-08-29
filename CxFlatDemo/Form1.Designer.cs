@@ -1,4 +1,5 @@
 ﻿using CxFlatUI;
+using CxFlatUI.Controls;
 
 namespace CxFlatDemo
 {
@@ -36,6 +37,16 @@ namespace CxFlatDemo
             this.cxFlatStatusBar1 = new CxFlatUI.CxFlatStatusBar();
             this.cxFlatTabControl1 = new CxFlatUI.CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cxFlatButton2 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatContextMenuStrip1 = new CxFlatUI.CxFlatContextMenuStrip();
+            this.abcdefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sdssToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sdhlkjdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.sadsdbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.下拉菜单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdfgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cxFlatTextBox1 = new CxFlatUI.CxFlatTextBox();
             this.cxFlatNumericUpDown2 = new CxFlatUI.CxFlatNumericUpDown();
             this.cxFlatNumericUpDown1 = new CxFlatUI.CxFlatNumericUpDown();
@@ -84,15 +95,16 @@ namespace CxFlatDemo
             this.cxFlatRoundButton4 = new CxFlatUI.CxFlatRoundButton();
             this.cxFlatRoundButton3 = new CxFlatUI.CxFlatRoundButton();
             this.cxFlatRoundButton2 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatButton9 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton8 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton7 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton6 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton5 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton4 = new CxFlatUI.CxFlatButton();
-            this.cxFlatButton1 = new CxFlatUI.CxFlatButton();
+            this.cxFlatButton9 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton8 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton7 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton6 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton5 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton4 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton1 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.cxFlatContextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
             this.cxFlatGroupBox2.SuspendLayout();
@@ -137,6 +149,7 @@ namespace CxFlatDemo
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cxFlatButton2);
             this.tabPage1.Controls.Add(this.cxFlatTextBox1);
             this.tabPage1.Controls.Add(this.cxFlatNumericUpDown2);
             this.tabPage1.Controls.Add(this.cxFlatNumericUpDown1);
@@ -157,8 +170,86 @@ namespace CxFlatDemo
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cxFlatButton2
+            // 
+            this.cxFlatButton2.ButtonType = CxFlatUI.ButtonType.Primary;
+            this.cxFlatButton2.ContextMenuStrip = this.cxFlatContextMenuStrip1;
+            this.cxFlatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton2.Location = new System.Drawing.Point(566, 315);
+            this.cxFlatButton2.Name = "cxFlatButton2";
+            this.cxFlatButton2.Size = new System.Drawing.Size(168, 40);
+            this.cxFlatButton2.TabIndex = 27;
+            this.cxFlatButton2.Text = "cxFlatButton2";
+            this.cxFlatButton2.TextColor = System.Drawing.Color.White;
+            // 
+            // cxFlatContextMenuStrip1
+            // 
+            this.cxFlatContextMenuStrip1.BackColor = System.Drawing.Color.White;
+            this.cxFlatContextMenuStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.cxFlatContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abcdefToolStripMenuItem,
+            this.sdssToolStripMenuItem,
+            this.sdhlkjdToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.sadsdbToolStripMenuItem,
+            this.下拉菜单ToolStripMenuItem});
+            this.cxFlatContextMenuStrip1.Name = "cxFlatContextMenuStrip1";
+            this.cxFlatContextMenuStrip1.Size = new System.Drawing.Size(125, 120);
+            this.cxFlatContextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cxFlatContextMenuStrip1_ItemClicked);
+            // 
+            // abcdefToolStripMenuItem
+            // 
+            this.abcdefToolStripMenuItem.Name = "abcdefToolStripMenuItem";
+            this.abcdefToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.abcdefToolStripMenuItem.Text = "abcdef";
+            // 
+            // sdssToolStripMenuItem
+            // 
+            this.sdssToolStripMenuItem.Name = "sdssToolStripMenuItem";
+            this.sdssToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.sdssToolStripMenuItem.Text = "123sdss";
+            // 
+            // sdhlkjdToolStripMenuItem
+            // 
+            this.sdhlkjdToolStripMenuItem.Name = "sdhlkjdToolStripMenuItem";
+            this.sdhlkjdToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.sdhlkjdToolStripMenuItem.Text = "sdhlkjd";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
+            // 
+            // sadsdbToolStripMenuItem
+            // 
+            this.sadsdbToolStripMenuItem.Name = "sadsdbToolStripMenuItem";
+            this.sadsdbToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.sadsdbToolStripMenuItem.Text = "sadsdb";
+            // 
+            // 下拉菜单ToolStripMenuItem
+            // 
+            this.下拉菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asdfgToolStripMenuItem,
+            this.toolStripMenuItem2});
+            this.下拉菜单ToolStripMenuItem.Name = "下拉菜单ToolStripMenuItem";
+            this.下拉菜单ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.下拉菜单ToolStripMenuItem.Text = "下拉菜单";
+            // 
+            // asdfgToolStripMenuItem
+            // 
+            this.asdfgToolStripMenuItem.Name = "asdfgToolStripMenuItem";
+            this.asdfgToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.asdfgToolStripMenuItem.Text = "asdfg";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
+            this.toolStripMenuItem2.Text = "12345678";
+            // 
             // cxFlatTextBox1
             // 
+            this.cxFlatTextBox1.ContextMenuStrip = this.cxFlatContextMenuStrip1;
             this.cxFlatTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cxFlatTextBox1.Hint = "请输入内容";
             this.cxFlatTextBox1.Location = new System.Drawing.Point(566, 271);
@@ -848,6 +939,7 @@ namespace CxFlatDemo
             this.Text = "Form1";
             this.cxFlatTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.cxFlatContextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();
             this.cxFlatGroupBox2.ResumeLayout(false);
@@ -919,6 +1011,16 @@ namespace CxFlatDemo
         private CxFlatRoundProgressBar cxFlatRoundProgressBar4;
         private CxFlatStatusBar cxFlatStatusBar1;
         private CxFlatTextBox cxFlatTextBox1;
+        private CxFlatContextMenuStrip cxFlatContextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem abcdefToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sdssToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sdhlkjdToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem sadsdbToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 下拉菜单ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asdfgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private CxFlatButton cxFlatButton2;
     }
 }
 

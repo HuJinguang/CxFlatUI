@@ -41,59 +41,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonType.cs" />
-    <Compile Include="CxFlatAlertBox.cs">
+    <Compile Include="Controls\ButtonType.cs" />
+    <Compile Include="Controls\CxFlatAlertBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatButton.cs">
+    <Compile Include="Controls\CxFlatButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatCheckBox.cs">
+    <Compile Include="Controls\CxFlatCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatComboBox.cs">
+    <Compile Include="Controls\CxFlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatGroupBox.cs">
+    <Compile Include="Controls\CxFlatContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatNumericUpDown.cs">
+    <Compile Include="Controls\CxFlatGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatPictureBox.cs">
+    <Compile Include="Controls\CxFlatNumericUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatProgressBar.cs">
+    <Compile Include="Controls\CxFlatPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatRadioButton.cs">
+    <Compile Include="Controls\CxFlatProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatRoundButton.cs">
+    <Compile Include="Controls\CxFlatRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatRoundProgressBar.cs">
+    <Compile Include="Controls\CxFlatRoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatSimpleButton.cs">
+    <Compile Include="Controls\CxFlatRoundProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatSliderBar.cs">
+    <Compile Include="Controls\CxFlatSimpleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatStatusBar.cs">
+    <Compile Include="Controls\CxFlatSliderBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatSwitch.cs">
+    <Compile Include="Controls\CxFlatStatusBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatTabControl.cs">
+    <Compile Include="Controls\CxFlatSwitch.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatTextBox.cs">
+    <Compile Include="Controls\CxFlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CxFlatToggle.cs">
+    <Compile Include="Controls\CxFlatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CxFlatToggle.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DrawHelper.cs" />

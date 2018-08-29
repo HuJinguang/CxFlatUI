@@ -58,7 +58,7 @@ namespace CxFlatUI
 
         #endregion
 
-        #region 事件
+        #region 重写事件
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
@@ -71,6 +71,8 @@ namespace CxFlatUI
             Visible = false;
         }
         #endregion
+
+        #region OnPaint
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -117,14 +119,20 @@ namespace CxFlatUI
                 Alignment = StringAlignment.Center,
                 LineAlignment = StringAlignment.Center
             });
-
         }
+
+        #endregion
+
+        #region 构造函数
+
         public CxFlatAlertBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;
             Font = new Font("微软雅黑", 12);
         }
+
+        #endregion
 
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -133,7 +141,6 @@ namespace CxFlatUI
             _Timer.Enabled = false;
             _Timer.Dispose();
         }
-
 
         /// <summary>
         /// 显示AlertBox
