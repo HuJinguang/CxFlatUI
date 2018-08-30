@@ -50,5 +50,10 @@ namespace CxFlatDemo
         {
             cxFlatButton2.Text = e.ClickedItem.Text;
         }
+
+        private void cxFlatDatePicker1_onDateChanged(DateTime newDateTime)
+        {
+            label1.Text = cxFlatDatePicker1.Date.ToLongDateString();
+        }
     }
 }

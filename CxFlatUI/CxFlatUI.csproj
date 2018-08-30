@@ -57,6 +57,9 @@
     <Compile Include="Controls\CxFlatContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\CxFlatDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\CxFlatGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>

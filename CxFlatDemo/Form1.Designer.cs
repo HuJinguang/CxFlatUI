@@ -101,6 +101,9 @@ namespace CxFlatDemo
             this.cxFlatButton6 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton5 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton4 = new CxFlatUI.Controls.CxFlatButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cxFlatDatePicker1 = new CxFlatUI.Controls.CxFlatDatePicker();
             this.cxFlatButton1 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -110,6 +113,7 @@ namespace CxFlatDemo
             this.cxFlatGroupBox2.SuspendLayout();
             this.cxFlatGroupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -136,6 +140,7 @@ namespace CxFlatDemo
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cxFlatTabControl1.Controls.Add(this.tabPage1);
             this.cxFlatTabControl1.Controls.Add(this.tabPage2);
+            this.cxFlatTabControl1.Controls.Add(this.tabPage3);
             this.cxFlatTabControl1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatTabControl1.HotTrack = true;
             this.cxFlatTabControl1.ItemSize = new System.Drawing.Size(120, 40);
@@ -912,6 +917,37 @@ namespace CxFlatDemo
             this.cxFlatButton4.Text = "主要按钮";
             this.cxFlatButton4.TextColor = System.Drawing.Color.White;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.cxFlatDatePicker1);
+            this.tabPage3.Location = new System.Drawing.Point(0, 40);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(825, 452);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(52, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
+            // cxFlatDatePicker1
+            // 
+            this.cxFlatDatePicker1.Date = new System.DateTime(2018, 8, 29, 21, 55, 38, 261);
+            this.cxFlatDatePicker1.Location = new System.Drawing.Point(56, 64);
+            this.cxFlatDatePicker1.Name = "cxFlatDatePicker1";
+            this.cxFlatDatePicker1.Size = new System.Drawing.Size(250, 270);
+            this.cxFlatDatePicker1.TabIndex = 0;
+            this.cxFlatDatePicker1.Text = "cxFlatDatePicker1";
+            this.cxFlatDatePicker1.onDateChanged += new CxFlatUI.Controls.CxFlatDatePicker.DateChanged(this.cxFlatDatePicker1_onDateChanged);
+            // 
             // cxFlatButton1
             // 
             this.cxFlatButton1.ButtonType = CxFlatUI.ButtonType.Primary;
@@ -947,6 +983,8 @@ namespace CxFlatDemo
             this.cxFlatGroupBox1.ResumeLayout(false);
             this.cxFlatGroupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1021,6 +1059,9 @@ namespace CxFlatDemo
         private System.Windows.Forms.ToolStripMenuItem asdfgToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private CxFlatButton cxFlatButton2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private CxFlatDatePicker cxFlatDatePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
