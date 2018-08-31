@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
@@ -51,9 +50,9 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
-            graphics.FillEllipse(new SolidBrush(ThemeColors.OneLevelBorder), new RectangleF(0, 0, Width, Height));
+            graphics.FillEllipse(new SolidBrush(ThemeColors.OneLevelBorder), new Rectangle(0, 0, Width, Height));
 
             if(_isError)
             {
@@ -77,11 +76,7 @@ namespace CxFlatUI
                 {
                     graphics.FillPie(new SolidBrush(ThemeColors.PrimaryColor), new Rectangle(0, 0, Width, Width), 0, _valueNumber * 3.6f);
                     graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(_roundWidth, _roundWidth, Width - _roundWidth * 2, Width - _roundWidth * 2));
-                    graphics.DrawString(_valueNumber.ToString()+"%", new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(_roundWidth, _roundWidth, Width - (_roundWidth * 2), Width - (_roundWidth * 2)), new StringFormat
-                    {
-                        Alignment = StringAlignment.Center,
-                        LineAlignment = StringAlignment.Center
-                    });
+                    graphics.DrawString(_valueNumber.ToString()+"%", new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(_roundWidth, _roundWidth, Width - (_roundWidth * 2), Width - (_roundWidth * 2)), StringAlign.Center);
                 }
             }
         }

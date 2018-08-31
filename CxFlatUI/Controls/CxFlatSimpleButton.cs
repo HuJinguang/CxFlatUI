@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -79,18 +74,14 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
 
             if (_buttonType == ButtonType.Default)
             {
                 var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
                 graphics.DrawPath(new Pen(enterFlag ? (clickFlag ? ThemeColors.DarkPrimary : ThemeColors.PrimaryColor) : ThemeColors.OneLevelBorder, 1), BG);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? (clickFlag?ThemeColors.DarkPrimary:ThemeColors.PrimaryColor ): ThemeColors.MainText), new RectangleF(0, 0, Width, Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? (clickFlag?ThemeColors.DarkPrimary:ThemeColors.PrimaryColor ): ThemeColors.MainText), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
             else
             {
@@ -129,15 +120,9 @@ namespace CxFlatUI
 
                 var brush = new SolidBrush(enterFlag ? (clickFlag ? backColor : Color.FromArgb(225, backColor)) : Color.FromArgb(25, backColor));
                 graphics.FillPath(brush, BG);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? Color.White : backColor), new RectangleF(0, 0, Width, Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
-
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? Color.White : backColor), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
         }
-
 
         public CxFlatSimpleButton()
         {
@@ -145,6 +130,5 @@ namespace CxFlatUI
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
         }
-
     }
 }

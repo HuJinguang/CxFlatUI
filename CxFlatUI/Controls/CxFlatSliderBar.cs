@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -133,7 +129,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             if (ShowValue && mouseFlat)
             {
@@ -144,11 +140,7 @@ namespace CxFlatUI
             new PointF(ValueWidth+7.794F+9-2+5,13.5F+1),
             new PointF(ValueWidth+9-2+5,28F)
                 });
-                graphics.DrawString(_value.ToString(), Font, new SolidBrush(Color.White), new RectangleF(ValueWidth - 2 + 5, 2, 18, 18), new StringFormat
-                {
-                    LineAlignment = StringAlignment.Center,
-                    Alignment = StringAlignment.Center
-                });
+                graphics.DrawString(_value.ToString(), Font, new SolidBrush(Color.White), new RectangleF(ValueWidth - 2 + 5, 2, 18, 18), StringAlign.Center);
             }
 
             graphics.FillRectangle(new SolidBrush(DrawHelper.BackColor), new RectangleF(15, Height - 10, Width - 30, 4));

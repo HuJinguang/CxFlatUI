@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 
 namespace CxFlatUI
@@ -21,7 +16,7 @@ namespace CxFlatUI
         private Rectangle maxRectangle;//最大化按钮区域
         private Rectangle closeRectangle;//关闭按钮区域
         
-        private Color _themeColor = ThemeColors.PrimaryColor;//主题颜色
+        private Color _themeColor = ThemeColors.LightPrimary;//主题颜色
         private Image _iconImage = null;//应用图标
 
         #region 属性
@@ -140,33 +135,25 @@ namespace CxFlatUI
                 //
                 //绘制标题
                 //
-                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(45, 1, Width - 100, Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Near,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(45, 1, Width - 100, Height), StringAlign.Left);
             }
             else
             {
                 //
                 //绘制标题
                 //
-                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(15, 1, Width-100, Height), new StringFormat
-                {
-                    Alignment= StringAlignment.Near,
-                    LineAlignment= StringAlignment.Center
-                });
+                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(15, 1, Width-100, Height), StringAlign.Left);
             }
             //
             //最小化按钮
             //
             if (minRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle, StringAlign.Center);
             }
             else
             {
-                graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle, StringAlign.Center);
             }
 
             //
@@ -175,16 +162,16 @@ namespace CxFlatUI
             if (maxRectangle.Contains(mousePoint))
             {
                 if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
                 else
-                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
             }
             else
             {
                 if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
                 else
-                    graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
             }
 
             //
@@ -192,11 +179,11 @@ namespace CxFlatUI
             //
             if (closeRectangle.Contains(mousePoint))
             {
-                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle, StringAlign.Center);
             }
             else
             {
-                graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle, StringAlign.Center);
             }
 
             base.OnPaint(e);

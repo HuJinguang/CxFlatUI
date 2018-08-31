@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 
 namespace CxFlatUI
@@ -44,31 +38,26 @@ namespace CxFlatUI
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
             Graphics graphics = e.Graphics;
             graphics.SmoothingMode = SmoothingMode.HighQuality;//消除锯齿
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;//高质量显示
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;//最高质量显示文本
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             var BG = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 3);
-            graphics.FillPath(new SolidBrush(Color.White), BG);
+            graphics.FillPath(new SolidBrush(BackColor), BG);
             graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), BG);
 
             if (_showText)
             {
                 graphics.DrawLine(new Pen(ThemeColors.OneLevelBorder, 1), 0, 38, Width, 38);
-                graphics.DrawString(Text, new Font("微软雅黑", 12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width - 50, 38), new StringFormat
-                {
-                    Alignment = StringAlignment.Near,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(Text, new Font("微软雅黑", 12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width - 50, 38), StringAlign.Left);
             }
         }
 
         public CxFlatGroupBox()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
         }

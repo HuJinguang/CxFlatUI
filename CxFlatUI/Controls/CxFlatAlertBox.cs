@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace CxFlatUI
 {
@@ -80,7 +75,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             var backBrush = new SolidBrush(ThemeColors.PrimaryColor);
             var textBrush = new SolidBrush(ThemeColors.PrimaryColor);
@@ -107,18 +102,11 @@ namespace CxFlatUI
             }
 
             var back = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width-1, Height-1, 3);
+            graphics.FillPath(new SolidBrush(Color.White), back);
             graphics.FillPath(backBrush, back);
-            graphics.DrawPath(new Pen(textBrush, 0.5f), back);
-            graphics.DrawString(Text, Font, textBrush, new RectangleF(20, 0, Width - 40, Height), new StringFormat
-            {
-                Alignment = StringAlignment.Near,
-                LineAlignment = StringAlignment.Center
-            });
-            graphics.DrawString("r", new Font("Marlett", 10), new SolidBrush(DrawHelper.DarkBackColor), new Rectangle(Width - 34, 0, 34, 34), new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawPath(new Pen(textBrush, 1f), back);
+            graphics.DrawString(Text, Font, textBrush, new RectangleF(20, 0, Width - 40, Height), StringAlign.Left);
+            graphics.DrawString("r", new Font("Marlett", 10), new SolidBrush(DrawHelper.DarkBackColor), new Rectangle(Width - 34, 0, 34, 34), StringAlign.Center);
         }
 
         #endregion
@@ -127,7 +115,7 @@ namespace CxFlatUI
 
         public CxFlatAlertBox()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             Font = new Font("微软雅黑", 12);
         }

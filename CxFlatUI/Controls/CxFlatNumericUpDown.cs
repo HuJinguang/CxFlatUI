@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -30,7 +25,6 @@ namespace CxFlatUI
         private RectangleF downRectangleF = new RectangleF();
         private Point mousePoint = new Point();
         #endregion
-
 
         #region 属性
         private NumericStyle _style = NumericStyle.LeftRight;
@@ -162,7 +156,7 @@ namespace CxFlatUI
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             var bg = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
             graphics.FillPath(new SolidBrush(ThemeColors.FourLevelBorder), bg);
@@ -182,16 +176,8 @@ namespace CxFlatUI
                     graphics.DrawLine(new Pen(ThemeColors.PlaceholderText, 0.5f), textBox.Location.X + textBox.Width + 0.5f, Height/2, Width - 1, Height/2);
                     break;
             }
-            graphics.DrawString("+", new Font("Segoe UI", 14f), new SolidBrush((upRectangleF.Contains(mousePoint) && enterFlag) ? ThemeColors.PrimaryColor : ThemeColors.SecondaryText), upRectangleF, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
-            graphics.DrawString("-", new Font("Segoe UI", 14f), new SolidBrush((downRectangleF.Contains(mousePoint) && enterFlag) ? ThemeColors.PrimaryColor : ThemeColors.SecondaryText), downRectangleF, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawString("+", new Font("Segoe UI", 14f), new SolidBrush((upRectangleF.Contains(mousePoint) && enterFlag) ? ThemeColors.PrimaryColor : ThemeColors.SecondaryText), upRectangleF, StringAlign.Center);
+            graphics.DrawString("-", new Font("Segoe UI", 14f), new SolidBrush((downRectangleF.Contains(mousePoint) && enterFlag) ? ThemeColors.PrimaryColor : ThemeColors.SecondaryText), downRectangleF, StringAlign.Center);
             graphics.DrawLine(new Pen(ThemeColors.PlaceholderText, 0.5f), textBox.Location.X + textBox.Width + 0.5f, 1, textBox.Location.X + textBox.Width + 0.5f, Height - 1);
             graphics.FillRectangle(new SolidBrush(Color.White), textBox.Location.X, 1, textBox.Width, Height - 2);
             base.Controls.Add(textBox);

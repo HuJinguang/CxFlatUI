@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -79,18 +74,14 @@ namespace CxFlatUI.Controls
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             if (_buttonType == ButtonType.Default)
             {
                 var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
                 graphics.FillPath(new SolidBrush(enterFlag ? Color.FromArgb(25, ThemeColors.PrimaryColor) : Color.White), BG);
                 graphics.DrawPath(new Pen(clickFlag ? ThemeColors.PrimaryColor : ThemeColors.OneLevelBorder,1), BG);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(0, 0, Width, Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
             else
             {
@@ -123,18 +114,14 @@ namespace CxFlatUI.Controls
                 {
                     graphics.FillPath(new SolidBrush(Color.FromArgb(125, ThemeColors.OneLevelBorder)), BG);
                 }
-                graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(0, 0, Width, Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
         }
 
 
         public CxFlatButton()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
         }

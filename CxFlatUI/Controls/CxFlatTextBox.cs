@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CxFlatUI
@@ -60,7 +56,7 @@ namespace CxFlatUI
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
             g.SmoothingMode = SmoothingMode.HighQuality;
             g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            g.Clear(Color.White);
+            g.Clear(Parent.BackColor);
 
             var bg = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
             g.FillPath(new SolidBrush(Color.White), bg);
@@ -1072,7 +1068,6 @@ namespace CxFlatUI
             {
 
             }
-            
         }
 
     }

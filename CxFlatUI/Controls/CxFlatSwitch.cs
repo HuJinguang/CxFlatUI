@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -47,13 +42,13 @@ namespace CxFlatUI
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.InterpolationMode = InterpolationMode.High;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
             //
             //背景形状
             //
             var backRect = new GraphicsPath();
-            backRect.AddArc(new RectangleF(0.5f, 0.5f, Height-1, Height-1), 90, 180);
-            backRect.AddArc(new RectangleF(Width - Height+0.5f, 0.5f, Height-1, Height-1), 270, 180);
+            backRect.AddArc(new RectangleF(0.5f, 0.5f, Height - 1, Height - 1), 90, 180);
+            backRect.AddArc(new RectangleF(Width - Height + 0.5f, 0.5f, Height - 1, Height - 1), 270, 180);
             backRect.CloseAllFigures();
             //
             //背景
@@ -67,7 +62,7 @@ namespace CxFlatUI
 
         public CxFlatSwitch()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer , true);
             DoubleBuffered = true;
             Height = 20; Width = 42;
             AnimationTimer.Tick += new EventHandler(AnimationTick);

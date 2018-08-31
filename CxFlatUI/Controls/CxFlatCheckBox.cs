@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 
 namespace CxFlatUI
@@ -64,7 +58,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             var checkmarkPath = DrawHelper.CreateRoundRect(2, 2, 16, 16, 1);
             var checkMarkLine = new Rectangle(3, 3, 14, 14);
@@ -84,10 +78,7 @@ namespace CxFlatUI
             graphics.FillRectangle(new SolidBrush(Color.White), PointAnimationNum, PointAnimationNum, SizeAnimationNum, SizeAnimationNum);
 
             //绘制文字
-            graphics.DrawString(Text, Font, new SolidBrush(Checked?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(22, 0, Width - 22, Height), new StringFormat
-            {
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawString(Text, Font, new SolidBrush(Checked?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(22, 0, Width - 22, Height), StringAlign.Center);
         }
 
         //

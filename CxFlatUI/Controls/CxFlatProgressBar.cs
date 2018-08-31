@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
@@ -76,7 +75,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             var tempColor = _isError ? ThemeColors.Danger : ThemeColors.PrimaryColor;
 
@@ -89,11 +88,7 @@ namespace CxFlatUI
                     {
                          new PointF(x,y),new PointF(x+5,y-5),new PointF(x+16,y-5),new PointF(x+16,y-25),new PointF(x-16,y-25),new PointF(x-16,y-5),new PointF(x-5,y-5)
                     });
-                    graphics.DrawString(_valueNumber != 100 ? _valueNumber.ToString() + "%" : "ok!", Font, new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(x - 16, y - 25, 32, 20), new StringFormat
-                    {
-                        Alignment = StringAlignment.Center,
-                        LineAlignment = StringAlignment.Center
-                    });
+                    graphics.DrawString(_valueNumber != 100 ? _valueNumber.ToString() + "%" : "ok!", Font, new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(x - 16, y - 25, 32, 20), StringAlign.Center);
 
                     graphics.FillRectangle(new SolidBrush(ThemeColors.OneLevelBorder), new RectangleF(16, 25, Width - 32, Height - 25));
                     graphics.FillRectangle(new SolidBrush(_valueNumber == 100&&!_isError ? ThemeColors.Success : tempColor), new RectangleF(16, 25, x - 16, Height - 25));
@@ -108,11 +103,7 @@ namespace CxFlatUI
 
                     if (_valueNumber == 0)
                     {
-                        graphics.DrawString("0%", new Font("微软雅黑", 9f), new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(5, 0, 50, Height), new StringFormat
-                        {
-                            LineAlignment = StringAlignment.Center,
-                            Alignment = StringAlignment.Near
-                        });
+                        graphics.DrawString("0%", new Font("微软雅黑", 9f), new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(5, 0, 50, Height), StringAlign.Left);
                     }
                     else
                     {
@@ -122,11 +113,7 @@ namespace CxFlatUI
                         path2.CloseAllFigures();
                         graphics.FillPath(new SolidBrush(_valueNumber == 100&&!_isError ? ThemeColors.Success : tempColor), path2);
 
-                        graphics.DrawString(_valueNumber.ToString() + "%", new Font("微软雅黑", 9f), new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(_valueNumber * (Width -Height) / 100 - 33, 0, 45, Height), new StringFormat
-                        {
-                            LineAlignment = StringAlignment.Center,
-                            Alignment = StringAlignment.Far
-                        });
+                        graphics.DrawString(_valueNumber.ToString() + "%", new Font("微软雅黑", 9f), new SolidBrush(ThemeColors.FourLevelBorder), new RectangleF(_valueNumber * (Width -Height) / 100 - 33, 0, 45, Height), StringAlign.Right);
                     }
                     break;
                 case Style.ValueOutSide:
@@ -165,11 +152,7 @@ namespace CxFlatUI
                         }
                         else
                         {
-                            graphics.DrawString(_valueNumber.ToString() + "%", new Font("微软雅黑", 10f), new SolidBrush(ThemeColors.MainText), new RectangleF(Width - 40, 0, 50, Height), new StringFormat
-                            {
-                                Alignment = StringAlignment.Near,
-                                LineAlignment = StringAlignment.Center
-                            });
+                            graphics.DrawString(_valueNumber.ToString() + "%", new Font("微软雅黑", 10f), new SolidBrush(ThemeColors.MainText), new RectangleF(Width - 40, 0, 50, Height), StringAlign.Left);
                         }
                     }
                     break;

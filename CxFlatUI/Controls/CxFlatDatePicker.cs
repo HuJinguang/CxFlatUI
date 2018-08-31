@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Globalization;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace CxFlatUI.Controls
 {
@@ -233,7 +228,7 @@ namespace CxFlatUI.Controls
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             //绘制背景边框
             var bg = DrawHelper.CreateRoundRect(1f, 1f, Width - 2, Height -2, 3);
@@ -241,42 +236,18 @@ namespace CxFlatUI.Controls
             graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), bg);
 
             //绘制年月
-            graphics.DrawString(string.Format("{0}年{1,2}月",CurrentDate.Year,CurrentDate.Month), new Font("微软雅黑",12f), new SolidBrush(ThemeColors.MainText), TopDateRect, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawString(string.Format("{0}年{1,2}月",CurrentDate.Year,CurrentDate.Month), new Font("微软雅黑",12f), new SolidBrush(ThemeColors.MainText), TopDateRect, StringAlign.Center);
             //绘制年月选择区域
-            graphics.DrawString("7", new Font("webdings", 12f), new SolidBrush(previousYearHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), PreviousYearRect, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
-            graphics.DrawString("3", new Font("webdings", 12f), new SolidBrush(previousMonthHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), PreviousMonthRect, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
-            graphics.DrawString("4", new Font("webdings", 12f), new SolidBrush(nextMonthHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), NextMonthRect, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
-            graphics.DrawString("8", new Font("webdings", 12f), new SolidBrush(nextYearHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), NextYearRect, new StringFormat
-            {
-                Alignment = StringAlignment.Center,
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawString("7", new Font("webdings", 12f), new SolidBrush(previousYearHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), PreviousYearRect, StringAlign.Center);
+            graphics.DrawString("3", new Font("webdings", 12f), new SolidBrush(previousMonthHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), PreviousMonthRect, StringAlign.Center);
+            graphics.DrawString("4", new Font("webdings", 12f), new SolidBrush(nextMonthHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), NextMonthRect,StringAlign.Center);
+            graphics.DrawString("8", new Font("webdings", 12f), new SolidBrush(nextYearHovered ? ThemeColors.PrimaryColor : ThemeColors.PlaceholderText), NextYearRect, StringAlign.Center);
 
             //绘制星期
             string s = "一二三四五六日";
             for (int i = 0; i < 7; i++)
             {
-                graphics.DrawString(s[i].ToString(), new Font("微软雅黑", 10f), new SolidBrush(ThemeColors.RegularText), new RectangleF(10+i * (Width-20) / 7, WeekRect.Y, WeekRect.Width, WeekRect.Height), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(s[i].ToString(), new Font("微软雅黑", 10f), new SolidBrush(ThemeColors.RegularText), new RectangleF(10+i * (Width-20) / 7, WeekRect.Y, WeekRect.Width, WeekRect.Height), StringAlign.Center);
             }
 
             //绘制分割线
@@ -311,11 +282,7 @@ namespace CxFlatUI.Controls
                     //graphics.FillRectangle(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(rect1.X+3,rect1.Y+3,rect1.Width-6,rect1.Width-6));
                     brush = new SolidBrush(Color.White);
                 }
-                graphics.DrawString(DateRectangles[i/7][i%7].Date.Day.ToString(), Font, DateRectangles[i/7][i%7].Drawn?brush: new SolidBrush(ThemeColors.SecondaryText), DateRectangles[i/7][i%7].Rect, new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                graphics.DrawString(DateRectangles[i/7][i%7].Date.Day.ToString(), Font, DateRectangles[i/7][i%7].Drawn?brush: new SolidBrush(ThemeColors.SecondaryText), DateRectangles[i/7][i%7].Rect, StringAlign.Center);
             }
         }
 

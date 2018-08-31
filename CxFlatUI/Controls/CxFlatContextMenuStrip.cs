@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -22,45 +16,7 @@ namespace CxFlatUI
             DoubleBuffered = true;
             BackColor = Color.White;
         }
-        
-
-        //private ToolStripItemClickedEventArgs _delayesArgs;
-        //protected override void OnItemClicked(ToolStripItemClickedEventArgs e)
-        //{
-        //    if (e.ClickedItem != null && !(e.ClickedItem is ToolStripSeparator))
-        //    {
-        //        if (e == _delayesArgs)
-        //        {
-        //            base.OnItemClicked(e);
-        //        }
-        //        else
-        //        {
-        //          _delayesArgs = e;
-        //           OnItemClickStart?.Invoke(this, e);
-        //        }
-        //    }
-        //}
     }
-
-    //public class CxFlatToolStripMenuItem : ToolStripMenuItem
-    //{
-    //    public CxFlatToolStripMenuItem()
-    //    {
-    //        AutoSize = true;
-    //        //Size = new Size(100, 60);
-    //    }
-
-    //    protected override ToolStripDropDown CreateDefaultDropDown()
-    //    {
-    //        var baseDropDown = base.CreateDefaultDropDown();
-    //        if (DesignMode) return baseDropDown;
-
-    //        var defaultDropDown = new CxFlatContextMenuStrip();
-    //        defaultDropDown.Items.AddRange(baseDropDown.Items);
-
-    //        return defaultDropDown;
-    //    }
-    //}
 
     public class CxFlatToolStripRender : ToolStripProfessionalRenderer
     {
@@ -154,7 +110,7 @@ namespace CxFlatUI
                 new Font("微软雅黑", 11f),
                 new SolidBrush(e.Item.Selected ? ThemeColors.PrimaryColor : ThemeColors.RegularText),
                 textRect,
-                new StringFormat { LineAlignment = StringAlignment.Center,Alignment= StringAlignment.Center });
+                StringAlign.Center);
         }
 
         /// <summary>

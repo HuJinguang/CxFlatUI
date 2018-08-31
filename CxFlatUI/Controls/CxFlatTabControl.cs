@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
@@ -79,18 +77,14 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             for (int i = 0; i < TabCount; i++)
             {
                 if (i == SelectedIndex)
                 {
                     graphics.FillRectangle(new SolidBrush(_themeColor), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
-                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(_themeColor), GetTabRect(i), new StringFormat
-                    {
-                        LineAlignment = StringAlignment.Center,
-                        Alignment = StringAlignment.Center
-                    });
+                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(_themeColor), GetTabRect(i), StringAlign.Center);
                 }
                 else
                 {
@@ -99,23 +93,18 @@ namespace CxFlatUI
                         graphics.FillRectangle(new SolidBrush(Color.FromArgb(150, _themeColor)), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
                     }
 
-                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(Color.Black), GetTabRect(i), new StringFormat
-                    {
-                        LineAlignment = StringAlignment.Center,
-                        Alignment = StringAlignment.Center
-                    });
+                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(Color.Black), GetTabRect(i), StringAlign.Center);
                 }
             }
         }
 
         public CxFlatTabControl()
         {
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12F);
             SizeMode = TabSizeMode.Fixed;
             ItemSize = new Size(120, 40);
-
         }
     }
 }

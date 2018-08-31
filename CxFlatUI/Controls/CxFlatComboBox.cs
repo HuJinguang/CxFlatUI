@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -37,7 +31,7 @@ namespace CxFlatUI
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             
-            graphics.Clear(ThemeColors.FourLevelBorder);
+            graphics.Clear(Parent.BackColor);
             var backPath = DrawHelper.CreateRoundRect(1, 1, Width-2, Height-2, 2);
             graphics.FillPath(new SolidBrush(Color.White), backPath);
             graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder,2), backPath);
@@ -73,31 +67,15 @@ namespace CxFlatUI
                 //绘制被选择的项
                 e.Graphics.FillRectangle(new SolidBrush(ThemeColors.ThreeLevelBorder), e.Bounds);
                 //绘制文本
-                e.Graphics.DrawString(base.GetItemText(base.Items[e.Index]), Font, new SolidBrush(ThemeColors.PrimaryColor), e.Bounds, new StringFormat
-                {
-                    LineAlignment = StringAlignment.Center,
-                    Alignment = StringAlignment.Near
-                });
+                e.Graphics.DrawString(base.GetItemText(base.Items[e.Index]), Font, new SolidBrush(ThemeColors.PrimaryColor), e.Bounds, StringAlign.TopCenter);
             }
             else
             {
                 //绘制未被选择的项
                 e.Graphics.FillRectangle(new SolidBrush(Color.White), e.Bounds);
                 var textColor = ThemeColors.MainText;
-                //if (Text== GetItemText(Items[e.Index]))
-                //{
-                //    textColor = ThemeColors.PrimaryColor;
-                //}
-                //else
-                //{
-                //    textColor = ThemeColors.MainText;
-                //}
                 //绘制文本
-                e.Graphics.DrawString(base.GetItemText(base.Items[e.Index]), Font, new SolidBrush(textColor), e.Bounds, new StringFormat
-                {
-                    LineAlignment = StringAlignment.Center,
-                    Alignment = StringAlignment.Near
-                });
+                e.Graphics.DrawString(base.GetItemText(base.Items[e.Index]), Font, new SolidBrush(textColor), e.Bounds, StringAlign.TopCenter);
             }
             e.Graphics.Dispose();
         }

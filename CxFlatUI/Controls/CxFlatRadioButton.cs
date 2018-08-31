@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 
 namespace CxFlatUI
@@ -76,7 +71,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-            graphics.Clear(Color.White);
+            graphics.Clear(Parent.BackColor);
 
             Rectangle BGEllipse = new Rectangle(1, 1, 18, 18);
             EnabledCheckedColor = _checkedColor;
@@ -88,10 +83,7 @@ namespace CxFlatUI
             graphics.FillEllipse(BG, new Rectangle(PointAnimationNum, PointAnimationNum, SizeAnimationNum, SizeAnimationNum));
 
             //绘制文本
-            graphics.DrawString(Text, Font, new SolidBrush(Checked ? _checkedColor : Color.Black), new RectangleF(22, 0, Width - 22, Height), new StringFormat
-            {
-                LineAlignment = StringAlignment.Center
-            });
+            graphics.DrawString(Text, Font, new SolidBrush(Checked ? _checkedColor : Color.Black), new RectangleF(22, 0, Width - 22, Height), StringAlign.Center);
         }
 
         //
