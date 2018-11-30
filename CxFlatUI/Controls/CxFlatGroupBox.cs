@@ -9,30 +9,15 @@ namespace CxFlatUI
 {
     public class CxFlatGroupBox : GroupBox
     {
-        private Color _themeColor = ThemeColors.PrimaryColor;
-
         #region 属性
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
 
-        private bool _showText = false;
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public Color ThemeColor { get; set; } = ThemeColors.PrimaryColor;
+
         [Description("是否显示控件文本")]
-        public bool ShowText
-        {
-            get { return _showText; }
-            set
-            {
-                _showText = value;
-                Invalidate();
-            }
-        }
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public bool ShowText { get; set; } = false;
+
         #endregion
 
         protected override void OnPaint(PaintEventArgs e)
@@ -48,7 +33,7 @@ namespace CxFlatUI
             graphics.FillPath(new SolidBrush(BackColor), BG);
             graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder), BG);
 
-            if (_showText)
+            if (ShowText)
             {
                 graphics.DrawLine(new Pen(ThemeColors.OneLevelBorder, 1), 0, 38, Width, 38);
                 graphics.DrawString(Text, new Font("微软雅黑", 12F), new SolidBrush(ThemeColors.MainText), new RectangleF(15, 0, Width - 50, 38), StringAlign.Left);
