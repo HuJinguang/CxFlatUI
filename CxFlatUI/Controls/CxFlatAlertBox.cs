@@ -20,17 +20,10 @@ namespace CxFlatUI
         #endregion
 
         #region 属性
-        private AlertType _type = AlertType.Success;
+
         [Description("消息框的类型")]
-        public AlertType Type
-        {
-            get { return _type; }
-            set
-            {
-                _type = value;
-                Invalidate();
-            }
-        }
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public AlertType Type { get; set; } = AlertType.Success;
 
         private Timer _timer;
         private Timer _Timer
@@ -79,7 +72,7 @@ namespace CxFlatUI
 
             var backBrush = new SolidBrush(ThemeColors.PrimaryColor);
             var textBrush = new SolidBrush(ThemeColors.PrimaryColor);
-            switch (_type)
+            switch (Type)
             {
                 case AlertType.Success:
                     backBrush = new SolidBrush(Color.FromArgb(25, ThemeColors.Success));
@@ -138,7 +131,7 @@ namespace CxFlatUI
         /// <param name="Interval">显示时间（毫秒）</param>
         public void ShowAlertBox(AlertType type, string text, int Interval)
         {
-            _type = type;
+            Type = type;
             Text = text;
             Visible = true;
             _Timer = new Timer();

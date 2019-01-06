@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
@@ -15,27 +16,13 @@ namespace CxFlatUI.Controls
         #endregion
 
         #region 属性
-        private ButtonType _buttonType = ButtonType.Primary;
-        public ButtonType ButtonType
-        {
-            get { return _buttonType; }
-            set
-            {
-                _buttonType = value;
-                Invalidate();
-            }
-        }
 
-        private Color _textColor = Color.White;
-        public Color TextColor
-        {
-            get { return _textColor; }
-            set
-            {
-                _textColor = value;
-                Invalidate();
-            }
-        }
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public ButtonType ButtonType { get; set; } = ButtonType.Primary;
+
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public Color TextColor { get; set; } = Color.White;
+
         #endregion
 
         #region 事件
@@ -76,7 +63,7 @@ namespace CxFlatUI.Controls
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.Clear(Parent.BackColor);
 
-            if (_buttonType == ButtonType.Default)
+            if (ButtonType == ButtonType.Default)
             {
                 var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
                 graphics.FillPath(new SolidBrush(enterFlag ? Color.FromArgb(25, ThemeColors.PrimaryColor) : Color.White), BG);
@@ -87,7 +74,7 @@ namespace CxFlatUI.Controls
             {
                 var BG = DrawHelper.CreateRoundRect(0, 0, Width, Height, 3);
                 var backColor = ThemeColors.PrimaryColor;
-                switch (_buttonType)
+                switch (ButtonType)
                 {
                     case ButtonType.Primary:
                         backColor = ThemeColors.PrimaryColor;
