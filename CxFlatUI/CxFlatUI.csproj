@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basic\Colors.cs" />
+    <Compile Include="Basic\ControlSize.cs" />
+    <Compile Include="Basic\FontSize.cs" />
     <Compile Include="Controls\ButtonType.cs" />
     <Compile Include="Controls\CxFlatAlertBox.cs">
       <SubType>Component</SubType>
@@ -75,13 +78,7 @@
     <Compile Include="Controls\CxFlatRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\CxFlatRoundButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Controls\CxFlatRoundProgressBar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\CxFlatSimpleButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\CxFlatSliderBar.cs">
@@ -102,7 +99,7 @@
     <Compile Include="Controls\CxFlatToggle.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DrawHelper.cs" />
+    <Compile Include="Helper\DrawHelper.cs" />
     <Compile Include="MouseStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

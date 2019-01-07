@@ -12,7 +12,6 @@ namespace CxFlatUI
         #region 变量
         #endregion
 
-        private int tempValue = 0;
         private int _valueNumber = 0;
         public int ValueNumber
         {

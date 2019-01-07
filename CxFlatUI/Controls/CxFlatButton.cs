@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CxFlatUI.Basic;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -10,19 +11,20 @@ namespace CxFlatUI.Controls
 {
     public class CxFlatButton : Control
     {
+        #region 属性
+        [Description("按钮类型"), Category("自定义属性"), RefreshProperties(RefreshProperties.Repaint)]
+        public ButtonType Type { get; set; } = ButtonType.Default;
+
+        [Description("是否为朴素按钮"), Category("自定义属性"), RefreshProperties(RefreshProperties.Repaint)]
+        public bool Plain { get; set; } = false;
+
+        [Description("是否为圆角按钮"), Category("自定义属性"), RefreshProperties(RefreshProperties.Repaint)]
+        public bool Round { get; set; } = false;
+        #endregion
+
         #region 变量
         bool enterFlag = false;
         bool clickFlag = false;
-        #endregion
-
-        #region 属性
-
-        [RefreshProperties(RefreshProperties.Repaint)]
-        public ButtonType ButtonType { get; set; } = ButtonType.Primary;
-
-        [RefreshProperties(RefreshProperties.Repaint)]
-        public Color TextColor { get; set; } = Color.White;
-
         #endregion
 
         #region 事件
@@ -54,57 +56,67 @@ namespace CxFlatUI.Controls
             Invalidate();
         }
         #endregion
-
+        
         protected override void OnPaint(PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
-            graphics.SmoothingMode = SmoothingMode.HighQuality;
-            graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+            Helper.DrawHelper.HighQualityGraphics(ref graphics);
             graphics.Clear(Parent.BackColor);
 
-            if (ButtonType == ButtonType.Default)
+            var color = Colors.GetColorByButtonType(Type);
+            //边框颜色
+            var borderColor = color;
+            //背景颜色
+            var backColor = color;
+            //遮罩颜色
+            var maskColor = Color.FromArgb(35, 255, 255, 255);
+            //文本颜色
+            var textColor = Color.White;
+            
+            if (Type == ButtonType.Default)
             {
-                var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
-                graphics.FillPath(new SolidBrush(enterFlag ? Color.FromArgb(25, ThemeColors.PrimaryColor) : Color.White), BG);
-                graphics.DrawPath(new Pen(clickFlag ? ThemeColors.PrimaryColor : ThemeColors.OneLevelBorder,1), BG);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag?ThemeColors.PrimaryColor:ThemeColors.MainText), new RectangleF(0, 0, Width, Height), StringAlign.Center);
+                borderColor = enterFlag ? (Plain ? Colors.Main : Color.FromArgb(100, Colors.Main)) : Colors.BaseBorder;
+                borderColor = clickFlag ? Colors.Main : borderColor;
+                backColor = Color.White;
+                maskColor = Plain ? Color.FromArgb(35, 255, 255, 255) : Color.FromArgb(35, Colors.Main);
+                textColor = enterFlag ? Colors.Main : Colors.PrimaryText;
             }
             else
             {
-                var BG = DrawHelper.CreateRoundRect(0, 0, Width, Height, 3);
-                var backColor = ThemeColors.PrimaryColor;
-                switch (ButtonType)
+                if (Plain)
                 {
-                    case ButtonType.Primary:
-                        backColor = ThemeColors.PrimaryColor;
-                        break;
-                    case ButtonType.Success:
-                        backColor = ThemeColors.Success;
-                        break;
-                    case ButtonType.Info:
-                        backColor = ThemeColors.Info;
-                        break;
-                    case ButtonType.Waring:
-                        backColor = ThemeColors.Warning;
-                        break;
-                    case ButtonType.Danger:
-                        backColor = ThemeColors.Danger;
-                        break;
-                    default:
-                        break;
+                    borderColor = Color.FromArgb(200, color);
+                    backColor = Color.FromArgb(35, color);
+                    textColor = enterFlag ? Color.White : color;
+                    maskColor = clickFlag ? color : Color.FromArgb(235, color);
                 }
-                
-                var brush = new SolidBrush(enterFlag ? (clickFlag ? backColor : Color.FromArgb(225, backColor)) : backColor);
-                graphics.FillPath(brush, BG);
-                if (!Enabled)
+                else
                 {
-                    graphics.FillPath(new SolidBrush(Color.FromArgb(125, ThemeColors.OneLevelBorder)), BG);
+                    maskColor = clickFlag ? Color.FromArgb(35, 0, 0, 0) : maskColor;
                 }
-                graphics.DrawString(Text, Font, new SolidBrush(Color.White), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
-        }
 
+            GraphicsPath path;
+            if (Round)
+            {
+                path = new GraphicsPath();
+                path.AddArc(new RectangleF(0.5f, 0.5f, Height - 1, Height - 1), 90, 180);
+                path.AddArc(new RectangleF(Width - Height + 0.5f, 0.5f, Height - 1, Height - 1), 270, 180);
+                path.CloseAllFigures();
+            }
+            else
+            {
+                path = Helper.DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
+            }
+
+            graphics.FillPath(new SolidBrush(backColor), path);
+            graphics.DrawPath(new Pen(borderColor, 1), path);
+            if (enterFlag)
+            {
+                graphics.FillPath(new SolidBrush(maskColor), path);
+            }
+            graphics.DrawString(Text, Font, new SolidBrush(textColor), new RectangleF(Height / 2, 0, Width - Height, Height), StringAlign.Center);
+        }
 
         public CxFlatButton()
         {
@@ -112,6 +124,5 @@ namespace CxFlatUI.Controls
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
         }
-
     }
 }

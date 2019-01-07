@@ -83,22 +83,28 @@ namespace CxFlatDemo
             this.cxFlatProgressBar2 = new CxFlatUI.CxFlatProgressBar();
             this.cxFlatRoundProgressBar3 = new CxFlatUI.CxFlatRoundProgressBar();
             this.cxFlatRoundProgressBar2 = new CxFlatUI.CxFlatRoundProgressBar();
-            this.cxFlatSimpleButton6 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatSimpleButton5 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatSimpleButton4 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatSimpleButton3 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatSimpleButton2 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatSimpleButton1 = new CxFlatUI.CxFlatSimpleButton();
-            this.cxFlatRoundButton7 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatRoundButton6 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatRoundButton5 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatRoundButton4 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatRoundButton3 = new CxFlatUI.CxFlatRoundButton();
-            this.cxFlatRoundButton2 = new CxFlatUI.CxFlatRoundButton();
+            this.cxFlatButton26 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton25 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton14 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton24 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton9 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton23 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton13 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton22 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton12 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton21 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton8 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton20 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton11 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton19 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton7 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton18 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton10 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton17 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton6 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton16 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton3 = new CxFlatUI.Controls.CxFlatButton();
+            this.cxFlatButton15 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton5 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton4 = new CxFlatUI.Controls.CxFlatButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -177,15 +183,16 @@ namespace CxFlatDemo
             // 
             // cxFlatButton2
             // 
-            this.cxFlatButton2.ButtonType = CxFlatUI.ButtonType.Primary;
             this.cxFlatButton2.ContextMenuStrip = this.cxFlatContextMenuStrip1;
             this.cxFlatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton2.Location = new System.Drawing.Point(566, 315);
             this.cxFlatButton2.Name = "cxFlatButton2";
+            this.cxFlatButton2.Plain = false;
+            this.cxFlatButton2.Round = false;
             this.cxFlatButton2.Size = new System.Drawing.Size(168, 40);
             this.cxFlatButton2.TabIndex = 27;
             this.cxFlatButton2.Text = "cxFlatButton2";
-            this.cxFlatButton2.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton2.Type = CxFlatUI.ButtonType.Default;
             // 
             // cxFlatContextMenuStrip1
             // 
@@ -532,22 +539,28 @@ namespace CxFlatDemo
             this.tabPage2.Controls.Add(this.cxFlatProgressBar2);
             this.tabPage2.Controls.Add(this.cxFlatRoundProgressBar3);
             this.tabPage2.Controls.Add(this.cxFlatRoundProgressBar2);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton6);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton5);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton4);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton3);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton2);
-            this.tabPage2.Controls.Add(this.cxFlatSimpleButton1);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton7);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton6);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton5);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton4);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton3);
-            this.tabPage2.Controls.Add(this.cxFlatRoundButton2);
+            this.tabPage2.Controls.Add(this.cxFlatButton26);
+            this.tabPage2.Controls.Add(this.cxFlatButton25);
+            this.tabPage2.Controls.Add(this.cxFlatButton14);
+            this.tabPage2.Controls.Add(this.cxFlatButton24);
             this.tabPage2.Controls.Add(this.cxFlatButton9);
+            this.tabPage2.Controls.Add(this.cxFlatButton23);
+            this.tabPage2.Controls.Add(this.cxFlatButton13);
+            this.tabPage2.Controls.Add(this.cxFlatButton22);
+            this.tabPage2.Controls.Add(this.cxFlatButton12);
+            this.tabPage2.Controls.Add(this.cxFlatButton21);
             this.tabPage2.Controls.Add(this.cxFlatButton8);
+            this.tabPage2.Controls.Add(this.cxFlatButton20);
+            this.tabPage2.Controls.Add(this.cxFlatButton11);
+            this.tabPage2.Controls.Add(this.cxFlatButton19);
             this.tabPage2.Controls.Add(this.cxFlatButton7);
+            this.tabPage2.Controls.Add(this.cxFlatButton18);
+            this.tabPage2.Controls.Add(this.cxFlatButton10);
+            this.tabPage2.Controls.Add(this.cxFlatButton17);
             this.tabPage2.Controls.Add(this.cxFlatButton6);
+            this.tabPage2.Controls.Add(this.cxFlatButton16);
+            this.tabPage2.Controls.Add(this.cxFlatButton3);
+            this.tabPage2.Controls.Add(this.cxFlatButton15);
             this.tabPage2.Controls.Add(this.cxFlatButton5);
             this.tabPage2.Controls.Add(this.cxFlatButton4);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
@@ -722,209 +735,293 @@ namespace CxFlatDemo
             this.cxFlatRoundProgressBar2.Text = "cxFlatRoundProgressBar2";
             this.cxFlatRoundProgressBar2.ValueNumber = 100;
             // 
-            // cxFlatSimpleButton6
+            // cxFlatButton26
             // 
-            this.cxFlatSimpleButton6.ButtonType = CxFlatUI.ButtonType.Danger;
-            this.cxFlatSimpleButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton6.Location = new System.Drawing.Point(687, 93);
-            this.cxFlatSimpleButton6.Name = "cxFlatSimpleButton6";
-            this.cxFlatSimpleButton6.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton6.TabIndex = 17;
-            this.cxFlatSimpleButton6.Text = "危险按钮";
-            this.cxFlatSimpleButton6.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton26.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton26.Location = new System.Drawing.Point(12, 165);
+            this.cxFlatButton26.Name = "cxFlatButton26";
+            this.cxFlatButton26.Plain = true;
+            this.cxFlatButton26.Round = true;
+            this.cxFlatButton26.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton26.TabIndex = 5;
+            this.cxFlatButton26.Text = "默认按钮";
+            this.cxFlatButton26.Type = CxFlatUI.ButtonType.Default;
             // 
-            // cxFlatSimpleButton5
+            // cxFlatButton25
             // 
-            this.cxFlatSimpleButton5.ButtonType = CxFlatUI.ButtonType.Waring;
-            this.cxFlatSimpleButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton5.Location = new System.Drawing.Point(552, 93);
-            this.cxFlatSimpleButton5.Name = "cxFlatSimpleButton5";
-            this.cxFlatSimpleButton5.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton5.TabIndex = 16;
-            this.cxFlatSimpleButton5.Text = "警告按钮";
-            this.cxFlatSimpleButton5.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton25.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton25.Location = new System.Drawing.Point(12, 114);
+            this.cxFlatButton25.Name = "cxFlatButton25";
+            this.cxFlatButton25.Plain = false;
+            this.cxFlatButton25.Round = true;
+            this.cxFlatButton25.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton25.TabIndex = 5;
+            this.cxFlatButton25.Text = "默认按钮";
+            this.cxFlatButton25.Type = CxFlatUI.ButtonType.Default;
             // 
-            // cxFlatSimpleButton4
+            // cxFlatButton14
             // 
-            this.cxFlatSimpleButton4.ButtonType = CxFlatUI.ButtonType.Info;
-            this.cxFlatSimpleButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton4.Location = new System.Drawing.Point(417, 93);
-            this.cxFlatSimpleButton4.Name = "cxFlatSimpleButton4";
-            this.cxFlatSimpleButton4.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton4.TabIndex = 15;
-            this.cxFlatSimpleButton4.Text = "信息按钮";
-            this.cxFlatSimpleButton4.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton14.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton14.Location = new System.Drawing.Point(12, 64);
+            this.cxFlatButton14.Name = "cxFlatButton14";
+            this.cxFlatButton14.Plain = true;
+            this.cxFlatButton14.Round = false;
+            this.cxFlatButton14.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton14.TabIndex = 5;
+            this.cxFlatButton14.Text = "默认按钮";
+            this.cxFlatButton14.Type = CxFlatUI.ButtonType.Default;
             // 
-            // cxFlatSimpleButton3
+            // cxFlatButton24
             // 
-            this.cxFlatSimpleButton3.ButtonType = CxFlatUI.ButtonType.Success;
-            this.cxFlatSimpleButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton3.Location = new System.Drawing.Point(282, 93);
-            this.cxFlatSimpleButton3.Name = "cxFlatSimpleButton3";
-            this.cxFlatSimpleButton3.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton3.TabIndex = 14;
-            this.cxFlatSimpleButton3.Text = "成功按钮";
-            this.cxFlatSimpleButton3.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatSimpleButton2
-            // 
-            this.cxFlatSimpleButton2.ButtonType = CxFlatUI.ButtonType.Primary;
-            this.cxFlatSimpleButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton2.Location = new System.Drawing.Point(147, 93);
-            this.cxFlatSimpleButton2.Name = "cxFlatSimpleButton2";
-            this.cxFlatSimpleButton2.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton2.TabIndex = 13;
-            this.cxFlatSimpleButton2.Text = "主要按钮";
-            this.cxFlatSimpleButton2.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatSimpleButton1
-            // 
-            this.cxFlatSimpleButton1.ButtonType = CxFlatUI.ButtonType.Default;
-            this.cxFlatSimpleButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatSimpleButton1.Location = new System.Drawing.Point(12, 93);
-            this.cxFlatSimpleButton1.Name = "cxFlatSimpleButton1";
-            this.cxFlatSimpleButton1.Size = new System.Drawing.Size(123, 41);
-            this.cxFlatSimpleButton1.TabIndex = 12;
-            this.cxFlatSimpleButton1.Text = "朴素按钮";
-            this.cxFlatSimpleButton1.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton7
-            // 
-            this.cxFlatRoundButton7.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton7.ButtonType = CxFlatUI.ButtonType.Danger;
-            this.cxFlatRoundButton7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton7.Location = new System.Drawing.Point(687, 161);
-            this.cxFlatRoundButton7.Name = "cxFlatRoundButton7";
-            this.cxFlatRoundButton7.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton7.TabIndex = 11;
-            this.cxFlatRoundButton7.Text = "危险按钮";
-            this.cxFlatRoundButton7.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton6
-            // 
-            this.cxFlatRoundButton6.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton6.ButtonType = CxFlatUI.ButtonType.Waring;
-            this.cxFlatRoundButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton6.Location = new System.Drawing.Point(552, 161);
-            this.cxFlatRoundButton6.Name = "cxFlatRoundButton6";
-            this.cxFlatRoundButton6.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton6.TabIndex = 10;
-            this.cxFlatRoundButton6.Text = "警告按钮";
-            this.cxFlatRoundButton6.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton5
-            // 
-            this.cxFlatRoundButton5.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton5.ButtonType = CxFlatUI.ButtonType.Info;
-            this.cxFlatRoundButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton5.Location = new System.Drawing.Point(417, 161);
-            this.cxFlatRoundButton5.Name = "cxFlatRoundButton5";
-            this.cxFlatRoundButton5.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton5.TabIndex = 9;
-            this.cxFlatRoundButton5.Text = "信息按钮";
-            this.cxFlatRoundButton5.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton4
-            // 
-            this.cxFlatRoundButton4.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton4.ButtonType = CxFlatUI.ButtonType.Success;
-            this.cxFlatRoundButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton4.Location = new System.Drawing.Point(282, 161);
-            this.cxFlatRoundButton4.Name = "cxFlatRoundButton4";
-            this.cxFlatRoundButton4.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton4.TabIndex = 8;
-            this.cxFlatRoundButton4.Text = "成功按钮";
-            this.cxFlatRoundButton4.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton3
-            // 
-            this.cxFlatRoundButton3.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton3.ButtonType = CxFlatUI.ButtonType.Primary;
-            this.cxFlatRoundButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton3.Location = new System.Drawing.Point(147, 161);
-            this.cxFlatRoundButton3.Name = "cxFlatRoundButton3";
-            this.cxFlatRoundButton3.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton3.TabIndex = 7;
-            this.cxFlatRoundButton3.Text = "主要按钮";
-            this.cxFlatRoundButton3.TextColor = System.Drawing.Color.White;
-            // 
-            // cxFlatRoundButton2
-            // 
-            this.cxFlatRoundButton2.BackColor = System.Drawing.Color.Transparent;
-            this.cxFlatRoundButton2.ButtonType = CxFlatUI.ButtonType.Default;
-            this.cxFlatRoundButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatRoundButton2.Location = new System.Drawing.Point(12, 161);
-            this.cxFlatRoundButton2.Name = "cxFlatRoundButton2";
-            this.cxFlatRoundButton2.Size = new System.Drawing.Size(123, 40);
-            this.cxFlatRoundButton2.TabIndex = 6;
-            this.cxFlatRoundButton2.Text = "圆角按钮";
-            this.cxFlatRoundButton2.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton24.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton24.Location = new System.Drawing.Point(687, 165);
+            this.cxFlatButton24.Name = "cxFlatButton24";
+            this.cxFlatButton24.Plain = true;
+            this.cxFlatButton24.Round = true;
+            this.cxFlatButton24.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton24.TabIndex = 4;
+            this.cxFlatButton24.Text = "危险按钮";
+            this.cxFlatButton24.Type = CxFlatUI.ButtonType.Danger;
             // 
             // cxFlatButton9
             // 
-            this.cxFlatButton9.ButtonType = CxFlatUI.ButtonType.Default;
             this.cxFlatButton9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton9.Location = new System.Drawing.Point(12, 18);
+            this.cxFlatButton9.Location = new System.Drawing.Point(12, 12);
             this.cxFlatButton9.Name = "cxFlatButton9";
+            this.cxFlatButton9.Plain = false;
+            this.cxFlatButton9.Round = false;
             this.cxFlatButton9.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton9.TabIndex = 5;
             this.cxFlatButton9.Text = "默认按钮";
-            this.cxFlatButton9.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton9.Type = CxFlatUI.ButtonType.Default;
+            // 
+            // cxFlatButton23
+            // 
+            this.cxFlatButton23.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton23.Location = new System.Drawing.Point(552, 165);
+            this.cxFlatButton23.Name = "cxFlatButton23";
+            this.cxFlatButton23.Plain = true;
+            this.cxFlatButton23.Round = true;
+            this.cxFlatButton23.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton23.TabIndex = 3;
+            this.cxFlatButton23.Text = "警告按钮";
+            this.cxFlatButton23.Type = CxFlatUI.ButtonType.Waring;
+            // 
+            // cxFlatButton13
+            // 
+            this.cxFlatButton13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton13.Location = new System.Drawing.Point(687, 64);
+            this.cxFlatButton13.Name = "cxFlatButton13";
+            this.cxFlatButton13.Plain = true;
+            this.cxFlatButton13.Round = false;
+            this.cxFlatButton13.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton13.TabIndex = 4;
+            this.cxFlatButton13.Text = "危险按钮";
+            this.cxFlatButton13.Type = CxFlatUI.ButtonType.Danger;
+            // 
+            // cxFlatButton22
+            // 
+            this.cxFlatButton22.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton22.Location = new System.Drawing.Point(687, 114);
+            this.cxFlatButton22.Name = "cxFlatButton22";
+            this.cxFlatButton22.Plain = false;
+            this.cxFlatButton22.Round = true;
+            this.cxFlatButton22.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton22.TabIndex = 4;
+            this.cxFlatButton22.Text = "危险按钮";
+            this.cxFlatButton22.Type = CxFlatUI.ButtonType.Danger;
+            // 
+            // cxFlatButton12
+            // 
+            this.cxFlatButton12.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton12.Location = new System.Drawing.Point(552, 64);
+            this.cxFlatButton12.Name = "cxFlatButton12";
+            this.cxFlatButton12.Plain = true;
+            this.cxFlatButton12.Round = false;
+            this.cxFlatButton12.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton12.TabIndex = 3;
+            this.cxFlatButton12.Text = "警告按钮";
+            this.cxFlatButton12.Type = CxFlatUI.ButtonType.Waring;
+            // 
+            // cxFlatButton21
+            // 
+            this.cxFlatButton21.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton21.Location = new System.Drawing.Point(417, 165);
+            this.cxFlatButton21.Name = "cxFlatButton21";
+            this.cxFlatButton21.Plain = true;
+            this.cxFlatButton21.Round = true;
+            this.cxFlatButton21.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton21.TabIndex = 2;
+            this.cxFlatButton21.Text = "信息按钮";
+            this.cxFlatButton21.Type = CxFlatUI.ButtonType.Info;
             // 
             // cxFlatButton8
             // 
-            this.cxFlatButton8.ButtonType = CxFlatUI.ButtonType.Danger;
             this.cxFlatButton8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton8.Location = new System.Drawing.Point(687, 18);
+            this.cxFlatButton8.Location = new System.Drawing.Point(687, 12);
             this.cxFlatButton8.Name = "cxFlatButton8";
+            this.cxFlatButton8.Plain = false;
+            this.cxFlatButton8.Round = false;
             this.cxFlatButton8.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton8.TabIndex = 4;
             this.cxFlatButton8.Text = "危险按钮";
-            this.cxFlatButton8.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton8.Type = CxFlatUI.ButtonType.Danger;
+            // 
+            // cxFlatButton20
+            // 
+            this.cxFlatButton20.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton20.Location = new System.Drawing.Point(552, 114);
+            this.cxFlatButton20.Name = "cxFlatButton20";
+            this.cxFlatButton20.Plain = false;
+            this.cxFlatButton20.Round = true;
+            this.cxFlatButton20.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton20.TabIndex = 3;
+            this.cxFlatButton20.Text = "警告按钮";
+            this.cxFlatButton20.Type = CxFlatUI.ButtonType.Waring;
+            // 
+            // cxFlatButton11
+            // 
+            this.cxFlatButton11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton11.Location = new System.Drawing.Point(417, 64);
+            this.cxFlatButton11.Name = "cxFlatButton11";
+            this.cxFlatButton11.Plain = true;
+            this.cxFlatButton11.Round = false;
+            this.cxFlatButton11.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton11.TabIndex = 2;
+            this.cxFlatButton11.Text = "信息按钮";
+            this.cxFlatButton11.Type = CxFlatUI.ButtonType.Info;
+            // 
+            // cxFlatButton19
+            // 
+            this.cxFlatButton19.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton19.Location = new System.Drawing.Point(282, 165);
+            this.cxFlatButton19.Name = "cxFlatButton19";
+            this.cxFlatButton19.Plain = true;
+            this.cxFlatButton19.Round = true;
+            this.cxFlatButton19.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton19.TabIndex = 1;
+            this.cxFlatButton19.Text = "成功按钮";
+            this.cxFlatButton19.Type = CxFlatUI.ButtonType.Success;
             // 
             // cxFlatButton7
             // 
-            this.cxFlatButton7.ButtonType = CxFlatUI.ButtonType.Waring;
             this.cxFlatButton7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton7.Location = new System.Drawing.Point(552, 18);
+            this.cxFlatButton7.Location = new System.Drawing.Point(552, 12);
             this.cxFlatButton7.Name = "cxFlatButton7";
+            this.cxFlatButton7.Plain = false;
+            this.cxFlatButton7.Round = false;
             this.cxFlatButton7.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton7.TabIndex = 3;
             this.cxFlatButton7.Text = "警告按钮";
-            this.cxFlatButton7.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton7.Type = CxFlatUI.ButtonType.Waring;
+            // 
+            // cxFlatButton18
+            // 
+            this.cxFlatButton18.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton18.Location = new System.Drawing.Point(417, 114);
+            this.cxFlatButton18.Name = "cxFlatButton18";
+            this.cxFlatButton18.Plain = false;
+            this.cxFlatButton18.Round = true;
+            this.cxFlatButton18.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton18.TabIndex = 2;
+            this.cxFlatButton18.Text = "信息按钮";
+            this.cxFlatButton18.Type = CxFlatUI.ButtonType.Info;
+            // 
+            // cxFlatButton10
+            // 
+            this.cxFlatButton10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton10.Location = new System.Drawing.Point(282, 64);
+            this.cxFlatButton10.Name = "cxFlatButton10";
+            this.cxFlatButton10.Plain = true;
+            this.cxFlatButton10.Round = false;
+            this.cxFlatButton10.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton10.TabIndex = 1;
+            this.cxFlatButton10.Text = "成功按钮";
+            this.cxFlatButton10.Type = CxFlatUI.ButtonType.Success;
+            // 
+            // cxFlatButton17
+            // 
+            this.cxFlatButton17.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton17.Location = new System.Drawing.Point(147, 165);
+            this.cxFlatButton17.Name = "cxFlatButton17";
+            this.cxFlatButton17.Plain = true;
+            this.cxFlatButton17.Round = true;
+            this.cxFlatButton17.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton17.TabIndex = 0;
+            this.cxFlatButton17.Text = "主要按钮";
+            this.cxFlatButton17.Type = CxFlatUI.ButtonType.Primary;
             // 
             // cxFlatButton6
             // 
-            this.cxFlatButton6.ButtonType = CxFlatUI.ButtonType.Info;
             this.cxFlatButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton6.Location = new System.Drawing.Point(417, 18);
+            this.cxFlatButton6.Location = new System.Drawing.Point(417, 12);
             this.cxFlatButton6.Name = "cxFlatButton6";
+            this.cxFlatButton6.Plain = false;
+            this.cxFlatButton6.Round = false;
             this.cxFlatButton6.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton6.TabIndex = 2;
             this.cxFlatButton6.Text = "信息按钮";
-            this.cxFlatButton6.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton6.Type = CxFlatUI.ButtonType.Info;
+            // 
+            // cxFlatButton16
+            // 
+            this.cxFlatButton16.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton16.Location = new System.Drawing.Point(282, 114);
+            this.cxFlatButton16.Name = "cxFlatButton16";
+            this.cxFlatButton16.Plain = false;
+            this.cxFlatButton16.Round = true;
+            this.cxFlatButton16.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton16.TabIndex = 1;
+            this.cxFlatButton16.Text = "成功按钮";
+            this.cxFlatButton16.Type = CxFlatUI.ButtonType.Success;
+            // 
+            // cxFlatButton3
+            // 
+            this.cxFlatButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton3.Location = new System.Drawing.Point(147, 64);
+            this.cxFlatButton3.Name = "cxFlatButton3";
+            this.cxFlatButton3.Plain = true;
+            this.cxFlatButton3.Round = false;
+            this.cxFlatButton3.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton3.TabIndex = 0;
+            this.cxFlatButton3.Text = "主要按钮";
+            this.cxFlatButton3.Type = CxFlatUI.ButtonType.Primary;
+            // 
+            // cxFlatButton15
+            // 
+            this.cxFlatButton15.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cxFlatButton15.Location = new System.Drawing.Point(147, 114);
+            this.cxFlatButton15.Name = "cxFlatButton15";
+            this.cxFlatButton15.Plain = false;
+            this.cxFlatButton15.Round = true;
+            this.cxFlatButton15.Size = new System.Drawing.Size(123, 42);
+            this.cxFlatButton15.TabIndex = 0;
+            this.cxFlatButton15.Text = "主要按钮";
+            this.cxFlatButton15.Type = CxFlatUI.ButtonType.Primary;
             // 
             // cxFlatButton5
             // 
-            this.cxFlatButton5.ButtonType = CxFlatUI.ButtonType.Success;
             this.cxFlatButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton5.Location = new System.Drawing.Point(282, 18);
+            this.cxFlatButton5.Location = new System.Drawing.Point(282, 12);
             this.cxFlatButton5.Name = "cxFlatButton5";
+            this.cxFlatButton5.Plain = false;
+            this.cxFlatButton5.Round = false;
             this.cxFlatButton5.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton5.TabIndex = 1;
             this.cxFlatButton5.Text = "成功按钮";
-            this.cxFlatButton5.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton5.Type = CxFlatUI.ButtonType.Success;
             // 
             // cxFlatButton4
             // 
-            this.cxFlatButton4.ButtonType = CxFlatUI.ButtonType.Primary;
             this.cxFlatButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatButton4.Location = new System.Drawing.Point(147, 18);
+            this.cxFlatButton4.Location = new System.Drawing.Point(147, 12);
             this.cxFlatButton4.Name = "cxFlatButton4";
+            this.cxFlatButton4.Plain = false;
+            this.cxFlatButton4.Round = false;
             this.cxFlatButton4.Size = new System.Drawing.Size(123, 42);
             this.cxFlatButton4.TabIndex = 0;
             this.cxFlatButton4.Text = "主要按钮";
-            this.cxFlatButton4.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton4.Type = CxFlatUI.ButtonType.Primary;
             // 
             // tabPage3
             // 
@@ -959,14 +1056,15 @@ namespace CxFlatDemo
             // 
             // cxFlatButton1
             // 
-            this.cxFlatButton1.ButtonType = CxFlatUI.ButtonType.Primary;
             this.cxFlatButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton1.Location = new System.Drawing.Point(5, 6);
             this.cxFlatButton1.Name = "cxFlatButton1";
+            this.cxFlatButton1.Plain = false;
+            this.cxFlatButton1.Round = false;
             this.cxFlatButton1.Size = new System.Drawing.Size(128, 39);
             this.cxFlatButton1.TabIndex = 9;
             this.cxFlatButton1.Text = "cxFlatButton1";
-            this.cxFlatButton1.TextColor = System.Drawing.Color.White;
+            this.cxFlatButton1.Type = CxFlatUI.ButtonType.Default;
             this.cxFlatButton1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
@@ -1028,18 +1126,6 @@ namespace CxFlatDemo
         private CxFlatButton cxFlatButton5;
         private CxFlatButton cxFlatButton4;
         private CxFlatButton cxFlatButton9;
-        private CxFlatRoundButton cxFlatRoundButton7;
-        private CxFlatRoundButton cxFlatRoundButton6;
-        private CxFlatRoundButton cxFlatRoundButton5;
-        private CxFlatRoundButton cxFlatRoundButton4;
-        private CxFlatRoundButton cxFlatRoundButton3;
-        private CxFlatRoundButton cxFlatRoundButton2;
-        private CxFlatSimpleButton cxFlatSimpleButton1;
-        private CxFlatSimpleButton cxFlatSimpleButton2;
-        private CxFlatSimpleButton cxFlatSimpleButton6;
-        private CxFlatSimpleButton cxFlatSimpleButton5;
-        private CxFlatSimpleButton cxFlatSimpleButton4;
-        private CxFlatSimpleButton cxFlatSimpleButton3;
         private CxFlatNumericUpDown cxFlatNumericUpDown1;
         private CxFlatNumericUpDown cxFlatNumericUpDown2;
         private CxFlatRoundProgressBar cxFlatRoundProgressBar2;
@@ -1071,6 +1157,24 @@ namespace CxFlatDemo
         private System.Windows.Forms.TabPage tabPage3;
         private CxFlatDatePicker cxFlatDatePicker1;
         private System.Windows.Forms.Label label1;
+        private CxFlatButton cxFlatButton14;
+        private CxFlatButton cxFlatButton13;
+        private CxFlatButton cxFlatButton12;
+        private CxFlatButton cxFlatButton11;
+        private CxFlatButton cxFlatButton10;
+        private CxFlatButton cxFlatButton3;
+        private CxFlatButton cxFlatButton26;
+        private CxFlatButton cxFlatButton25;
+        private CxFlatButton cxFlatButton24;
+        private CxFlatButton cxFlatButton23;
+        private CxFlatButton cxFlatButton22;
+        private CxFlatButton cxFlatButton21;
+        private CxFlatButton cxFlatButton20;
+        private CxFlatButton cxFlatButton19;
+        private CxFlatButton cxFlatButton18;
+        private CxFlatButton cxFlatButton17;
+        private CxFlatButton cxFlatButton16;
+        private CxFlatButton cxFlatButton15;
     }
 }
 

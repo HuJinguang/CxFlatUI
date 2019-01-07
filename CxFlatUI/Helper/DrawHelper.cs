@@ -1,11 +1,23 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace CxFlatUI
+namespace CxFlatUI.Helper
 {
     public static class DrawHelper
     {
+        public static void HighQualityGraphics(ref Graphics graphics)
+        {
+            graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+        }
+
         public static GraphicsPath CreateRoundRect(float x, float y, float width, float height, float radius)
         {
             GraphicsPath gp = new GraphicsPath();
@@ -70,9 +82,5 @@ namespace CxFlatUI
             int b = (int)((backgroundColor.B * invRatio) + (frontColor.B * ratio));
             return Color.FromArgb(r, g, b);
         }
-
-        public static Color BackColor = ColorTranslator.FromHtml("#dadcdf");//bcbfc4
-        public static Color DarkBackColor = ColorTranslator.FromHtml("#90949a");
-        public static Color LightBackColor = ColorTranslator.FromHtml("#F5F5F5");
     }
 }

@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
+using CxFlatUI.Basic;
+using CxFlatUI.Helper;
 
 
 namespace CxFlatUI
@@ -143,7 +145,7 @@ namespace CxFlatUI
                 graphics.DrawString(_value.ToString(), Font, new SolidBrush(Color.White), new RectangleF(ValueWidth - 2 + 5, 2, 18, 18), StringAlign.Center);
             }
 
-            graphics.FillRectangle(new SolidBrush(DrawHelper.BackColor), new RectangleF(15, Height - 10, Width - 30, 4));
+            graphics.FillRectangle(new SolidBrush(Colors.BaseBorder), new RectangleF(15, Height - 10, Width - 30, 4));
             graphics.FillRectangle(new SolidBrush(Color.White), new RectangleF(15, Height - 10, ValueWidth, 4));
             graphics.FillRectangle(new SolidBrush(_themeColor), new RectangleF(15, Height - 10, ValueWidth, 4));
             graphics.FillEllipse(new SolidBrush(_themeColor), new RectangleF(ValueWidth + 5, Height - 17, 16, 16));

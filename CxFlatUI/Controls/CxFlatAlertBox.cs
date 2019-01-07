@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
+using CxFlatUI.Basic;
+using CxFlatUI.Helper;
 
 namespace CxFlatUI
 {
@@ -99,7 +101,7 @@ namespace CxFlatUI
             graphics.FillPath(backBrush, back);
             graphics.DrawPath(new Pen(textBrush, 1f), back);
             graphics.DrawString(Text, Font, textBrush, new RectangleF(20, 0, Width - 40, Height), StringAlign.Left);
-            graphics.DrawString("r", new Font("Marlett", 10), new SolidBrush(DrawHelper.DarkBackColor), new Rectangle(Width - 34, 0, 34, 34), StringAlign.Center);
+            graphics.DrawString("r", new Font("Marlett", 10), new SolidBrush(Colors.BaseBorder), new Rectangle(Width - 34, 0, 34, 34), StringAlign.Center);
         }
 
         #endregion
