@@ -116,6 +116,10 @@ namespace CxFlatUI.Controls
                 graphics.FillPath(new SolidBrush(maskColor), path);
             }
             graphics.DrawString(Text, Font, new SolidBrush(textColor), new RectangleF(Height / 2, 0, Width - Height, Height), StringAlign.Center);
+            if (!Enabled)
+            {
+                graphics.FillPath(new SolidBrush(Color.FromArgb(100, 255, 255, 255)), path);
+            }
         }
 
         public CxFlatButton()

@@ -737,6 +737,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton26
             // 
+            this.cxFlatButton26.Enabled = false;
             this.cxFlatButton26.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton26.Location = new System.Drawing.Point(12, 165);
             this.cxFlatButton26.Name = "cxFlatButton26";
@@ -749,6 +750,8 @@ namespace CxFlatDemo
             // 
             // cxFlatButton25
             // 
+            this.cxFlatButton25.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cxFlatButton25.Enabled = false;
             this.cxFlatButton25.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton25.Location = new System.Drawing.Point(12, 114);
             this.cxFlatButton25.Name = "cxFlatButton25";
@@ -761,6 +764,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton14
             // 
+            this.cxFlatButton14.Enabled = false;
             this.cxFlatButton14.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton14.Location = new System.Drawing.Point(12, 64);
             this.cxFlatButton14.Name = "cxFlatButton14";
@@ -785,6 +789,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton9
             // 
+            this.cxFlatButton9.Enabled = false;
             this.cxFlatButton9.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton9.Location = new System.Drawing.Point(12, 12);
             this.cxFlatButton9.Name = "cxFlatButton9";
@@ -941,6 +946,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton17
             // 
+            this.cxFlatButton17.Enabled = false;
             this.cxFlatButton17.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton17.Location = new System.Drawing.Point(147, 165);
             this.cxFlatButton17.Name = "cxFlatButton17";
@@ -977,6 +983,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton3
             // 
+            this.cxFlatButton3.Enabled = false;
             this.cxFlatButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton3.Location = new System.Drawing.Point(147, 64);
             this.cxFlatButton3.Name = "cxFlatButton3";
@@ -989,6 +996,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton15
             // 
+            this.cxFlatButton15.Enabled = false;
             this.cxFlatButton15.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton15.Location = new System.Drawing.Point(147, 114);
             this.cxFlatButton15.Name = "cxFlatButton15";
@@ -1013,6 +1021,7 @@ namespace CxFlatDemo
             // 
             // cxFlatButton4
             // 
+            this.cxFlatButton4.Enabled = false;
             this.cxFlatButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cxFlatButton4.Location = new System.Drawing.Point(147, 12);
             this.cxFlatButton4.Name = "cxFlatButton4";
