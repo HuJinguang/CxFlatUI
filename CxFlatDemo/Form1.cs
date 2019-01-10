@@ -18,6 +18,21 @@ namespace CxFlatDemo
             InitializeComponent();
             //设置标题栏无按钮
             //this.ControlBox = false;
+            //
+
+            //多行文本框
+            cxFlatTextBox2.Text =
+                "A" + Environment.NewLine
+                + "B" + Environment.NewLine
+                + "C" + Environment.NewLine
+                + "D" + Environment.NewLine
+                + "E" + Environment.NewLine
+                + "F" + Environment.NewLine
+                + "G" + Environment.NewLine
+                + "H" + Environment.NewLine
+                + "I" + Environment.NewLine
+                + "J" + Environment.NewLine
+                + "K" + Environment.NewLine;
         }
 
         private void button1_Click(object sender, EventArgs e)

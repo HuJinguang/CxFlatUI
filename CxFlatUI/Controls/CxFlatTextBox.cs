@@ -31,6 +31,10 @@ namespace CxFlatUI
         public bool UseSystemPasswordChar { get { return _baseTextBox.UseSystemPasswordChar; } set { _baseTextBox.UseSystemPasswordChar = value; } }
         public char PasswordChar { get { return _baseTextBox.PasswordChar; } set { _baseTextBox.PasswordChar = value; } }
 
+        public bool Multiline { get { return _baseTextBox.Multiline; } set { _baseTextBox.Multiline = value; } }
+
+        public ScrollBars ScrollBars { get { return _baseTextBox.ScrollBars; } set { _baseTextBox.ScrollBars = value; } }
+
         public void SelectAll() { _baseTextBox.SelectAll(); }
         public void Clear() { _baseTextBox.Clear(); }
         public new void Focus() { _baseTextBox.Focus(); }
@@ -50,6 +54,7 @@ namespace CxFlatUI
         {
             _baseTextBox.Location = new Point(12, 8);
             _baseTextBox.Width = Width - 24;
+            _baseTextBox.Height = (Height - 16) > 0 ? (Height - 16) : 0;
             Height = _baseTextBox.Height + 16;
 
             var g = pevent.Graphics;
@@ -75,6 +80,7 @@ namespace CxFlatUI
             }
             _baseTextBox.GotFocus += _baseTextBox_GotFocus;
             _baseTextBox.LostFocus += _baseTextBox_LostFocus;
+            _baseTextBox.KeyPress += _baseTextBox_KeyPress;
             _baseTextBox.TabStop = true;
             this.TabStop = false;
         }
@@ -87,6 +93,15 @@ namespace CxFlatUI
         private void _baseTextBox_GotFocus(object sender, EventArgs e)
         {
             Invalidate();
+        }
+
+        private void _baseTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\x1')
+            {
+                ((TextBox)sender).SelectAll();
+                e.Handled = true;
+            }
         }
 
         #region baseTextBox的事件

@@ -37,6 +37,7 @@ namespace CxFlatDemo
             this.cxFlatStatusBar1 = new CxFlatUI.CxFlatStatusBar();
             this.cxFlatTabControl1 = new CxFlatUI.CxFlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cxFlatComboBox1 = new CxFlatUI.CxFlatComboBox();
             this.cxFlatButton2 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatContextMenuStrip1 = new CxFlatUI.CxFlatContextMenuStrip();
             this.abcdefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,6 +103,7 @@ namespace CxFlatDemo
             this.cxFlatButton5 = new CxFlatUI.Controls.CxFlatButton();
             this.cxFlatButton4 = new CxFlatUI.Controls.CxFlatButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.cxFlatTextBox2 = new CxFlatUI.CxFlatTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cxFlatDatePicker1 = new CxFlatUI.Controls.CxFlatDatePicker();
             this.cxFlatButton1 = new CxFlatUI.Controls.CxFlatButton();
@@ -155,6 +157,7 @@ namespace CxFlatDemo
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.cxFlatComboBox1);
             this.tabPage1.Controls.Add(this.cxFlatButton2);
             this.tabPage1.Controls.Add(this.cxFlatTextBox1);
             this.tabPage1.Controls.Add(this.cxFlatPictureBox1);
@@ -174,6 +177,18 @@ namespace CxFlatDemo
             this.tabPage1.Size = new System.Drawing.Size(825, 452);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // cxFlatComboBox1
+            // 
+            this.cxFlatComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cxFlatComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cxFlatComboBox1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.cxFlatComboBox1.FormattingEnabled = true;
+            this.cxFlatComboBox1.ItemHeight = 30;
+            this.cxFlatComboBox1.Location = new System.Drawing.Point(218, 391);
+            this.cxFlatComboBox1.Name = "cxFlatComboBox1";
+            this.cxFlatComboBox1.Size = new System.Drawing.Size(121, 36);
+            this.cxFlatComboBox1.TabIndex = 28;
             // 
             // cxFlatButton2
             // 
@@ -259,8 +274,10 @@ namespace CxFlatDemo
             this.cxFlatTextBox1.Hint = "请输入内容";
             this.cxFlatTextBox1.Location = new System.Drawing.Point(566, 271);
             this.cxFlatTextBox1.MaxLength = 32767;
+            this.cxFlatTextBox1.Multiline = false;
             this.cxFlatTextBox1.Name = "cxFlatTextBox1";
             this.cxFlatTextBox1.PasswordChar = '\0';
+            this.cxFlatTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.cxFlatTextBox1.SelectedText = "";
             this.cxFlatTextBox1.SelectionLength = 0;
             this.cxFlatTextBox1.SelectionStart = 0;
@@ -929,6 +946,7 @@ namespace CxFlatDemo
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.cxFlatTextBox2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.cxFlatDatePicker1);
             this.tabPage3.Location = new System.Drawing.Point(0, 40);
@@ -937,6 +955,25 @@ namespace CxFlatDemo
             this.tabPage3.Size = new System.Drawing.Size(825, 452);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
+            // 
+            // cxFlatTextBox2
+            // 
+            this.cxFlatTextBox2.ContextMenuStrip = this.cxFlatContextMenuStrip1;
+            this.cxFlatTextBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cxFlatTextBox2.Hint = "请输入内容";
+            this.cxFlatTextBox2.Location = new System.Drawing.Point(342, 64);
+            this.cxFlatTextBox2.MaxLength = 32767;
+            this.cxFlatTextBox2.Multiline = true;
+            this.cxFlatTextBox2.Name = "cxFlatTextBox2";
+            this.cxFlatTextBox2.PasswordChar = '\0';
+            this.cxFlatTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.cxFlatTextBox2.SelectedText = "";
+            this.cxFlatTextBox2.SelectionLength = 0;
+            this.cxFlatTextBox2.SelectionStart = 0;
+            this.cxFlatTextBox2.Size = new System.Drawing.Size(273, 197);
+            this.cxFlatTextBox2.TabIndex = 27;
+            this.cxFlatTextBox2.TabStop = false;
+            this.cxFlatTextBox2.UseSystemPasswordChar = false;
             // 
             // label1
             // 
@@ -1071,6 +1108,8 @@ namespace CxFlatDemo
         private System.Windows.Forms.TabPage tabPage3;
         private CxFlatDatePicker cxFlatDatePicker1;
         private System.Windows.Forms.Label label1;
+        private CxFlatComboBox cxFlatComboBox1;
+        private CxFlatTextBox cxFlatTextBox2;
     }
 }
 

@@ -4,7 +4,7 @@
     <!--*-->
     <id>CxFlatUI</id>
     <!--*-->
-    <version>1.0.0</version>
+    <version>1.0.0.1</version>
     <title>CxFlatUI</title>
     <!--*-->
     <authors>HuJinguang</authors>
@@ -17,7 +17,7 @@
     <!--*-->
     <description>基于winform的FlatUI类库</description>
     <!--*-->
-    <releaseNotes>初次发布 </releaseNotes>
+    <releaseNotes>添加CxFlatStatusBar按钮显示控制</releaseNotes>
     <copyright>Copyright ©  2018</copyright>
     <tags>winform ui flatui</tags>
     <dependencies>
