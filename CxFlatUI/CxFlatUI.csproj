@@ -123,5 +123,21 @@
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="package.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMePng\APIKeys.png" />
+    <Content Include="ReadMePng\Deploy.png" />
+    <Content Include="ReadMePng\MetaData.png" />
+    <Content Include="ReadMePng\Nuget.png" />
+    <Content Include="ReadMePng\NugetAPIKeys.png" />
+    <Content Include="ReadMePng\NuPackNugetPackager.png" />
+    <Content Include="ReadMePng\Options.png" />
+    <Content Include="ReadMePng\类库上右键.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
