@@ -978,7 +978,9 @@ namespace CxFlatDemo
             this.Controls.Add(this.cxFlatStatusBar1);
             this.Controls.Add(this.cxFlatTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1366, 728);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1920, 1050);
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

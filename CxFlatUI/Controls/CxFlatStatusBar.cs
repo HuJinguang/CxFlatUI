@@ -15,10 +15,9 @@ namespace CxFlatUI
         private Rectangle minRectangle;//最小化按钮区域
         private Rectangle maxRectangle;//最大化按钮区域
         private Rectangle closeRectangle;//关闭按钮区域
-        
+
         private Color _themeColor = ThemeColors.LightPrimary;//主题颜色
         private Image _iconImage = null;//应用图标
-
         #region 属性
 
         [Category("背景颜色")]
@@ -32,6 +31,44 @@ namespace CxFlatUI
             }
         }
 
+        /// <summary>
+        /// 是否显示最小化
+        /// </summary>
+        [DefaultValue(true)]
+        [Category("获取或设置一个值，该值指示是否在窗体的标题栏中显示“最小化”按钮。")]
+        public bool MinimizeBox
+        {
+            get
+            {
+                return ParentForm.MinimizeBox;
+            }
+        }
+
+        /// <summary>
+        /// 是否显示最大化
+        /// </summary>
+        [DefaultValue(true)]
+        [Category("获取或设置一个值，该值指示是否在窗体的标题栏中显示“最大化”按钮。")]
+        public bool MaximizeBox
+        {
+            get
+            {
+                return ParentForm.MaximizeBox;
+            }
+        }
+
+        /// <summary>
+        /// 控件框是否显示在标题中
+        /// </summary>
+        [DefaultValue(true)]
+        [Category("获取或设置一个值，该值指示控件框是否显示在标题中")]
+        public bool ControlBox
+        {
+            get
+            {
+                return ParentForm.ControlBox;
+            }
+        }
         #endregion
 
         #region 事件
@@ -113,9 +150,6 @@ namespace CxFlatUI
             base.OnPaint(e);
             Location = new Point(0, 0);
             Width = ParentForm.Width;
-            minRectangle = new Rectangle(Width - 76, (Height - 16) / 2, 18, 18);
-            maxRectangle = new Rectangle(Width - 54, (Height - 16) / 2, 18, 18);
-            closeRectangle = new Rectangle(Width - 32, (Height - 16) / 2, 18, 18);
 
             Bitmap bitmap = new Bitmap(Width, Height);
             Graphics graphics = Graphics.FromImage(bitmap);
@@ -142,48 +176,60 @@ namespace CxFlatUI
                 //
                 //绘制标题
                 //
-                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(15, 1, Width-100, Height), StringAlign.Left);
-            }
-            //
-            //最小化按钮
-            //
-            if (minRectangle.Contains(mousePoint))
-            {
-                graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle, StringAlign.Center);
-            }
-            else
-            {
-                graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle, StringAlign.Center);
+                graphics.DrawString(Text, new Font("微软雅黑", 12f), new SolidBrush(ThemeColors.FourLevelBorder), new Rectangle(15, 1, Width - 100, Height), StringAlign.Left);
             }
 
-            //
-            //最大化按钮
-            //
-            if (maxRectangle.Contains(mousePoint))
+            if (ControlBox)
             {
-                if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
-                else
-                    graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
-            }
-            else
-            {
-                if (ParentForm.WindowState == FormWindowState.Normal)
-                    graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
-                else
-                    graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
-            }
+                if (MinimizeBox)
+                {
+                    minRectangle = new Rectangle(Width - 54 - (MaximizeBox ? 1 : 0) * 22, (Height - 16) / 2, 18, 18);
+                    //
+                    //最小化按钮
+                    //
+                    if (minRectangle.Contains(mousePoint))
+                    {
+                        graphics.DrawString("0", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), minRectangle, StringAlign.Center);
+                    }
+                    else
+                    {
+                        graphics.DrawString("0", icoFont, new SolidBrush(Color.White), minRectangle, StringAlign.Center);
+                    }
+                }
+                if (MaximizeBox)
+                {
+                    maxRectangle = new Rectangle(Width - 54, (Height - 16) / 2, 18, 18);
+                    //
+                    //最大化按钮
+                    //
+                    if (maxRectangle.Contains(mousePoint))
+                    {
+                        if (ParentForm.WindowState == FormWindowState.Normal)
+                            graphics.DrawString("1", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
+                        else
+                            graphics.DrawString("2", icoFont, new SolidBrush(ThemeColors.TwoLevelBorder), maxRectangle, StringAlign.Center);
+                    }
+                    else
+                    {
+                        if (ParentForm.WindowState == FormWindowState.Normal)
+                            graphics.DrawString("1", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
+                        else
+                            graphics.DrawString("2", icoFont, new SolidBrush(Color.White), maxRectangle, StringAlign.Center);
+                    }
+                }
 
-            //
-            //关闭按钮
-            //
-            if (closeRectangle.Contains(mousePoint))
-            {
-                graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle, StringAlign.Center);
-            }
-            else
-            {
-                graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle, StringAlign.Center);
+                closeRectangle = new Rectangle(Width - 32, (Height - 16) / 2, 18, 18);
+                //
+                //关闭按钮
+                //
+                if (closeRectangle.Contains(mousePoint))
+                {
+                    graphics.DrawString("r", icoFont, new SolidBrush(ThemeColors.Danger), closeRectangle, StringAlign.Center);
+                }
+                else
+                {
+                    graphics.DrawString("r", icoFont, new SolidBrush(Color.White), closeRectangle, StringAlign.Center);
+                }
             }
 
             base.OnPaint(e);
