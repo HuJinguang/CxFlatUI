@@ -50,14 +50,14 @@ namespace CxFlatUI
             }
         }
 
-        protected override void OnPaint(PaintEventArgs pevent)
+        protected override void OnPaint(PaintEventArgs e)
         {
             _baseTextBox.Location = new Point(12, 8);
             _baseTextBox.Width = Width - 24;
             _baseTextBox.Height = (Height - 16) > 0 ? (Height - 16) : 0;
             Height = _baseTextBox.Height + 16;
 
-            var g = pevent.Graphics;
+            var g = e.Graphics;
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
             g.SmoothingMode = SmoothingMode.HighQuality;
             g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;

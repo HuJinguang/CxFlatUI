@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace CxFlatUI
 {
-    public class CxFlatComboBox:ComboBox
+    public class CxFlatComboBox : ComboBox
     {
         public CxFlatComboBox()
         {
@@ -15,7 +15,7 @@ namespace CxFlatUI
             DoubleBuffered = true;
             FlatStyle = FlatStyle.Flat;
             DrawMode = DrawMode.OwnerDrawFixed;
-            
+
             Font = new Font("微软雅黑", 12F);
             ItemHeight = 30;
         }
@@ -30,20 +30,21 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            
+
             graphics.Clear(Parent.BackColor);
-            var backPath = DrawHelper.CreateRoundRect(1, 1, Width-2, Height-2, 2);
+            var backPath = DrawHelper.CreateRoundRect(1, 1, Width - 2, Height - 2, 2);
             graphics.FillPath(new SolidBrush(Color.White), backPath);
-            graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder,2), backPath);
+            graphics.DrawPath(new Pen(ThemeColors.OneLevelBorder, 2), backPath);
 
             //绘制背景颜色
-            graphics.FillRectangle(new SolidBrush(Color.White), new RectangleF(0,0,Width,Height));
+            graphics.FillRectangle(new SolidBrush(Color.White), new RectangleF(1, 1, Width - 2, Height - 2));
 
             //绘制文本
             graphics.DrawString(Text, Font, new SolidBrush(ThemeColors.PrimaryColor), new Point(4, 4));
 
             //绘制下拉箭头
-            graphics.DrawString("6", new Font("Marlett", 12), new SolidBrush(SystemColors.ControlDark), new Rectangle(Width - 18, 6, 18, 18));
+            graphics.DrawString("6", new Font("Marlett", 12), new SolidBrush(SystemColors.ControlDark), new Rectangle(Width - 22, (Height - 18) / 2, 18, 18));
+
 
             //graphics.Dispose();
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
