@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <!--*-->
+    <id>CxFlatUI</id>
+    <!--*-->
+    <version>1.0.0.2</version>
+    <title>CxFlatUI</title>
+    <!--*-->
+    <authors>HuJinguang</authors>
+    <owners>HuJinguang;Zeje</owners>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/zeje/CxFlatUI</projectUrl>
+    <!--<iconUrl>
+    </iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--*-->
+    <description>基于winform的FlatUI类库</description>
+    <!--*-->
+    <releaseNotes>CxFlatTextBox：添加多行文本框支持，支持滚动条，支持Ctrl+A全选</releaseNotes>
+    <copyright>Copyright ©  2018</copyright>
+    <tags>winform ui flatui</tags>
+    <dependencies>
+      <!--
+      <dependency id="SampleDependency" version="1.0" />
+-->
+    </dependencies>
+  </metadata>
+</package>
