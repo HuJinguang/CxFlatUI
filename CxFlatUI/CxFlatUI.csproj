@@ -96,6 +96,7 @@
     <Compile Include="Controls\CxFlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\CxFlatTextArea.cs" />
     <Compile Include="Controls\CxFlatTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
