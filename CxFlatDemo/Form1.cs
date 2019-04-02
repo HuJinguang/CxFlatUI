@@ -72,5 +72,13 @@ namespace CxFlatDemo
         {
             label1.Text = cxFlatDatePicker1.Date.ToLongDateString();
         }
+
+        private void CxFlatButton3_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                ThemeColors.PrimaryColor = colorDialog1.Color;
+            }
+        }
     }
 }

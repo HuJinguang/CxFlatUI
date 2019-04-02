@@ -16,20 +16,12 @@ namespace CxFlatUI
         private Rectangle maxRectangle;//最大化按钮区域
         private Rectangle closeRectangle;//关闭按钮区域
 
-        private Color _themeColor = ThemeColors.LightPrimary;//主题颜色
+        private bool _useTheme = true;//使用统一主题颜色
+        private Color _themeColor = ThemeColors.PrimaryColor;//主题颜色
         private Image _iconImage = null;//应用图标
+        
         #region 属性
 
-        [Category("背景颜色")]
-        public Color ThemeColor
-        {
-            get { return _themeColor; }
-            set
-            {
-                _themeColor = value;
-                Invalidate();
-            }
-        }
 
         /// <summary>
         /// 是否显示最小化
@@ -157,7 +149,7 @@ namespace CxFlatUI
             graphics.SmoothingMode = SmoothingMode.HighQuality;//消除锯齿
             graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;//高质量显示
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;//最高质量显示文本
-            graphics.Clear(_themeColor);
+            graphics.Clear( ThemeColors.PrimaryColor);
 
             var icoFont = new Font("Marlett", 12);
             //

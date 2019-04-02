@@ -133,8 +133,8 @@ namespace CxFlatUI
 
             if (ShowValue && mouseFlat)
             {
-                graphics.FillEllipse(new SolidBrush(_themeColor), new RectangleF(ValueWidth - 2 + 5, 1, 18, 18));
-                graphics.FillPolygon(new SolidBrush(_themeColor), new PointF[]
+                graphics.FillEllipse(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(ValueWidth - 2 + 5, 1, 18, 18));
+                graphics.FillPolygon(new SolidBrush(ThemeColors.PrimaryColor), new PointF[]
                 {
             new PointF(ValueWidth+1.305F-2+5,13.5F+1),
             new PointF(ValueWidth+7.794F+9-2+5,13.5F+1),
@@ -145,8 +145,8 @@ namespace CxFlatUI
 
             graphics.FillRectangle(new SolidBrush(DrawHelper.BackColor), new RectangleF(15, Height - 10, Width - 30, 4));
             graphics.FillRectangle(new SolidBrush(Color.White), new RectangleF(15, Height - 10, ValueWidth, 4));
-            graphics.FillRectangle(new SolidBrush(_themeColor), new RectangleF(15, Height - 10, ValueWidth, 4));
-            graphics.FillEllipse(new SolidBrush(_themeColor), new RectangleF(ValueWidth + 5, Height - 17, 16, 16));
+            graphics.FillRectangle(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(15, Height - 10, ValueWidth, 4));
+            graphics.FillEllipse(new SolidBrush(ThemeColors.PrimaryColor), new RectangleF(ValueWidth + 5, Height - 17, 16, 16));
             graphics.FillEllipse(new SolidBrush(Color.White), new RectangleF(ValueWidth + 8, Height - 14, 10, 10));
         }
 

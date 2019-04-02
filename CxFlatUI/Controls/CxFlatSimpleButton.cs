@@ -80,8 +80,8 @@ namespace CxFlatUI
             if (_buttonType == ButtonType.Default)
             {
                 var BG = DrawHelper.CreateRoundRect(0.5f, 0.5f, Width - 1, Height - 1, 3);
-                graphics.DrawPath(new Pen(enterFlag ? (clickFlag ? ThemeColors.DarkPrimary : ThemeColors.PrimaryColor) : ThemeColors.OneLevelBorder, 1), BG);
-                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? (clickFlag?ThemeColors.DarkPrimary:ThemeColors.PrimaryColor ): ThemeColors.MainText), new RectangleF(0, 0, Width, Height), StringAlign.Center);
+                graphics.DrawPath(new Pen(enterFlag ? (clickFlag ? Color.FromArgb(200,ThemeColors.PrimaryColor) : ThemeColors.PrimaryColor) : ThemeColors.OneLevelBorder, 1), BG);
+                graphics.DrawString(Text, Font, new SolidBrush(enterFlag ? (clickFlag? Color.FromArgb(200, ThemeColors.PrimaryColor) : ThemeColors.PrimaryColor ): ThemeColors.MainText), new RectangleF(0, 0, Width, Height), StringAlign.Center);
             }
             else
             {

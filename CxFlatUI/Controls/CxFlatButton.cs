@@ -23,6 +23,11 @@ namespace CxFlatUI.Controls
         [RefreshProperties(RefreshProperties.Repaint)]
         public Color TextColor { get; set; } = Color.White;
 
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public Color ThemeColor { get; set; } = ThemeColors.PrimaryColor;
+
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public bool UseTheme { get; set; } = true;
         #endregion
 
         #region 事件
@@ -112,6 +117,5 @@ namespace CxFlatUI.Controls
             DoubleBuffered = true;
             Font = new Font("Segoe UI", 12);
         }
-
     }
 }

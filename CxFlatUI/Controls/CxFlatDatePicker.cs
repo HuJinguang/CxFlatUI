@@ -270,7 +270,7 @@ namespace CxFlatUI.Controls
                 //突出显示今天
                 if (tempDate.Date == DateTime.Today)
                 {
-                    brush = new SolidBrush(ThemeColors.DarkPrimary);
+                    brush = new SolidBrush(ThemeColors.PrimaryColor);
                 }
                 //突出显示所选日期
                 if (tempDate.Date == Date)

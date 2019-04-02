@@ -83,14 +83,14 @@ namespace CxFlatUI
             {
                 if (i == SelectedIndex)
                 {
-                    graphics.FillRectangle(new SolidBrush(_themeColor), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
-                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(_themeColor), GetTabRect(i), StringAlign.Center);
+                    graphics.FillRectangle(new SolidBrush(ThemeColors.PrimaryColor), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
+                    graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(ThemeColors.PrimaryColor), GetTabRect(i), StringAlign.Center);
                 }
                 else
                 {
                     if (i == enterIndex && enterFlag)
                     {
-                        graphics.FillRectangle(new SolidBrush(Color.FromArgb(150, _themeColor)), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
+                        graphics.FillRectangle(new SolidBrush(Color.FromArgb(150, ThemeColors.PrimaryColor)), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
                     }
 
                     graphics.DrawString(TabPages[i].Text.ToUpper(), Font, new SolidBrush(Color.Black), GetTabRect(i), StringAlign.Center);

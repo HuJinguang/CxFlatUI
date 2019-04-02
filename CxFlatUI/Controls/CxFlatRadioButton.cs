@@ -75,7 +75,7 @@ namespace CxFlatUI
 
             Rectangle BGEllipse = new Rectangle(1, 1, 18, 18);
             EnabledCheckedColor = _checkedColor;
-            SolidBrush BG = new SolidBrush(Enabled ? (Checked || enterFalg ? EnabledCheckedColor : EnabledUnCheckedColor) : DisabledColor);
+            SolidBrush BG = new SolidBrush(Enabled ? (Checked || enterFalg ? ThemeColors.PrimaryColor : EnabledUnCheckedColor) : DisabledColor);
 
             graphics.FillEllipse(BG, BGEllipse);
             graphics.FillEllipse(new SolidBrush(Color.White), new Rectangle(3, 3, 14, 14));
@@ -83,12 +83,14 @@ namespace CxFlatUI
             graphics.FillEllipse(BG, new Rectangle(PointAnimationNum, PointAnimationNum, SizeAnimationNum, SizeAnimationNum));
 
             //绘制文本
-            graphics.DrawString(Text, Font, new SolidBrush(Checked ? _checkedColor : Color.Black), new RectangleF(22, 0, Width - 22, Height), StringAlign.Center);
+            graphics.DrawString(Text, Font, new SolidBrush(Checked ? ThemeColors.PrimaryColor : Color.Black), new RectangleF(22, 0, Width - 22, Height), StringAlign.Center);
         }
 
-        //
-        //选择动画
-        //
+        /// <summary>
+        /// 选择动画
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnimationTick(object sender, EventArgs e)
         {
             if (Checked)
