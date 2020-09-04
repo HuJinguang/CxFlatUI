@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30428.66
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CxFlatUI", "CxFlatUI\CxFlatUI.csproj", "{818F9757-8EA0-4756-B1BC-4C18226473F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CxFlatDemo", "CxFlatDemo\CxFlatDemo.csproj", "{E4C673EC-B8E5-484C-990D-241339740572}"
+	ProjectSection(ProjectDependencies) = postProject
+		{818F9757-8EA0-4756-B1BC-4C18226473F0} = {818F9757-8EA0-4756-B1BC-4C18226473F0}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7310F6AC-FBA6-4272-B5C1-DCE69E0127DC}"
 	ProjectSection(SolutionItems) = preProject

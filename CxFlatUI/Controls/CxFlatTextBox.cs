@@ -225,17 +225,17 @@ namespace CxFlatUI
             }
         }
 
-        public new event EventHandler ContextMenuChanged
-        {
-            add
-            {
-                _baseTextBox.ContextMenuChanged += value;
-            }
-            remove
-            {
-                _baseTextBox.ContextMenuChanged -= value;
-            }
-        }
+        //public new event EventHandler ContextMenuChanged
+        //{
+        //    add
+        //    {
+        //        _baseTextBox.ContextMenuChanged += value;
+        //    }
+        //    remove
+        //    {
+        //        _baseTextBox.ContextMenuChanged -= value;
+        //    }
+        //}
 
         public new event EventHandler ContextMenuStripChanged
         {
