@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>HuJinguang</Authors>
+    <Company>CxFaltDemo</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CxFlatUI\CxFlatUI.Net6.csproj" />
+  </ItemGroup>
+
+</Project>
